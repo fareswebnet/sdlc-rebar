@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Delivery Roadmap Backlog"
+  short_description: "Slice roadmap and backlog"
+  default_prompt: "Use $sdlc-delivery-roadmap-backlog to turn strategy and specs into small, valuable, buildable slices."

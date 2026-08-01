@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Implementation Planning"
+  short_description: "Plan code changes safely workflows"
+  default_prompt: "Use $sdlc-implementation-planning to make code work predictable before editing files."

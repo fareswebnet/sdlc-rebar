@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Performance Scalability Cost"
+  short_description: "Balance scale and cost workflows"
+  default_prompt: "Use $sdlc-performance-scalability-cost to treat cost and scalability as first-class architecture constraints."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Observability Reliability"
+  short_description: "Design reliable production systems"
+  default_prompt: "Use $sdlc-observability-reliability to help teams understand production behavior from user and business impact, not only infrastructure metrics."

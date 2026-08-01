@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Idea Framing"
+  short_description: "Clarify raw product ideas"
+  default_prompt: "Use $sdlc-idea-framing to convert a vague idea into a testable product thesis."

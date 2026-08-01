@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Technical Debt Evolution"
+  short_description: "Manage debt and evolution"
+  default_prompt: "Use $sdlc-technical-debt-evolution to manage debt as a portfolio of risks, not a vague cleanup wish list."

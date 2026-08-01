@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Documentation Knowledge"
+  short_description: "Keep docs useful and current"
+  default_prompt: "Use $sdlc-documentation-knowledge to keep knowledge close to the work and useful under pressure."

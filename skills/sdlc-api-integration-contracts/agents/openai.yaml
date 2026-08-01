@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC API Integration Contracts"
+  short_description: "Specify APIs and events workflows"
+  default_prompt: "Use $sdlc-api-integration-contracts to prevent hidden coupling and integration ambiguity."

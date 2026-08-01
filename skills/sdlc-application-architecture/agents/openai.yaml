@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Application Architecture"
+  short_description: "Design application boundaries"
+  default_prompt: "Use $sdlc-application-architecture to choose a structure the team can build, test, and evolve."

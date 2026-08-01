@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Bounded Context Map"
+  short_description: "Map DDD context boundaries"
+  default_prompt: "Use $sdlc-bounded-context-map to prevent one vague model from spreading across unrelated parts of the system."

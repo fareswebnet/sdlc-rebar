@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC UI Design System"
+  short_description: "Plan UI system and components"
+  default_prompt: "Use $sdlc-ui-design-system to turn product flows into consistent, accessible, maintainable interfaces."

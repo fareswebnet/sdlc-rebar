@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC BDD Specifications"
+  short_description: "Specify behavior by examples"
+  default_prompt: "Use $sdlc-bdd-specifications to use concrete examples to close ambiguity between business, product, design, engineering, and qa."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Maturity Assessment"
+  short_description: "Score maturity and gaps workflows"
+  default_prompt: "Use $sdlc-maturity-assessment to turn an uncertain project state into a prioritized improvement roadmap."

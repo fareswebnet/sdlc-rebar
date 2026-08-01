@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC PRD Requirements"
+  short_description: "Write precise product specs"
+  default_prompt: "Use $sdlc-prd-requirements to create requirements that are specific enough to build and test, without over-specifying implementation."

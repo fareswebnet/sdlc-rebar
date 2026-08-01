@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Domain Modeling"
+  short_description: "Model business domain rules"
+  default_prompt: "Use $sdlc-domain-modeling to make the business model explicit before the software model hardens."

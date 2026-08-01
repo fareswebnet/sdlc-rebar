@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Code Change Execution"
+  short_description: "Execute scoped repo changes"
+  default_prompt: "Use $sdlc-code-change-execution to make disciplined changes that satisfy the spec and survive review."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC AI Product Architecture"
+  short_description: "Design LLM and agent products"
+  default_prompt: "Use $sdlc-ai-product-architecture to make ai product behavior measurable, governable, and safe enough for the use case."

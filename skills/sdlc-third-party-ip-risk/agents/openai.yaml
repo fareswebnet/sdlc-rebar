@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Third Party IP Risk"
+  short_description: "Review vendors, licenses, IP"
+  default_prompt: "Use $sdlc-third-party-ip-risk to make external code, services, models, and licenses visible before they become due diligence problems."

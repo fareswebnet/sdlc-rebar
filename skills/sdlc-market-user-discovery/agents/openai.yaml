@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Market User Discovery"
+  short_description: "Research users and market"
+  default_prompt: "Use $sdlc-market-user-discovery to replace internal guesses with evidence and well-labeled uncertainty."

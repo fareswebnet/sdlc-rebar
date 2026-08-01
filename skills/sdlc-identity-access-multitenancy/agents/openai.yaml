@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Identity Access Multitenancy"
+  short_description: "Model auth and tenant isolation"
+  default_prompt: "Use $sdlc-identity-access-multitenancy to treat identity and authorization as domain and security models, not route-level afterthoughts."

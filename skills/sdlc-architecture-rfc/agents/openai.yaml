@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Architecture RFC"
+  short_description: "Write architecture RFCs workflows"
+  default_prompt: "Use $sdlc-architecture-rfc to make significant architecture choices explicit, reviewable, and traceable."

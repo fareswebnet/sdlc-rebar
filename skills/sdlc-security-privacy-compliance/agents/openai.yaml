@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Security Privacy Compliance"
+  short_description: "Integrate AppSec and privacy"
+  default_prompt: "Use $sdlc-security-privacy-compliance to build security and privacy into the sdlc before release pressure hides risk."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC UX Product Design"
+  short_description: "Design user flows and states"
+  default_prompt: "Use $sdlc-ux-product-design to make workflows usable before they become tickets and screens."

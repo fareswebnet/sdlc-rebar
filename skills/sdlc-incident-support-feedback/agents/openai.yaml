@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Incident Support Feedback"
+  short_description: "Close incident and support loops"
+  default_prompt: "Use $sdlc-incident-support-feedback to convert production and customer pain into learning and durable improvements."
