@@ -1,0 +1,111 @@
+id: releasepilot-idea-to-pr
+source_harness: harnesses/app-idea-to-production.yaml
+app: ReleasePilot
+goal: Produce a reviewable first-slice PR for a release-readiness dashboard without deploying to production.
+autonomy_level: high-with-human-gates
+stop_condition: PR ready for human review; no production deployment.
+stages:
+  - id: intake
+    agent: product-strategist
+    skills:
+      - sdlc-idea-framing
+      - sdlc-market-user-discovery
+      - sdlc-product-strategy
+    output:
+      - docs/product/problem-statement.md
+      - docs/product/vision.md
+      - docs/product/assumptions.md
+    gate: MVP user, outcome, non-goals, and riskiest assumptions are explicit.
+  - id: specification
+    agent: product-strategist
+    skills:
+      - sdlc-prd-requirements
+    output:
+      - docs/product/prd.md
+      - docs/product/requirements-traceability.md
+    gate: Requirements are measurable and acceptance criteria are testable.
+  - id: domain-behavior
+    agent: domain-architect
+    skills:
+      - sdlc-domain-modeling
+      - sdlc-bounded-context-map
+      - sdlc-bdd-specifications
+    output:
+      - docs/architecture/domain-model.md
+      - docs/architecture/context-map.md
+      - docs/product/bdd/release-readiness.feature
+    gate: Release gates, risk states, and validation summaries are modeled by examples.
+  - id: ux-ui
+    agent: ux-ui-designer
+    skills:
+      - sdlc-ux-product-design
+      - sdlc-ui-design-system
+    output:
+      - docs/ux/journeys.md
+      - docs/ux/flows.md
+      - docs/ux/design-system.md
+    gate: Dashboard states cover loading, empty, incomplete, ready, blocked, and error views.
+  - id: architecture
+    agent: solution-architect
+    skills:
+      - sdlc-architecture-rfc
+      - sdlc-application-architecture
+      - sdlc-data-database-architecture
+      - sdlc-api-integration-contracts
+      - sdlc-identity-access-multitenancy
+    output:
+      - docs/architecture/application-architecture.md
+      - docs/architecture/data-model.md
+      - docs/architecture/api-contracts.md
+    gate: Tenant data, release checklist data, and PR validation output have clear ownership.
+  - id: implementation-plan
+    agent: orchestrator
+    skills:
+      - sdlc-ai-assisted-development
+      - sdlc-delivery-roadmap-backlog
+      - sdlc-implementation-planning
+    output:
+      - docs/delivery/backlog.md
+      - docs/engineering/implementation-plan.md
+      - docs/engineering/ai-development-plan.md
+    gate: First vertical slice is bounded to checklist generation, risk summary, and export.
+  - id: build
+    agent: fullstack-builder
+    skills:
+      - sdlc-code-change-execution
+      - sdlc-quality-test-strategy
+    output:
+      - implementation diff
+      - unit tests
+      - component tests
+      - validation notes
+    gate: Tests pass and behavior maps back to BDD examples.
+  - id: independent-validation
+    agent: qa-test-engineer
+    skills:
+      - sdlc-quality-test-strategy
+    output:
+      - docs/quality/acceptance-tests.md
+      - docs/quality/regression-risk.md
+    gate: Acceptance and regression evidence are complete for the first slice.
+  - id: security-review
+    agent: security-reviewer
+    skills:
+      - sdlc-security-privacy-compliance
+      - sdlc-third-party-ip-risk
+    output:
+      - docs/security/threat-model.md
+      - docs/security/privacy-review.md
+    gate: Tenant isolation, PR metadata sensitivity, and dependency risk have no release blockers.
+  - id: merge-review
+    agent: code-reviewer
+    skills:
+      - sdlc-code-review-quality-gate
+    output:
+      - review findings
+      - merge decision
+    gate: No unresolved blocking findings remain.
+completion:
+  - PR body is ready.
+  - Review gate is ready.
+  - Production deployment is explicitly out of scope.

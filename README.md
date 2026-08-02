@@ -137,6 +137,11 @@ Turn this incident, support signal, analytics anomaly, or reliability issue into
 
 Human approval remains required for product scope, durable architecture choices, dependency additions, secrets, customer data, payments, destructive migrations, and production deployment.
 
+## Examples
+
+- `examples/fintech-cfo-b2b/sdlc-case-study.md`: compact case study for a fintech CFO product.
+- `examples/agent-factory-idea-to-pr/`: complete automation example showing how a raw app idea becomes a task graph, artifact map, simulated PR, and review gate across Codex, Claude Code, and Hermes prompts.
+
 ## Scaffold Project Docs
 
 From this repository:

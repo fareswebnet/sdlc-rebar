@@ -14,6 +14,7 @@ AGENTS = ROOT / "agents"
 HARNESSES = ROOT / "harnesses"
 PIPELINES = ROOT / "pipelines"
 INTEGRATIONS = ROOT / "integrations"
+EXAMPLES = ROOT / "examples"
 REQUIRED = {"name", "description"}
 BAD = re.compile(r"TODO|TBD|FIXME|placeholder|A COMPLETER|a completer", re.I)
 EXPECTED_AGENTS = {
@@ -46,6 +47,17 @@ EXPECTED_INTEGRATIONS = {
     "openclaw",
     "github-actions",
     "mcp",
+}
+EXPECTED_EXAMPLE_FILES = {
+    "fintech-cfo-b2b/sdlc-case-study.md",
+    "agent-factory-idea-to-pr/README.md",
+    "agent-factory-idea-to-pr/artifacts/task-graph.yaml",
+    "agent-factory-idea-to-pr/artifacts/sdlc-artifact-map.md",
+    "agent-factory-idea-to-pr/artifacts/simulated-pr.md",
+    "agent-factory-idea-to-pr/artifacts/review-gate.md",
+    "agent-factory-idea-to-pr/prompts/codex.md",
+    "agent-factory-idea-to-pr/prompts/claude-code.md",
+    "agent-factory-idea-to-pr/prompts/hermes.md",
 }
 
 
@@ -87,6 +99,22 @@ def validate_references(path: Path, text: str, known_skills: set[str], known_age
     for agent in sorted(set(re.findall(r"^\s+agent: ([a-z0-9-]+)\s*$", text, re.M))):
         if agent not in known_agents:
             errors.append(f"{path.relative_to(ROOT)}: unknown agent {agent}")
+
+
+def validate_example_files(known_skills: set[str], errors: list[str]) -> None:
+    for example_file in sorted(EXPECTED_EXAMPLE_FILES):
+        path = EXAMPLES / example_file
+        text = read_checked(path, errors)
+        if example_file.endswith(".yaml"):
+            validate_references(path, text, known_skills, EXPECTED_AGENTS, errors)
+    task_graph = read_checked(EXAMPLES / "agent-factory-idea-to-pr" / "artifacts" / "task-graph.yaml", errors)
+    for required in ("source_harness: harnesses/app-idea-to-production.yaml", "stop_condition:", "completion:"):
+        if required not in task_graph:
+            errors.append(f"examples/agent-factory-idea-to-pr/artifacts/task-graph.yaml: missing {required}")
+    simulated_pr = read_checked(EXAMPLES / "agent-factory-idea-to-pr" / "artifacts" / "simulated-pr.md", errors)
+    for required in ("## Summary", "## Tests", "## Security And Privacy", "## Human Gate"):
+        if required not in simulated_pr:
+            errors.append(f"examples/agent-factory-idea-to-pr/artifacts/simulated-pr.md: missing {required}")
 
 
 def main() -> int:
@@ -190,6 +218,7 @@ def main() -> int:
         if not re.search(rf"^{re.escape(agent)},", matrix_text, re.M):
             errors.append(f"{matrix.relative_to(ROOT)}: missing matrix row for {agent}")
     read_checked(ROOT / "docs" / "references" / "agent-runtime-matrix.md", errors)
+    validate_example_files(known_skills, errors)
 
     if errors:
         for error in errors:
