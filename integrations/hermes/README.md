@@ -39,6 +39,17 @@ hermes chat --skills sdlc-incident-support-feedback,sdlc-product-analytics-exper
   -q "Run pipelines/production-feedback-loop.md against the latest support and observability signals available through approved tools."
 ```
 
+Complete ReleasePilot example:
+
+```bash
+python3 examples/hermes-releasepilot-signal-clustering/scripts/validate_hermes_example.py
+
+hermes chat --worktree --skills sdlc-delivery-system,sdlc-ai-assisted-development,sdlc-bdd-specifications,sdlc-quality-test-strategy \
+  -q "$(cat examples/hermes-releasepilot-signal-clustering/prompts/hermes-kickoff.md)"
+```
+
+The full example lives in `examples/hermes-releasepilot-signal-clustering/` and shows how Hermes can coordinate product framing, bounded contexts, BDD, TDD red tests, scoped implementation, security review, PR review, feature flags, observability, and ROI follow-up.
+
 ## Recommended Orchestration
 
 - `orchestrator` owns the task graph.

@@ -1,0 +1,75 @@
+id: releasepilot
+name: ReleasePilot Hermes Profile
+purpose: Dedicated Hermes orchestration profile for the ReleasePilot Signal Clustering feature.
+runtime_role: orchestration
+default_harness: harnesses/app-idea-to-production.yaml
+context_files:
+  - .hermes.md
+  - AGENTS.md
+  - docs/product/prd.md
+  - docs/architecture/context-map.md
+  - docs/engineering/ai-development-plan.md
+memory_policy:
+  durable_memory:
+    - product positioning and non-goals
+    - bounded contexts and ownership
+    - Definition of Done
+    - approved architecture decisions
+    - accepted risk exceptions
+  keep_out_of_memory:
+    - secrets
+    - raw customer data
+    - private incident details
+    - temporary implementation guesses
+skills:
+  sdlc:
+    - sdlc-delivery-system
+    - sdlc-ai-assisted-development
+    - sdlc-domain-modeling
+    - sdlc-bounded-context-map
+    - sdlc-bdd-specifications
+    - sdlc-quality-test-strategy
+    - sdlc-security-privacy-compliance
+    - sdlc-release-production-readiness
+  project:
+    - releasepilot-research
+    - releasepilot-domain
+    - releasepilot-bdd
+    - releasepilot-architecture
+    - releasepilot-tdd
+    - releasepilot-implementation
+    - releasepilot-security-review
+    - releasepilot-pr-review
+    - releasepilot-roi
+toolsets:
+  read_only_research:
+    repo: read
+    network: approved_sources_only
+  spec_writer:
+    repo: docs_and_features_write
+    network: off
+  red_test_writer:
+    repo: tests_write
+    network: off
+  implementation:
+    repo: scoped_write
+    network: off_by_default
+  reviewer:
+    repo: read
+    network: off
+human_approval_required_for:
+  - scope change
+  - architecture decision
+  - dependency addition
+  - migration
+  - secret or environment change
+  - customer data access
+  - production deployment
+  - external communication
+scheduled_routines:
+  - id: daily-delivery-brief
+    cadence: every_weekday_morning
+    purpose: Summarize open PRs, failed checks, blocked gates, and next human decisions.
+  - id: weekly-roi-review
+    cadence: weekly
+    purpose: Compare agent cost, cycle time, review rework, defect escape, and accepted product outcomes.

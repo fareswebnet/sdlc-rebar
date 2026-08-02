@@ -58,6 +58,32 @@ EXPECTED_EXAMPLE_FILES = {
     "agent-factory-idea-to-pr/prompts/codex.md",
     "agent-factory-idea-to-pr/prompts/claude-code.md",
     "agent-factory-idea-to-pr/prompts/hermes.md",
+    "hermes-releasepilot-signal-clustering/README.md",
+    "hermes-releasepilot-signal-clustering/hermes/.hermes.md",
+    "hermes-releasepilot-signal-clustering/hermes/profile.releasepilot.yaml",
+    "hermes-releasepilot-signal-clustering/hermes/memory-seed.md",
+    "hermes-releasepilot-signal-clustering/artifacts/task-graph.yaml",
+    "hermes-releasepilot-signal-clustering/artifacts/signal-clustering-sdlc-map.md",
+    "hermes-releasepilot-signal-clustering/artifacts/bdd-scenarios.feature",
+    "hermes-releasepilot-signal-clustering/artifacts/red-tests.md",
+    "hermes-releasepilot-signal-clustering/artifacts/feature-flag.yaml",
+    "hermes-releasepilot-signal-clustering/artifacts/implementation-plan.md",
+    "hermes-releasepilot-signal-clustering/artifacts/simulated-pr.md",
+    "hermes-releasepilot-signal-clustering/artifacts/review-gate.md",
+    "hermes-releasepilot-signal-clustering/artifacts/production-follow-up.md",
+    "hermes-releasepilot-signal-clustering/prompts/hermes-kickoff.md",
+    "hermes-releasepilot-signal-clustering/prompts/hermes-stage-handoff.md",
+    "hermes-releasepilot-signal-clustering/prompts/hermes-nightly-followup.md",
+    "hermes-releasepilot-signal-clustering/skills/releasepilot-research/SKILL.md",
+    "hermes-releasepilot-signal-clustering/skills/releasepilot-domain/SKILL.md",
+    "hermes-releasepilot-signal-clustering/skills/releasepilot-bdd/SKILL.md",
+    "hermes-releasepilot-signal-clustering/skills/releasepilot-architecture/SKILL.md",
+    "hermes-releasepilot-signal-clustering/skills/releasepilot-tdd/SKILL.md",
+    "hermes-releasepilot-signal-clustering/skills/releasepilot-implementation/SKILL.md",
+    "hermes-releasepilot-signal-clustering/skills/releasepilot-security-review/SKILL.md",
+    "hermes-releasepilot-signal-clustering/skills/releasepilot-pr-review/SKILL.md",
+    "hermes-releasepilot-signal-clustering/skills/releasepilot-roi/SKILL.md",
+    "hermes-releasepilot-signal-clustering/scripts/validate_hermes_example.py",
 }
 
 
@@ -115,6 +141,17 @@ def validate_example_files(known_skills: set[str], errors: list[str]) -> None:
     for required in ("## Summary", "## Tests", "## Security And Privacy", "## Human Gate"):
         if required not in simulated_pr:
             errors.append(f"examples/agent-factory-idea-to-pr/artifacts/simulated-pr.md: missing {required}")
+
+    hermes_graph = read_checked(EXAMPLES / "hermes-releasepilot-signal-clustering" / "artifacts" / "task-graph.yaml", errors)
+    for required in (
+        "runtime: hermes",
+        "profile: releasepilot",
+        "project_skill: releasepilot-tdd",
+        "project_skill: releasepilot-implementation",
+        "stop_condition: PR ready for human review; no production deployment and no customer communication.",
+    ):
+        if required not in hermes_graph:
+            errors.append(f"examples/hermes-releasepilot-signal-clustering/artifacts/task-graph.yaml: missing {required}")
 
 
 def main() -> int:

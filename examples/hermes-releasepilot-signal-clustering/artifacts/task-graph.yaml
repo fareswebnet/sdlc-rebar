@@ -1,0 +1,188 @@
+id: releasepilot-signal-clustering-hermes-run
+source_harness: harnesses/app-idea-to-production.yaml
+runtime: hermes
+profile: releasepilot
+app: ReleasePilot
+feature: Signal Clustering
+goal: Build a reviewable first vertical slice that clusters feedback signals and generates a human-approved product spec.
+autonomy_level: high-with-human-gates
+stop_condition: PR ready for human review; no production deployment and no customer communication.
+context:
+  profile_manifest: examples/hermes-releasepilot-signal-clustering/hermes/profile.releasepilot.yaml
+  project_context: examples/hermes-releasepilot-signal-clustering/hermes/.hermes.md
+  memory_seed: examples/hermes-releasepilot-signal-clustering/hermes/memory-seed.md
+project_skills:
+  - releasepilot-research
+  - releasepilot-domain
+  - releasepilot-bdd
+  - releasepilot-architecture
+  - releasepilot-tdd
+  - releasepilot-implementation
+  - releasepilot-security-review
+  - releasepilot-pr-review
+  - releasepilot-roi
+human_gates:
+  - approve product intent and non-goals
+  - approve BDD examples as the behavior contract
+  - approve architecture, data ownership, and feature flag
+  - approve dependency additions and migrations
+  - approve merge and production rollout separately
+checkpoints:
+  - before_specs
+  - before_red_tests
+  - before_implementation
+  - before_refactor
+  - before_pr_preparation
+stages:
+  - id: intake-and-research
+    agent: product-strategist
+    skills:
+      - sdlc-idea-framing
+      - sdlc-market-user-discovery
+      - sdlc-product-strategy
+    project_skill: releasepilot-research
+    permissions:
+      repo: read
+      network: approved_sources_only
+      write: docs_only
+    output:
+      - docs/product/problem-statement.md
+      - docs/product/assumptions.md
+      - docs/product/strategy.md
+    gate: Intent, target user, non-goals, and riskiest assumptions are explicit.
+  - id: domain-and-boundaries
+    agent: domain-architect
+    skills:
+      - sdlc-domain-modeling
+      - sdlc-bounded-context-map
+      - sdlc-bdd-specifications
+    project_skill: releasepilot-domain
+    permissions:
+      repo: docs_write
+      network: off
+    output:
+      - docs/architecture/domain-model.md
+      - docs/architecture/context-map.md
+      - docs/product/bdd/signal-clustering.feature
+    gate: Signal, cluster, evidence, confidence, conflict, and human validation invariants are modeled.
+  - id: behavior-contract
+    agent: domain-architect
+    skills:
+      - sdlc-bdd-specifications
+    project_skill: releasepilot-bdd
+    permissions:
+      repo: features_write
+      network: off
+    output:
+      - features/signal-clustering.feature
+      - docs/product/requirements-traceability.md
+    gate: BDD examples are reviewed before implementation starts.
+  - id: ux-and-architecture
+    agent: solution-architect
+    skills:
+      - sdlc-ux-product-design
+      - sdlc-ui-design-system
+      - sdlc-architecture-rfc
+      - sdlc-application-architecture
+      - sdlc-data-database-architecture
+      - sdlc-api-integration-contracts
+      - sdlc-identity-access-multitenancy
+    project_skill: releasepilot-architecture
+    permissions:
+      repo: docs_write
+      network: off
+    output:
+      - docs/architecture/adr/0001-signal-clustering.md
+      - docs/architecture/application-architecture.md
+      - docs/architecture/data-model.md
+      - docs/ux/flows.md
+      - docs/ux/design-system.md
+      - docs/delivery/feature-flags.md
+    gate: Architecture, data ownership, tenant isolation, and feature flag are accepted.
+  - id: red-tests
+    agent: qa-test-engineer
+    skills:
+      - sdlc-quality-test-strategy
+      - sdlc-bdd-specifications
+    project_skill: releasepilot-tdd
+    permissions:
+      repo: tests_write
+      network: off
+    output:
+      - tests/domain/signal-clustering.test.ts
+      - tests/components/signal-cluster-review.test.ts
+      - docs/quality/acceptance-tests.md
+    gate: Tests fail for the right reason before production code is changed.
+  - id: implementation
+    agent: fullstack-builder
+    skills:
+      - sdlc-code-change-execution
+      - sdlc-quality-test-strategy
+    project_skill: releasepilot-implementation
+    permissions:
+      repo: scoped_write
+      allowed_paths:
+        - src/domain/signal-clustering
+        - src/app/signal-clustering
+        - tests/domain
+        - tests/components
+        - docs
+      network: off
+    output:
+      - implementation diff
+      - passing tests
+      - validation notes
+    gate: Red tests become green, behavior maps to BDD, and no protected area is modified.
+  - id: independent-security-review
+    agent: security-reviewer
+    skills:
+      - sdlc-security-privacy-compliance
+      - sdlc-third-party-ip-risk
+    project_skill: releasepilot-security-review
+    permissions:
+      repo: read
+      network: off
+    output:
+      - docs/security/threat-model.md
+      - docs/security/privacy-review.md
+      - dependency and data-risk notes
+    gate: Tenant isolation, sensitive feedback handling, and dependency risk have no blockers.
+  - id: pr-review
+    agent: code-reviewer
+    skills:
+      - sdlc-code-review-quality-gate
+      - sdlc-release-production-readiness
+    project_skill: releasepilot-pr-review
+    permissions:
+      repo: read
+      network: off
+    output:
+      - PR body
+      - review findings
+      - merge decision
+      - release notes draft
+    gate: Merge recommendation is explicit and production deployment remains out of scope.
+  - id: post-release-learning-plan
+    agent: release-manager
+    skills:
+      - sdlc-observability-reliability
+      - sdlc-product-analytics-experimentation
+      - sdlc-performance-scalability-cost
+      - sdlc-incident-support-feedback
+    project_skill: releasepilot-roi
+    permissions:
+      repo: docs_write
+      network: off
+    output:
+      - docs/operations/observability.md
+      - docs/delivery/production-readiness.md
+      - docs/product/analytics/experiments.md
+      - docs/governance/decision-log.md
+    gate: Rollout metrics, learning loop, and ROI measurement are ready for a human release owner.
+completion:
+  - BDD contract exists.
+  - Red tests exist before implementation.
+  - Implementation is scoped to approved paths.
+  - Security and privacy review is complete.
+  - PR body and merge gate are ready.
+  - Production rollout needs a separate human go decision.

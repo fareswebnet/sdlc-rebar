@@ -141,6 +141,7 @@ Human approval remains required for product scope, durable architecture choices,
 
 - `examples/fintech-cfo-b2b/sdlc-case-study.md`: compact case study for a fintech CFO product.
 - `examples/agent-factory-idea-to-pr/`: complete automation example showing how a raw app idea becomes a task graph, artifact map, simulated PR, and review gate across Codex, Claude Code, and Hermes prompts.
+- `examples/hermes-releasepilot-signal-clustering/`: complete Hermes operating pack for a ReleasePilot Signal Clustering feature, including profile context, project skills, task graph, BDD, red tests, feature flag, simulated PR, review gate, production follow-up, and ROI loop.
 
 ## Scaffold Project Docs
 

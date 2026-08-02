@@ -1,0 +1,43 @@
+id: releasepilot.signal_clustering
+name: Signal Clustering
+owner: product-engineering
+purpose: Gate the first user-visible Signal Clustering slice.
+default_state: off
+states:
+  local:
+    enabled: true
+    audience: developers
+  preview:
+    enabled: true
+    audience: internal product reviewers
+  production:
+    enabled: false
+    audience: none until go decision
+enable_conditions:
+  - BDD scenarios accepted
+  - red tests are green
+  - tenant isolation test passes
+  - security review has no blockers
+  - rollback path is documented
+  - release owner approves go decision
+disable_conditions:
+  - cluster output exposes cross-tenant data
+  - confidence explanation is missing
+  - generated spec omits source evidence
+  - significant user confusion appears in review sessions
+rollback:
+  method: Disable the flag for affected tenants.
+  data_action: Keep stored clusters and decisions for audit unless a human approves deletion.
+  communication: Internal only until production rollout is approved.
+metrics:
+  activation:
+    - feature_flag_enabled_tenants
+    - signal_batches_clustered
+  quality:
+    - accepted_cluster_rate
+    - rejected_cluster_rate
+    - split_cluster_rate
+    - generated_spec_edit_rate
+  safety:
+    - denied_cross_tenant_access_count
+    - low_confidence_spec_generation_attempts
