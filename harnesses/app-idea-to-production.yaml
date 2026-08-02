@@ -1,0 +1,123 @@
+id: app-idea-to-production
+name: App Idea To Production
+purpose: Drive a new product idea from raw concept to reviewed PR, preview, and controlled production launch.
+entrypoint: orchestrator
+autonomy_level: high-with-human-gates
+human_gates:
+  - approve MVP scope before architecture
+  - approve architecture and data decisions before implementation
+  - approve external dependencies before installation
+  - approve production deployment, migrations, payments, secrets, and destructive actions
+stages:
+  - id: intake
+    agent: product-strategist
+    skills:
+      - sdlc-idea-framing
+      - sdlc-market-user-discovery
+      - sdlc-product-strategy
+    outputs:
+      - docs/product/problem-statement.md
+      - docs/product/vision.md
+      - docs/product/assumptions.md
+    gate: problem, audience, outcome, appetite, and non-goals are explicit
+  - id: specification
+    agent: product-strategist
+    skills:
+      - sdlc-prd-requirements
+    outputs:
+      - docs/product/prd.md
+      - docs/product/requirements-traceability.md
+    gate: requirements are testable and tied to success metrics
+  - id: domain-and-behavior
+    agent: domain-architect
+    skills:
+      - sdlc-domain-modeling
+      - sdlc-bounded-context-map
+      - sdlc-bdd-specifications
+    outputs:
+      - docs/architecture/domain-model.md
+      - docs/architecture/context-map.md
+      - docs/product/bdd/feature.template.md
+    gate: domain rules, context ownership, and acceptance examples are stable enough to code
+  - id: ux-ui
+    agent: ux-ui-designer
+    skills:
+      - sdlc-ux-product-design
+      - sdlc-ui-design-system
+    outputs:
+      - docs/ux/journeys.md
+      - docs/ux/flows.md
+      - docs/ux/design-system.md
+    gate: major screens include responsive, accessibility, empty, loading, error, and success states
+  - id: architecture
+    agent: solution-architect
+    skills:
+      - sdlc-architecture-rfc
+      - sdlc-application-architecture
+      - sdlc-data-database-architecture
+      - sdlc-api-integration-contracts
+      - sdlc-identity-access-multitenancy
+    outputs:
+      - docs/architecture/rfc/template.md
+      - docs/architecture/application-architecture.md
+      - docs/architecture/data-model.md
+      - docs/architecture/api-contracts.md
+    gate: architecture, data, identity, and integration decisions include tradeoffs and rollback implications
+  - id: implementation-plan
+    agent: orchestrator
+    skills:
+      - sdlc-ai-assisted-development
+      - sdlc-delivery-roadmap-backlog
+      - sdlc-implementation-planning
+    outputs:
+      - docs/delivery/backlog.md
+      - docs/engineering/implementation-plan.md
+      - docs/engineering/ai-development-plan.md
+    gate: work is split into vertical slices with validation commands and owners
+  - id: build
+    agent: fullstack-builder
+    skills:
+      - sdlc-code-change-execution
+      - sdlc-quality-test-strategy
+    outputs:
+      - code changes
+      - tests
+      - migrations when approved
+      - validation notes
+    gate: targeted tests pass and changed behavior maps to acceptance examples
+  - id: independent-validation
+    agent: qa-test-engineer
+    skills:
+      - sdlc-quality-test-strategy
+      - sdlc-bdd-specifications
+    outputs:
+      - docs/quality/acceptance-tests.md
+      - docs/quality/regression-risk.md
+    gate: regression risk and acceptance coverage are explicit
+  - id: security-and-review
+    agent: security-reviewer
+    skills:
+      - sdlc-security-privacy-compliance
+      - sdlc-third-party-ip-risk
+      - sdlc-code-review-quality-gate
+    outputs:
+      - docs/security/threat-model.md
+      - docs/security/privacy-review.md
+      - review findings
+    gate: release blockers are fixed or explicitly accepted by a human
+  - id: release-readiness
+    agent: release-manager
+    skills:
+      - sdlc-release-production-readiness
+      - sdlc-observability-reliability
+      - sdlc-incident-support-feedback
+    outputs:
+      - docs/delivery/production-readiness.md
+      - docs/delivery/release-plan.md
+      - docs/operations/observability.md
+      - docs/operations/runbooks/runbook-template.md
+    gate: human go/no-go decision is recorded before production
+completion_criteria:
+  - PR is opened with validation evidence
+  - preview environment or local demo is available
+  - production release plan, rollback plan, and post-release metrics exist

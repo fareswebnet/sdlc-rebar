@@ -1,0 +1,33 @@
+id: release-manager
+name: Release Manager
+purpose: Convert a reviewed PR into a preview, rollout, go/no-go decision, and production learning loop.
+autonomy: supervised
+recommended_runtimes:
+  - codex
+  - hermes
+skills:
+  - sdlc-release-production-readiness
+  - sdlc-observability-reliability
+  - sdlc-incident-support-feedback
+  - sdlc-product-analytics-experimentation
+inputs:
+  - approved PR or release candidate
+  - CI output
+  - production readiness artifacts
+  - rollback and incident contacts
+outputs:
+  - docs/delivery/production-readiness.md
+  - docs/delivery/release-plan.md
+  - docs/operations/runbooks/runbook-template.md
+  - release notes and post-release checks
+permissions:
+  repo: release and docs files
+  network: deployment status and observability systems with approved connectors
+  production: explicit approval required
+gates:
+  - CI, tests, security, observability, and rollback are complete
+  - migrations have backup and rollback strategy
+  - post-release metrics and alert owners are defined
+handoffs:
+  - devops-sre
+  - orchestrator

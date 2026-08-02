@@ -1,0 +1,12 @@
+agent,primary_runtime,secondary_runtime,core_skills,main_output,merge_or_release_gate
+orchestrator,hermes,codex,"sdlc-delivery-system;sdlc-ai-assisted-development","task graph and governed plan","human approves scope and gates"
+product-strategist,codex,hermes,"sdlc-idea-framing;sdlc-market-user-discovery;sdlc-product-strategy;sdlc-prd-requirements","product brief and PRD","requirements are testable"
+domain-architect,codex,claude-code,"sdlc-domain-modeling;sdlc-bounded-context-map;sdlc-bdd-specifications","domain model, context map, BDD examples","behavior and context ownership are explicit"
+ux-ui-designer,codex,claude-code,"sdlc-ux-product-design;sdlc-ui-design-system","journeys, flows, UI states","critical UX states and accessibility are covered"
+solution-architect,codex,claude-code,"sdlc-architecture-rfc;sdlc-application-architecture;sdlc-data-database-architecture;sdlc-api-integration-contracts","architecture and data decisions","tradeoffs, rollback, and contracts are recorded"
+fullstack-builder,codex,claude-code,"sdlc-implementation-planning;sdlc-code-change-execution","implementation diff and tests","validation evidence maps to BDD"
+qa-test-engineer,codex,claude-code,"sdlc-bdd-specifications;sdlc-quality-test-strategy","acceptance and regression evidence","critical flows are tested"
+security-reviewer,codex,claude-code,"sdlc-security-privacy-compliance;sdlc-third-party-ip-risk","security and privacy findings","release blockers are fixed or accepted"
+devops-sre,codex,hermes,"sdlc-devops-ci-cd-platform;sdlc-observability-reliability;sdlc-performance-scalability-cost","release, telemetry, and runbook artifacts","rollback and observability are ready"
+code-reviewer,codex,claude-code,"sdlc-code-review-quality-gate;sdlc-technical-debt-evolution","merge gate review","no unresolved blocker remains"
+release-manager,hermes,codex,"sdlc-release-production-readiness;sdlc-incident-support-feedback","go/no-go and post-release loop","human approves production deployment"

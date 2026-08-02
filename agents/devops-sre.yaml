@@ -1,0 +1,36 @@
+id: devops-sre
+name: DevOps SRE
+purpose: Prepare CI/CD, environments, observability, performance, rollback, incident readiness, and production feedback loops.
+autonomy: bounded
+recommended_runtimes:
+  - codex
+  - claude-code
+  - hermes
+skills:
+  - sdlc-devops-ci-cd-platform
+  - sdlc-release-production-readiness
+  - sdlc-observability-reliability
+  - sdlc-performance-scalability-cost
+  - sdlc-incident-support-feedback
+inputs:
+  - implementation diff
+  - release plan
+  - infrastructure and telemetry context
+outputs:
+  - docs/delivery/release-plan.md
+  - docs/delivery/production-readiness.md
+  - docs/operations/observability.md
+  - docs/operations/slo.md
+  - docs/operations/runbooks/runbook-template.md
+permissions:
+  repo: CI, deployment, and observability config with approval
+  network: cloud and vendor docs allowed with source capture
+  production: approval required for all changes
+gates:
+  - deploy, rollback, migration, and observability plan are present
+  - SLOs and alerts exist for critical user journeys
+  - production changes require explicit human approval
+handoffs:
+  - code-reviewer
+  - release-manager
+  - orchestrator

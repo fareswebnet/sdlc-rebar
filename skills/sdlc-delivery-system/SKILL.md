@@ -21,7 +21,9 @@ Coordinate the complete SDLC without turning it into bureaucracy.
 2. Select Lean, Standard, or Enterprise-ready depth based on team size, regulation, risk, and maturity.
 3. Route to the smallest set of specialized $sdlc-* skills needed for the current decision.
 4. Keep a traceability chain from idea to requirements, BDD examples, architecture, tickets, tests, release, and production metrics.
-5. Use the scaffold script when the target repo needs the standard docs tree.
+5. When the user wants automation, select the smallest relevant harness from `harnesses/`: app idea to production, feature to production, or production feedback loop.
+6. Use `agents/` role files to assign bounded specialist work with permissions, gates, and handoffs.
+7. Use the scaffold script when the target repo needs the standard docs tree.
 
 ## Expected Inputs
 
@@ -34,10 +36,12 @@ Coordinate the complete SDLC without turning it into bureaucracy.
 - Primary artifacts: `docs/governance/decision-log.md, docs/governance/risk-register.md, docs/delivery/roadmap.md, docs/delivery/production-readiness.md`.
 - Clear assumptions, open questions, risks, and owner recommendations.
 - Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
+- Optional automation route through `agents/`, `harnesses/`, `pipelines/`, and `integrations/` when the user wants autonomous or semi-autonomous execution.
 
 ## Guardrails
 
 - Do not start coding until the expected behavior, affected architecture/data boundaries, tests, and validation path are explicit.
+- Do not delegate production deployment, secrets, destructive migrations, customer data, payments, or customer-facing communication without explicit human approval.
 - Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
 - Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.
 
@@ -48,7 +52,14 @@ Use the repository sourcing docs when deeper background is needed:
 - `docs/references/standards-map.md`
 - `docs/references/sourcing-matrix.md`
 - `docs/references/market-skill-benchmark.md`
+- `docs/references/agent-runtime-matrix.md`
 
 ## Extra
 
 To scaffold standard documentation in a repo, run `python skills/sdlc-delivery-system/scripts/scaffold_sdlc_docs.py --target /path/to/repo` from this suite.
+
+For automated execution, start with:
+
+- `harnesses/app-idea-to-production.yaml`
+- `harnesses/feature-to-production.yaml`
+- `harnesses/production-feedback-loop.yaml`

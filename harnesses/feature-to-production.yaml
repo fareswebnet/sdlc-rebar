@@ -1,0 +1,73 @@
+id: feature-to-production
+name: Feature To Production
+purpose: Route a feature request through specification, implementation, review, and release without repeating full greenfield discovery.
+entrypoint: orchestrator
+autonomy_level: medium-with-human-gates
+human_gates:
+  - approve scope and behavior before code
+  - approve migrations, dependency additions, and production deployment
+stages:
+  - id: request-triage
+    agent: orchestrator
+    skills:
+      - sdlc-delivery-system
+      - sdlc-prd-requirements
+    outputs:
+      - feature brief
+      - impacted artifact list
+    gate: request has explicit behavior, non-goals, and validation path
+  - id: behavior-and-impact
+    agent: domain-architect
+    skills:
+      - sdlc-bdd-specifications
+      - sdlc-bounded-context-map
+    outputs:
+      - updated BDD examples
+      - context and ownership impact notes
+    gate: context, permissions, and edge cases are covered
+  - id: technical-plan
+    agent: solution-architect
+    skills:
+      - sdlc-implementation-planning
+      - sdlc-data-database-architecture
+      - sdlc-api-integration-contracts
+    outputs:
+      - docs/engineering/implementation-plan.md
+      - migration and contract notes when needed
+    gate: affected files, tests, rollback, and data safety are explicit
+  - id: code
+    agent: fullstack-builder
+    skills:
+      - sdlc-code-change-execution
+    outputs:
+      - implementation diff
+      - tests
+      - validation notes
+    gate: validation commands ran or failure evidence is documented
+  - id: verify
+    agent: qa-test-engineer
+    skills:
+      - sdlc-quality-test-strategy
+    outputs:
+      - acceptance and regression evidence
+    gate: critical flows are tested
+  - id: review
+    agent: code-reviewer
+    skills:
+      - sdlc-code-review-quality-gate
+    outputs:
+      - review findings
+      - merge decision
+    gate: no unresolved release blocker remains
+  - id: release
+    agent: release-manager
+    skills:
+      - sdlc-release-production-readiness
+    outputs:
+      - release notes
+      - rollout and rollback notes
+    gate: release owner records go/no-go
+completion_criteria:
+  - PR is ready to merge
+  - release impact is known
+  - post-release checks are assigned

@@ -6,12 +6,13 @@ This repository packages 33 `$sdlc-*` skills and optional presets to help a team
 
 `idea -> discovery -> PRD -> domain model -> bounded contexts -> BDD -> UX/UI -> architecture/data -> contracts -> backlog -> implementation -> tests -> release -> observability -> incidents/support -> improvement`
 
-The suite is designed for startups and scale-ups by default, but each skill can be used in Lean, Standard, or Enterprise-ready depth.
+The suite is designed for startups and scale-ups by default, but each skill can be used in Lean, Standard, or Enterprise-ready depth. It now also includes an agent-factory layer for highly automated coding workflows across Codex, Claude Code, Hermes, OpenClaw, GitHub Actions, MCP connectors, or a custom orchestrator.
 
 ## What This Is
 
 - A repo-first SDLC operating system for AI-assisted product and engineering work.
 - A set of portable agent skills using `SKILL.md` folders.
+- A vendor-neutral agent orchestration layer for moving from app idea to PR, preview, release, and production learning.
 - A standards-informed implementation layer over ISO/IEC/IEEE, DDD, BDD, OWASP, NIST, SLSA, DORA, OpenTelemetry, SRE, FinOps, WCAG, OpenAPI, AsyncAPI, and AI risk practices.
 
 ## What This Is Not
@@ -19,6 +20,7 @@ The suite is designed for startups and scale-ups by default, but each skill can 
 - Not legal, accounting, financial, compliance, investment, or security certification advice.
 - Not a replacement for qualified review in regulated or high-risk contexts.
 - Not a command to over-document every project. Use the depth that fits the risk.
+- Not a license to run production changes, secrets, destructive migrations, payments, or customer-impacting communications without human approval.
 
 ## Install
 
@@ -82,6 +84,59 @@ Restart the agent session so new skills are discovered.
 
 Presets are stored in `presets/` and tune skill depth for domain-specific projects.
 
+## Agent Factory
+
+The automation layer separates method from runtime:
+
+- `skills/`: reusable SDLC methods and guardrails.
+- `agents/`: specialist role definitions, permissions, gates, and handoffs.
+- `harnesses/`: executable state machines for idea-to-production, feature-to-production, and production feedback.
+- `pipelines/`: human-readable operating procedures for PRs, releases, and production learning.
+- `integrations/`: adapters for Codex, Claude Code, Hermes, OpenClaw, GitHub Actions, and MCP.
+- `data/agent-runtime-matrix.csv`: runtime and gate mapping by agent.
+
+Primary agents:
+
+| Agent | Role |
+|---|---|
+| `orchestrator` | Split work, select skills, enforce gates, and route handoffs. |
+| `product-strategist` | Clarify idea, evidence, PRD, MVP, roadmap, and metrics. |
+| `domain-architect` | Model domain rules, bounded contexts, and BDD examples. |
+| `ux-ui-designer` | Define journeys, UI states, accessibility, and tracking. |
+| `solution-architect` | Decide architecture, data, APIs, identity, and tradeoffs. |
+| `fullstack-builder` | Implement approved vertical slices in isolated branches or worktrees. |
+| `qa-test-engineer` | Build acceptance, regression, and risk-based test evidence. |
+| `security-reviewer` | Review AppSec, privacy, tenants, dependencies, and AI risk. |
+| `devops-sre` | Prepare CI/CD, reliability, observability, rollback, and runbooks. |
+| `code-reviewer` | Make the merge-gate decision from diff, specs, tests, and risk. |
+| `release-manager` | Own go/no-go, rollout, post-release checks, and production learning. |
+
+## Automated Workflows
+
+Idea to PR:
+
+```text
+Use harnesses/app-idea-to-production.yaml.
+Start from this app idea, create the product docs, BDD, architecture, implementation plan, then implement the first vertical slice.
+Stop before production deployment.
+```
+
+Feature to production:
+
+```text
+Use harnesses/feature-to-production.yaml.
+Route this feature through behavior, impact, implementation, QA, security, review, and release readiness.
+```
+
+Production feedback loop:
+
+```text
+Use harnesses/production-feedback-loop.yaml.
+Turn this incident, support signal, analytics anomaly, or reliability issue into a fix, learning, or product decision.
+```
+
+Human approval remains required for product scope, durable architecture choices, dependency additions, secrets, customer data, payments, destructive migrations, and production deployment.
+
 ## Scaffold Project Docs
 
 From this repository:
@@ -99,6 +154,16 @@ See:
 - `docs/references/standards-map.md`
 - `docs/references/market-skill-benchmark.md`
 - `docs/references/sourcing-matrix.md`
+- `docs/references/agent-runtime-matrix.md`
+
+## Runtime Adapters
+
+- `integrations/codex/README.md`
+- `integrations/claude-code/README.md`
+- `integrations/hermes/README.md`
+- `integrations/openclaw/README.md`
+- `integrations/github-actions/README.md`
+- `integrations/mcp/README.md`
 
 ## License
 

@@ -1,0 +1,69 @@
+id: production-feedback-loop
+name: Production Feedback Loop
+purpose: Convert incidents, support feedback, analytics signals, and reliability issues into product and engineering changes.
+entrypoint: orchestrator
+autonomy_level: supervised
+human_gates:
+  - approve customer-facing communication
+  - approve emergency production changes
+  - approve roadmap priority changes
+stages:
+  - id: signal-intake
+    agent: devops-sre
+    skills:
+      - sdlc-incident-support-feedback
+      - sdlc-observability-reliability
+      - sdlc-product-analytics-experimentation
+    outputs:
+      - incident or feedback summary
+      - affected journeys and metrics
+    gate: severity, scope, user impact, and evidence are explicit
+  - id: root-cause
+    agent: devops-sre
+    skills:
+      - sdlc-observability-reliability
+      - sdlc-performance-scalability-cost
+    outputs:
+      - docs/operations/incidents/postmortem-template.md
+      - reliability or cost findings
+    gate: cause, contributing factors, and detection gaps are separated
+  - id: product-impact
+    agent: product-strategist
+    skills:
+      - sdlc-product-strategy
+      - sdlc-product-analytics-experimentation
+    outputs:
+      - roadmap or KPI impact notes
+    gate: product decision is tied to measured user impact
+  - id: fix-plan
+    agent: solution-architect
+    skills:
+      - sdlc-technical-debt-evolution
+      - sdlc-implementation-planning
+    outputs:
+      - remediation plan
+      - debt or architecture evolution item
+    gate: remediation is smaller than the incident blast radius and has validation
+  - id: implementation
+    agent: fullstack-builder
+    skills:
+      - sdlc-code-change-execution
+      - sdlc-quality-test-strategy
+    outputs:
+      - fix diff
+      - regression tests
+      - validation notes
+    gate: recurrence test or monitoring improvement is included when feasible
+  - id: release-and-learn
+    agent: release-manager
+    skills:
+      - sdlc-release-production-readiness
+      - sdlc-documentation-knowledge
+    outputs:
+      - release and follow-up notes
+      - updated runbook or documentation
+    gate: follow-up owner and success metric are recorded
+completion_criteria:
+  - incident or feedback is linked to a shipped fix or explicit product decision
+  - detection, prevention, or documentation improved
+  - learning is fed back into roadmap or engineering standards
