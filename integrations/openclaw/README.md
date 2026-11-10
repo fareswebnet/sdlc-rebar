@@ -27,6 +27,7 @@ Use `ai-sdlc-skills` for full software delivery.
 Route work through:
 - `harnesses/app-idea-to-production.yaml`
 - `harnesses/feature-to-production.yaml`
+- `harnesses/spec-driven-delivery.yaml` for traceable, test-first, evidence-gated delivery
 - `harnesses/production-feedback-loop.yaml`
 
 Use `agents/*.yaml` for role, permission, gate, and handoff guidance.

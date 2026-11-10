@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Verification Before Completion"
+  short_description: "Evidence before any done claim"
+  default_prompt: "Use $sdlc-verification-before-completion to make every status claim traceable to evidence produced now, not remembered or assumed."

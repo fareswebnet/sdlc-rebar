@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Project Constitution"
+  short_description: "Define non-negotiable engineering principles"
+  default_prompt: "Use $sdlc-project-constitution to give humans and agents one short, testable set of rules that outrank convenience, so plans and reviews have something concrete to be checked against."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Requirements Checklist"
+  short_description: "Unit-test the requirements themselves"
+  default_prompt: "Use $sdlc-requirements-checklist to treat requirements as the system under test: every checklist item asks whether the requirement is well written, never whether the code works."

@@ -12,6 +12,7 @@ stages:
     skills:
       - sdlc-delivery-system
       - sdlc-prd-requirements
+      - sdlc-spec-clarification
     outputs:
       - feature brief
       - impacted artifact list
@@ -29,6 +30,8 @@ stages:
     agent: solution-architect
     skills:
       - sdlc-implementation-planning
+      - sdlc-task-breakdown
+      - sdlc-cross-artifact-analysis
       - sdlc-data-database-architecture
       - sdlc-api-integration-contracts
     outputs:
@@ -39,6 +42,8 @@ stages:
     agent: fullstack-builder
     skills:
       - sdlc-code-change-execution
+      - sdlc-test-driven-development
+      - sdlc-verification-before-completion
     outputs:
       - implementation diff
       - tests

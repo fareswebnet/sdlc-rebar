@@ -11,6 +11,8 @@ skills:
   - sdlc-market-user-discovery
   - sdlc-product-strategy
   - sdlc-prd-requirements
+  - sdlc-design-brainstorming
+  - sdlc-spec-clarification
 inputs:
   - founder idea
   - target users and constraints

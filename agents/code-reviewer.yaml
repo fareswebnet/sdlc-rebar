@@ -8,6 +8,7 @@ recommended_runtimes:
   - hermes
 skills:
   - sdlc-code-review-quality-gate
+  - sdlc-verification-before-completion
   - sdlc-technical-debt-evolution
   - sdlc-documentation-knowledge
 inputs:

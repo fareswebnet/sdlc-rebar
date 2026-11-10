@@ -24,6 +24,10 @@ Coordinate the complete SDLC without turning it into bureaucracy.
 5. When the user wants automation, select the smallest relevant harness from `harnesses/`: app idea to production, feature to production, or production feedback loop.
 6. Use `agents/` role files to assign bounded specialist work with permissions, gates, and handoffs.
 7. Use the scaffold script when the target repo needs the standard docs tree.
+8. For spec-driven work, run the chain in order and skip steps only with a stated reason: `$sdlc-project-constitution` once per repo, then `$sdlc-design-brainstorming`, `$sdlc-spec-clarification`, `$sdlc-requirements-checklist`, `$sdlc-implementation-planning`, `$sdlc-task-breakdown`, `$sdlc-cross-artifact-analysis`.
+9. For execution, require `$sdlc-branch-worktree-lifecycle` for isolation, `$sdlc-test-driven-development` for behavior changes, `$sdlc-systematic-debugging` for failures, `$sdlc-subagent-driven-execution` for multi-task plans, and `$sdlc-verification-before-completion` before any done claim.
+10. Make traceability executable with `$sdlc-traceability-ledger` and `python scripts/sdlc_trace.py`, and close tasks only against `$sdlc-definition-of-done`. Pick step depth from `docs/references/depth-matrix.md`; for the full chain use `harnesses/spec-driven-delivery.yaml`.
+11. After a build pass, run `$sdlc-spec-convergence` to append remaining work, and `$sdlc-code-review-reception` when feedback arrives.
 
 ## Expected Inputs
 

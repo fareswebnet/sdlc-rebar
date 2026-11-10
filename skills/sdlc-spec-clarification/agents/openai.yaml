@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Spec Clarification"
+  short_description: "Resolve spec ambiguity before planning"
+  default_prompt: "Use $sdlc-spec-clarification to remove costly ambiguity early, with a bounded interview that ends in recorded decisions instead of an open-ended discussion."

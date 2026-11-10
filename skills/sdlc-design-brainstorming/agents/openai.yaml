@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Design Brainstorming"
+  short_description: "Design gate before any implementation"
+  default_prompt: "Use $sdlc-design-brainstorming to prevent building the wrong thing by making design approval a hard gate, scaled to the size of the change."

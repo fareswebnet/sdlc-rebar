@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Delivery Retrospective"
+  short_description: "Turn delivery evidence into process upgrades"
+  default_prompt: "Use $sdlc-delivery-retrospective to close the loop so each delivery makes the next one cheaper and safer, with changes landing in the system rather than in meeting notes."

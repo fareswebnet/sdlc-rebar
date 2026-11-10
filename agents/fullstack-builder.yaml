@@ -9,6 +9,12 @@ recommended_runtimes:
 skills:
   - sdlc-implementation-planning
   - sdlc-code-change-execution
+  - sdlc-task-breakdown
+  - sdlc-test-driven-development
+  - sdlc-systematic-debugging
+  - sdlc-verification-before-completion
+  - sdlc-branch-worktree-lifecycle
+  - sdlc-code-review-reception
   - sdlc-quality-test-strategy
 inputs:
   - implementation plan

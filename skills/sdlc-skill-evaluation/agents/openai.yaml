@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Skill Evaluation"
+  short_description: "Measure whether skills improve agent output"
+  default_prompt: "Use $sdlc-skill-evaluation to prove that a skill changes behavior for the better, and notice when a change makes it worse."

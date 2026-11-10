@@ -9,6 +9,9 @@ recommended_runtimes:
 skills:
   - sdlc-bdd-specifications
   - sdlc-quality-test-strategy
+  - sdlc-requirements-checklist
+  - sdlc-traceability-ledger
+  - sdlc-definition-of-done
   - sdlc-product-analytics-experimentation
 inputs:
   - PRD and BDD examples

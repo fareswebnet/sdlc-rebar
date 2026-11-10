@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Traceability Ledger"
+  short_description: "Trace requirement to test to release"
+  default_prompt: "Use $sdlc-traceability-ledger to make 'is every requirement built and proven?' a command you can run, not an opinion."

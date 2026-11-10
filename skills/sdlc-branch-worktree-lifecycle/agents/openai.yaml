@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Branch Worktree Lifecycle"
+  short_description: "Isolate work and finish branches safely"
+  default_prompt: "Use $sdlc-branch-worktree-lifecycle to keep the main checkout safe and give every change a clean start and a deliberate ending."

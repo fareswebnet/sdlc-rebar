@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Tasks To Issues"
+  short_description: "Sync tasks with the issue tracker safely"
+  default_prompt: "Use $sdlc-tasks-to-issues to keep the repo task list and the tracker consistent without creating noise or duplicate work."

@@ -31,6 +31,7 @@ Before coding, make expected behavior, affected architecture and data boundaries
 For autonomous work, follow:
 - `harnesses/app-idea-to-production.yaml` for greenfield products
 - `harnesses/feature-to-production.yaml` for feature work
+- `harnesses/spec-driven-delivery.yaml` for traceable, test-first, evidence-gated delivery
 - `harnesses/production-feedback-loop.yaml` for incidents and production signals
 ```
 

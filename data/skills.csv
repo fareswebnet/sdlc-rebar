@@ -32,3 +32,23 @@ sdlc-product-analytics-experimentation,analytics,SDLC Product Analytics Experime
 sdlc-technical-debt-evolution,evolution,SDLC Technical Debt Evolution,Manage debt and evolution
 sdlc-documentation-knowledge,knowledge,SDLC Documentation Knowledge,Keep docs useful and current
 sdlc-third-party-ip-risk,risk,SDLC Third Party IP Risk,"Review vendors, licenses, IP"
+sdlc-project-constitution,governance,SDLC Project Constitution,Define non-negotiable engineering principles
+sdlc-spec-clarification,product,SDLC Spec Clarification,Resolve spec ambiguity before planning
+sdlc-requirements-checklist,quality,SDLC Requirements Checklist,Unit-test the requirements themselves
+sdlc-task-breakdown,delivery,SDLC Task Breakdown,Create dependency-ordered executable tasks
+sdlc-cross-artifact-analysis,governance,SDLC Cross-Artifact Analysis,"Audit spec, plan, tasks for consistency"
+sdlc-spec-convergence,delivery,SDLC Spec Convergence,Reconcile built code against the spec
+sdlc-design-brainstorming,product,SDLC Design Brainstorming,Design gate before any implementation
+sdlc-test-driven-development,quality,SDLC Test-Driven Development,"Red, green, refactor with proof"
+sdlc-systematic-debugging,quality,SDLC Systematic Debugging,Root cause before any fix
+sdlc-verification-before-completion,quality,SDLC Verification Before Completion,Evidence before any done claim
+sdlc-subagent-driven-execution,automation,SDLC Subagent-Driven Execution,Execute tasks with fresh agents and reviews
+sdlc-branch-worktree-lifecycle,delivery,SDLC Branch Worktree Lifecycle,Isolate work and finish branches safely
+sdlc-code-review-reception,quality,SDLC Code Review Reception,Evaluate review feedback before implementing
+sdlc-skill-authoring,automation,SDLC Skill Authoring,Write and test new agent skills
+sdlc-traceability-ledger,governance,SDLC Traceability Ledger,Trace requirement to test to release
+sdlc-definition-of-done,quality,SDLC Definition Of Done,Depth-scaled done criteria with evidence
+sdlc-agent-context-engineering,automation,SDLC Agent Context Engineering,Design context packs and briefs for agents
+sdlc-tasks-to-issues,delivery,SDLC Tasks To Issues,Sync tasks with the issue tracker safely
+sdlc-delivery-retrospective,evolution,SDLC Delivery Retrospective,Turn delivery evidence into process upgrades
+sdlc-skill-evaluation,automation,SDLC Skill Evaluation,Measure whether skills improve agent output

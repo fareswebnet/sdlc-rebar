@@ -1,0 +1,99 @@
+id: spec-driven-delivery
+name: Spec-Driven Delivery
+purpose: Take a feature from principles and design through clarified specs, traceable tasks, test-first execution, evidence-based verification, convergence, and learning, with machine-checkable gates between stages.
+entrypoint: orchestrator
+autonomy_level: medium-with-human-gates
+human_gates:
+  - approve the design before any plan or code
+  - approve the plan and task list before execution
+  - approve dependency additions, migrations, issue-tracker writes, and production deployment
+stages:
+  - id: principles
+    agent: orchestrator
+    skills:
+      - sdlc-project-constitution
+      - sdlc-agent-context-engineering
+    outputs:
+      - docs/governance/constitution.md
+      - repo instruction file
+    gate: principles are testable and each has a named check
+  - id: design
+    agent: product-strategist
+    skills:
+      - sdlc-design-brainstorming
+      - sdlc-spec-clarification
+    outputs:
+      - approved design
+      - clarified spec with requirement ids
+    gate: user approved the design and no high-impact gap remains
+  - id: spec-quality
+    agent: qa-test-engineer
+    skills:
+      - sdlc-requirements-checklist
+      - sdlc-bdd-specifications
+    outputs:
+      - requirements checklist
+      - tagged BDD scenarios
+    gate: every requirement has a scenario tagged with its id
+  - id: plan-and-tasks
+    agent: solution-architect
+    skills:
+      - sdlc-implementation-planning
+      - sdlc-task-breakdown
+      - sdlc-traceability-ledger
+    outputs:
+      - docs/engineering/implementation-plan.md
+      - docs/engineering/tasks.md
+    gate: scripts/sdlc_trace.py reports no HIGH finding
+  - id: consistency
+    agent: orchestrator
+    skills:
+      - sdlc-cross-artifact-analysis
+      - sdlc-tasks-to-issues
+    outputs:
+      - analysis report
+      - optional issue mapping
+    gate: no CRITICAL finding and human approved the task list
+  - id: build
+    agent: fullstack-builder
+    skills:
+      - sdlc-branch-worktree-lifecycle
+      - sdlc-test-driven-development
+      - sdlc-subagent-driven-execution
+      - sdlc-systematic-debugging
+    outputs:
+      - commits tied to task ids
+      - failing-then-passing tests
+    gate: every task has red and green evidence
+  - id: verify
+    agent: qa-test-engineer
+    skills:
+      - sdlc-verification-before-completion
+      - sdlc-definition-of-done
+    outputs:
+      - verification log
+      - definition-of-done evidence
+    gate: fresh evidence exists for each done criterion or a named owner waived it
+  - id: review
+    agent: code-reviewer
+    skills:
+      - sdlc-code-review-quality-gate
+      - sdlc-code-review-reception
+    outputs:
+      - review findings
+      - merge decision
+    gate: no unresolved blocker and traceability passes with --strict
+  - id: converge
+    agent: orchestrator
+    skills:
+      - sdlc-spec-convergence
+      - sdlc-delivery-retrospective
+    outputs:
+      - appended tasks for remaining work
+      - retrospective actions
+    gate: remaining work is explicit and process lessons are assigned
+completion_criteria:
+  - every requirement is traced to a scenario, task, and test
+  - verification evidence is attached to the PR
+  - drift between spec and code is zero or recorded
+  - retrospective actions have owners

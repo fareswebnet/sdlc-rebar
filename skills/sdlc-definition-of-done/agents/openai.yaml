@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Definition Of Done"
+  short_description: "Depth-scaled done criteria with evidence"
+  default_prompt: "Use $sdlc-definition-of-done to replace subjective 'done' with a short checklist whose every line has a proof."

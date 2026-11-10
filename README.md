@@ -2,7 +2,7 @@
 
 An agent skill suite for the full product-tech software delivery lifecycle.
 
-This repository packages 33 `$sdlc-*` skills and optional presets to help a team move from idea to production learning:
+This repository packages 53 `$sdlc-*` skills and optional presets to help a team move from idea to production learning:
 
 `idea -> discovery -> PRD -> domain model -> bounded contexts -> BDD -> UX/UI -> architecture/data -> contracts -> backlog -> implementation -> tests -> release -> observability -> incidents/support -> improvement`
 
@@ -71,6 +71,37 @@ Restart the agent session so new skills are discovered.
 | `$sdlc-technical-debt-evolution` | Manage debt, refactoring, and architecture evolution. |
 | `$sdlc-documentation-knowledge` | Keep documentation and onboarding useful. |
 | `$sdlc-third-party-ip-risk` | Review dependencies, licenses, vendors, and IP risk. |
+| `$sdlc-project-constitution` | Define non-negotiable engineering principles. |
+| `$sdlc-spec-clarification` | Resolve spec ambiguity before planning. |
+| `$sdlc-requirements-checklist` | Unit-test the requirements themselves. |
+| `$sdlc-task-breakdown` | Create dependency-ordered executable tasks. |
+| `$sdlc-cross-artifact-analysis` | Audit spec, plan, tasks for consistency. |
+| `$sdlc-spec-convergence` | Reconcile built code against the spec. |
+| `$sdlc-design-brainstorming` | Design gate before any implementation. |
+| `$sdlc-test-driven-development` | Red, green, refactor with proof. |
+| `$sdlc-systematic-debugging` | Root cause before any fix. |
+| `$sdlc-verification-before-completion` | Evidence before any done claim. |
+| `$sdlc-subagent-driven-execution` | Execute tasks with fresh agents and reviews. |
+| `$sdlc-branch-worktree-lifecycle` | Isolate work and finish branches safely. |
+| `$sdlc-code-review-reception` | Evaluate review feedback before implementing. |
+| `$sdlc-skill-authoring` | Write and test new agent skills. |
+
+## Spec-Driven and Disciplined Execution
+
+Inspired by GitHub Spec Kit and Superpowers (see `docs/references/method-sources.md`), the suite adds a spec-driven chain and execution discipline:
+
+`constitution -> brainstorm -> clarify -> checklist -> plan -> tasks -> analyze + trace -> TDD execution (subagent-driven, worktree-isolated) -> verify against definition of done -> review -> converge -> retrospective`
+
+- Spec chain: `$sdlc-project-constitution`, `$sdlc-design-brainstorming`, `$sdlc-spec-clarification`, `$sdlc-requirements-checklist`, `$sdlc-task-breakdown`, `$sdlc-cross-artifact-analysis`, `$sdlc-spec-convergence`.
+- Execution discipline: `$sdlc-test-driven-development`, `$sdlc-systematic-debugging`, `$sdlc-verification-before-completion`, `$sdlc-subagent-driven-execution`, `$sdlc-branch-worktree-lifecycle`, `$sdlc-code-review-reception`.
+- Beyond both sources: `$sdlc-traceability-ledger` (script-checked requirement-to-test chain), `$sdlc-definition-of-done` (depth-scaled, evidence-first), `$sdlc-agent-context-engineering`, `$sdlc-tasks-to-issues`, `$sdlc-delivery-retrospective`, `$sdlc-skill-evaluation`.
+- Meta: `$sdlc-skill-authoring`.
+
+Supporting assets: `docs/references/depth-matrix.md` (which steps at Lean, Standard, Enterprise-ready), `harnesses/spec-driven-delivery.yaml`, `pipelines/spec-driven-delivery.md`, `scripts/sdlc_trace.py` with `scripts/test_sdlc_trace.py`, and a worked fixture in `examples/spec-driven-trace/`.
+
+```bash
+python scripts/sdlc_trace.py --target examples/spec-driven-trace --strict
+```
 
 ## Presets
 
@@ -90,7 +121,7 @@ The automation layer separates method from runtime:
 
 - `skills/`: reusable SDLC methods and guardrails.
 - `agents/`: specialist role definitions, permissions, gates, and handoffs.
-- `harnesses/`: executable state machines for idea-to-production, feature-to-production, and production feedback.
+- `harnesses/`: executable state machines for idea-to-production, feature-to-production, spec-driven delivery, and production feedback.
 - `pipelines/`: human-readable operating procedures for PRs, releases, and production learning.
 - `integrations/`: adapters for Codex, Claude Code, Hermes, OpenClaw, GitHub Actions, and MCP.
 - `data/agent-runtime-matrix.csv`: runtime and gate mapping by agent.
@@ -126,6 +157,13 @@ Feature to production:
 ```text
 Use harnesses/feature-to-production.yaml.
 Route this feature through behavior, impact, implementation, QA, security, review, and release readiness.
+```
+
+Spec-driven delivery:
+
+```text
+Use harnesses/spec-driven-delivery.yaml.
+Take this feature through design, clarified spec, traceable tasks, test-first build, verification evidence, convergence, and retrospective.
 ```
 
 Production feedback loop:

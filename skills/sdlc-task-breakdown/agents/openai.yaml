@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Task Breakdown"
+  short_description: "Create dependency-ordered executable tasks"
+  default_prompt: "Use $sdlc-task-breakdown to make the plan executable: each task is small, unambiguous, traceable to a requirement, and runnable by an agent or human without guessing."

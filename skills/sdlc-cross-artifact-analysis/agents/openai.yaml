@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Cross-Artifact Analysis"
+  short_description: "Audit spec, plan, tasks for consistency"
+  default_prompt: "Use $sdlc-cross-artifact-analysis to catch the cheap-to-fix problems between documents before they become expensive code."

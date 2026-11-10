@@ -47,7 +47,9 @@ stages:
   - id: implementation
     agent: fullstack-builder
     skills:
+      - sdlc-systematic-debugging
       - sdlc-code-change-execution
+      - sdlc-test-driven-development
       - sdlc-quality-test-strategy
     outputs:
       - fix diff

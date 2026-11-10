@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Systematic Debugging"
+  short_description: "Root cause before any fix"
+  default_prompt: "Use $sdlc-systematic-debugging to replace guess-and-patch with an evidence-driven investigation that fixes the cause once."

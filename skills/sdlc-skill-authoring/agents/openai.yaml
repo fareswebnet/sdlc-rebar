@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Skill Authoring"
+  short_description: "Write and test new agent skills"
+  default_prompt: "Use $sdlc-skill-authoring to make skills that agents actually follow, by treating skill writing like TDD for process documentation."

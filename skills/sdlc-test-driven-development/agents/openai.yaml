@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Test-Driven Development"
+  short_description: "Red, green, refactor with proof"
+  default_prompt: "Use $sdlc-test-driven-development to make tests drive design and prove behavior, so passing tests mean something."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Agent Context Engineering"
+  short_description: "Design context packs and briefs for agents"
+  default_prompt: "Use $sdlc-agent-context-engineering to treat context as an engineered artifact: small, accurate, versioned, and tested by whether agents behave better with it."

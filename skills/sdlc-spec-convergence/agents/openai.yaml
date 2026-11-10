@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Spec Convergence"
+  short_description: "Reconcile built code against the spec"
+  default_prompt: "Use $sdlc-spec-convergence to close the loop between intent and code so remaining work is explicit instead of assumed."

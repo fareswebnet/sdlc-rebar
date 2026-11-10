@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Subagent-Driven Execution"
+  short_description: "Execute tasks with fresh agents and reviews"
+  default_prompt: "Use $sdlc-subagent-driven-execution to keep each agent focused and each change reviewed, so large plans execute reliably without context pollution."

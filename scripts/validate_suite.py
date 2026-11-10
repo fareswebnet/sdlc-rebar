@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -34,11 +35,13 @@ EXPECTED_HARNESSES = {
     "app-idea-to-production",
     "feature-to-production",
     "production-feedback-loop",
+    "spec-driven-delivery",
 }
 EXPECTED_PIPELINES = {
     "idea-to-pr.md",
     "pr-to-production.md",
     "production-feedback-loop.md",
+    "spec-driven-delivery.md",
 }
 EXPECTED_INTEGRATIONS = {
     "codex",
@@ -181,8 +184,8 @@ def main() -> int:
         if BAD.search(text):
             errors.append(f"{skill.name}: contains placeholder text")
     count = len(list(SKILLS.glob("sdlc-*")))
-    if count != 33:
-        errors.append(f"expected 33 skills, found {count}")
+    if count != 53:
+        errors.append(f"expected 53 skills, found {count}")
 
     known_agents = {path.stem for path in AGENTS.glob("*.yaml")}
     if known_agents != EXPECTED_AGENTS:
@@ -256,6 +259,12 @@ def main() -> int:
             errors.append(f"{matrix.relative_to(ROOT)}: missing matrix row for {agent}")
     read_checked(ROOT / "docs" / "references" / "agent-runtime-matrix.md", errors)
     validate_example_files(known_skills, errors)
+    for required in ("scripts/sdlc_trace.py", "scripts/test_sdlc_trace.py", "docs/references/depth-matrix.md", "docs/references/method-sources.md"):
+        if not (ROOT / required).exists():
+            errors.append(f"{required}: missing")
+    trace = subprocess.run([sys.executable, str(ROOT / "scripts" / "sdlc_trace.py"), "--target", str(EXAMPLES / "spec-driven-trace"), "--strict"], capture_output=True, text=True)
+    if trace.returncode != 0:
+        errors.append("examples/spec-driven-trace: traceability check failed\n" + trace.stdout)
 
     if errors:
         for error in errors:

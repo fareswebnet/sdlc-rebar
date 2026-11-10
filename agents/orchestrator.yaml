@@ -9,6 +9,14 @@ skills:
   - sdlc-delivery-system
   - sdlc-ai-assisted-development
   - sdlc-maturity-assessment
+  - sdlc-project-constitution
+  - sdlc-cross-artifact-analysis
+  - sdlc-subagent-driven-execution
+  - sdlc-spec-convergence
+  - sdlc-agent-context-engineering
+  - sdlc-tasks-to-issues
+  - sdlc-delivery-retrospective
+  - sdlc-skill-evaluation
 inputs:
   - raw idea or work request
   - repo state and current delivery artifacts
