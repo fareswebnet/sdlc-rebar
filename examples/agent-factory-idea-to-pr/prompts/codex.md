@@ -1,7 +1,7 @@
 # Codex Prompt
 
 ```text
-Use $sdlc-delivery-system and $sdlc-ai-assisted-development.
+Use sdlc-delivery-system and sdlc-ai-assisted-development.
 
 Run harnesses/app-idea-to-production.yaml for this app idea:
 

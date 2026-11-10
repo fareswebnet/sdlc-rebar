@@ -45,7 +45,7 @@ Remove costly ambiguity early, with a bounded interview that ends in recorded de
 
 ## Handoff
 
-`$sdlc-requirements-checklist` to test the clarified spec, then `$sdlc-implementation-planning`.
+`sdlc-requirements-checklist` to test the clarified spec, then `sdlc-implementation-planning`.
 
 ## Source Guidance
 

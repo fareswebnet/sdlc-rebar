@@ -1,6 +1,6 @@
 ---
 name: sdlc-agent-context-engineering
-description: Design the context agents receive: a concise repo-level AGENTS.md or CLAUDE.md, per-task context packs, subagent briefs, and memory and handoff notes, so agents get exactly the facts, constraints, and commands they need and nothing more. Use when onboarding agents to a repo, when agents repeat mistakes, before dispatching subagents, or when prompts keep growing.
+description: Design the context agents receive: a concise repo-level AGENTS.md, per-task context packs, subagent briefs, and memory and handoff notes, so agents get exactly the facts, constraints, and commands they need and nothing more. Use when onboarding agents to a repo, when agents repeat mistakes, before dispatching subagents, or when prompts keep growing.
 ---
 
 # SDLC Agent Context Engineering
@@ -33,7 +33,7 @@ Treat context as an engineered artifact: small, accurate, versioned, and tested 
 
 ## Outputs
 
-- Primary artifacts: `AGENTS.md` or `CLAUDE.md`, context pack template, subagent brief template, handoff note template.
+- Primary artifacts: `AGENTS.md`, context pack template, subagent brief template, handoff note template.
 - Clear assumptions, open questions, risks, and owner recommendations.
 - Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
@@ -46,7 +46,7 @@ Treat context as an engineered artifact: small, accurate, versioned, and tested 
 
 ## Handoff
 
-`$sdlc-subagent-driven-execution` to use the briefs, `$sdlc-skill-evaluation` to test whether the context helps.
+`sdlc-subagent-driven-execution` to use the briefs, `sdlc-skill-evaluation` to test whether the context helps.
 
 ## Source Guidance
 

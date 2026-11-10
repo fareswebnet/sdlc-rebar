@@ -46,7 +46,7 @@ Close the loop so each delivery makes the next one cheaper and safer, with chang
 
 ## Handoff
 
-`$sdlc-project-constitution` for principle changes, `$sdlc-skill-authoring` for skill updates, `$sdlc-incident-support-feedback` for production lessons.
+`sdlc-project-constitution` for principle changes, `sdlc-skill-authoring` for skill updates, `sdlc-incident-support-feedback` for production lessons.
 
 ## Source Guidance
 

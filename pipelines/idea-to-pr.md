@@ -36,6 +36,6 @@ Produce a PR or equivalent branch with:
 ## Runtime Hints
 
 - Codex: use a worktree or `codex exec` in `workspace-write` for scripted stages.
-- Claude Code: keep `CLAUDE.md` short and project-specific, then run bounded tasks per branch.
+- Claude Code: keep `AGENTS.md` short and project-specific (Claude Code reads it through a one-line `CLAUDE.md` containing `@AGENTS.md` if needed), then run bounded tasks per branch.
 - Hermes: use `hermes chat --worktree --skills <skill>` for delegated implementation tasks.
 - OpenClaw: use workspace skills as an adapter, with GitHub remaining the source of truth.

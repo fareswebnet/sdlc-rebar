@@ -46,7 +46,7 @@ Make skills that agents actually follow, by treating skill writing like TDD for 
 
 ## Handoff
 
-`$sdlc-skill-evaluation` to prove the skill works before it ships.
+`sdlc-skill-evaluation` to prove the skill works before it ships.
 
 ## Source Guidance
 

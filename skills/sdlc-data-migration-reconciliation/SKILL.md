@@ -47,7 +47,7 @@ Show that every record that mattered arrived, correctly, once, with a way back.
 
 ## Handoff
 
-`$sdlc-cutover-rollback` for go-live, `$sdlc-data-database-architecture` for target schema design.
+`sdlc-cutover-rollback` for go-live, `sdlc-data-database-architecture` for target schema design.
 
 ## Source Guidance
 

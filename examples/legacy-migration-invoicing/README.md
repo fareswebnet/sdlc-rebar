@@ -13,15 +13,15 @@ The script plays every role mechanically so the flow is reproducible. In a real 
 
 | Path | Role | Skill |
 |---|---|---|
-| `legacy/billing.py` | The real legacy, used as the oracle and never edited | `$sdlc-characterization-testing` |
-| `inventory.csv` | Script-style inventory of 7 things that existed | `$sdlc-legacy-inventory-registry` |
-| `docs/rules.md` | Business rules `RG-INV-*`, legacy defect decision | `$sdlc-legacy-reverse-engineering` |
-| `docs/batch-plan.md` | Vertical batches covering every line | `$sdlc-migration-batch-orchestration` |
-| `target/billing.py`, `target/routes.py` | Migrated module and its routes | `$sdlc-test-driven-development` |
-| `target/billing_first_attempt.py` | First attempt, kept to show the oracle catching it | `$sdlc-characterization-testing` |
-| `tests/` | Differential suite (boundaries plus seeded fuzz, exact equality) | `$sdlc-characterization-testing` |
+| `legacy/billing.py` | The real legacy, used as the oracle and never edited | `sdlc-characterization-testing` |
+| `inventory.csv` | Script-style inventory of 7 things that existed | `sdlc-legacy-inventory-registry` |
+| `docs/rules.md` | Business rules `RG-INV-*`, legacy defect decision | `sdlc-legacy-reverse-engineering` |
+| `docs/batch-plan.md` | Vertical batches covering every line | `sdlc-migration-batch-orchestration` |
+| `target/billing.py`, `target/routes.py` | Migrated module and its routes | `sdlc-test-driven-development` |
+| `target/billing_first_attempt.py` | First attempt, kept to show the oracle catching it | `sdlc-characterization-testing` |
+| `tests/` | Differential suite (boundaries plus seeded fuzz, exact equality) | `sdlc-characterization-testing` |
 | `artifacts/registry.final.csv` | Registry after claims, visas, and decisions | `scripts/sdlc_registry.py` |
-| `artifacts/batch-B1-audit.md` | Verifier report for batch B1 | `$sdlc-independent-verification` |
+| `artifacts/batch-B1-audit.md` | Verifier report for batch B1 | `sdlc-independent-verification` |
 | `artifacts/run-log.md` | What each step produced | all |
 
 ## What the run demonstrates
@@ -39,4 +39,4 @@ The script plays every role mechanically so the flow is reproducible. In a real 
 
 - This batch is tiny, so the sample rate is 100%. Real batches sample about 10% plus all priority-1 lines.
 - Priority-1 lines would get two independent verifiers.
-- A real run adds data reconciliation (`$sdlc-data-migration-reconciliation`) and a rehearsed cutover (`$sdlc-cutover-rollback`) before decommissioning the legacy.
+- A real run adds data reconciliation (`sdlc-data-migration-reconciliation`) and a rehearsed cutover (`sdlc-cutover-rollback`) before decommissioning the legacy.

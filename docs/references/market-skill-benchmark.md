@@ -44,7 +44,7 @@ Sources:
 |---|---|---|
 | Discovery / product | `grill-me`, `grilling`, `to-prd`, `to-spec`, `to-tickets`, `brainstorming`, `writing-plans` | Inspiration pour questionnement, transformation idée -> spec -> tickets |
 | Domain / architecture | `domain-modeling`, `ubiquitous-language`, `improve-codebase-architecture`, `codebase-design`, `request-refactor-plan` | Benchmark de workflow architecture, mais besoin de cadrage DDD plus complet |
-| Frontend / UI | `frontend-design`, `web-design-guidelines`, `design-an-interface`, `ui-ux-pro-max`, `shadcn`, `vercel-react-best-practices` | Inspiration forte pour `$sdlc-ux-product-design` et `$sdlc-ui-design-system` |
+| Frontend / UI | `frontend-design`, `web-design-guidelines`, `design-an-interface`, `ui-ux-pro-max`, `shadcn`, `vercel-react-best-practices` | Inspiration forte pour `sdlc-ux-product-design` et `sdlc-ui-design-system` |
 | Testing / qualité | `tdd`, `test-driven-development`, `qa`, `lint-and-validate`, `tdd-workflow` | Réutiliser patterns de workflow, mais élargir vers stratégie qualité complète |
 | Security | `checking-owasp-compliance`, `stride-analysis-patterns`, `sast-configuration`, `auditing-access-control`, `pentest-checklist` | À auditer; nos skills doivent s'appuyer sur NIST SSDF, OWASP SAMM/ASVS |
 | DevOps / cloud | `deployment-pipeline-design`, `azure-*`, `supabase`, `supabase-postgres-best-practices` | Inspirer presets stack/cloud, pas coeur agnostique |
@@ -73,6 +73,6 @@ Un skill public peut être repris comme dépendance recommandée ou modèle seul
 | Faut-il copier des skills existants ? | Non. |
 | Faut-il citer et benchmarker les catalogues ? | Oui. |
 | Faut-il reprendre des patterns de skills populaires ? | Oui, après audit. |
-| Faut-il créer notre propre interface `$sdlc-*` ? | Oui, pour stabilité et cohérence. |
+| Faut-il créer notre propre interface `sdlc-*` ? | Oui, pour stabilité et cohérence. |
 | Faut-il maintenir une matrice de provenance par skill ? | Oui, indispensable pour crédibilité et due diligence. |
 

@@ -45,7 +45,7 @@ Replace subjective 'done' with a short checklist whose every line has a proof.
 
 ## Handoff
 
-`$sdlc-verification-before-completion` to produce the evidence, `$sdlc-release-production-readiness` for release-level criteria.
+`sdlc-verification-before-completion` to produce the evidence, `sdlc-release-production-readiness` for release-level criteria.
 
 ## Source Guidance
 

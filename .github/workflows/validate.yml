@@ -11,3 +11,4 @@ jobs:
       - run: python scripts/validate_suite.py
       - run: python scripts/test_sdlc_trace.py
       - run: python scripts/test_sdlc_registry.py
+      - run: python scripts/test_install.py

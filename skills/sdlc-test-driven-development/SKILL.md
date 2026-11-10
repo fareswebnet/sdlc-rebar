@@ -54,7 +54,7 @@ Make tests drive design and prove behavior, so passing tests mean something.
 
 ## Handoff
 
-`$sdlc-verification-before-completion` after each green cycle; `$sdlc-code-review-quality-gate` for the diff.
+`sdlc-verification-before-completion` after each green cycle; `sdlc-code-review-quality-gate` for the diff.
 
 ## Source Guidance
 

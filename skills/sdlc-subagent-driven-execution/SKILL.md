@@ -23,7 +23,7 @@ Keep each agent focused and each change reviewed, so large plans execute reliabl
 4. Handle implementer status: DONE, DONE_WITH_CONCERNS (read the concerns), NEEDS_CONTEXT (supply it and retry), BLOCKED (change context, model, or task size, or escalate).
 5. After each task run two reviews in order: spec compliance (nothing missing, nothing extra), then code quality. Loop with the implementer until both approve.
 6. Choose the lightest sufficient model for each role; reserve stronger models for integration, design, and review of risky tasks.
-7. Verify the integrated result with `$sdlc-verification-before-completion`, then finish the branch via `$sdlc-branch-worktree-lifecycle`.
+7. Verify the integrated result with `sdlc-verification-before-completion`, then finish the branch via `sdlc-branch-worktree-lifecycle`.
 
 ## Expected Inputs
 
@@ -51,9 +51,13 @@ Keep each agent focused and each change reviewed, so large plans execute reliabl
 | Spec review passed, skip quality review | Both reviews are required, in order. |
 | Run these in parallel, they're related | If they touch the same files they are not independent. |
 
+## Runtime Fallbacks
+
+Without subagents, execute tasks one at a time in the same session, then run the spec-compliance and code-quality reviews in separate fresh sessions that receive only the task brief and the diff. Without parallelism, ignore `[P]` markers and keep the order. See `docs/references/runtime-capabilities.md`.
+
 ## Handoff
 
-`$sdlc-agent-context-engineering` for briefs; `$sdlc-branch-worktree-lifecycle` and `$sdlc-spec-convergence` after the run.
+`sdlc-agent-context-engineering` for briefs; `sdlc-branch-worktree-lifecycle` and `sdlc-spec-convergence` after the run.
 
 ## Source Guidance
 

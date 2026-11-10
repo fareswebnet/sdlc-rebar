@@ -7,15 +7,16 @@ Use Codex as a repo-first executor for planning, implementation, review, worktre
 For personal use:
 
 ```bash
-cp -R skills/sdlc-* ~/.codex/skills/
+python scripts/install.py --runtime codex --scope user
 ```
 
-For repo-scoped use, copy the skills into the target repository:
+For repo-scoped use (skills, kit, and `AGENTS.md` block):
 
 ```bash
-mkdir -p .agents/skills
-cp -R /path/to/ai-sdlc-skills/skills/sdlc-* .agents/skills/
+python scripts/install.py --runtime codex --target /path/to/repo --agents-md --with-kit
 ```
+
+Codex invokes skills with `$sdlc-<name>`; the per-skill `agents/openai.yaml` supplies display metadata.
 
 ## Project Instructions
 
@@ -39,7 +40,7 @@ For autonomous work, follow:
 ## Interactive Flow
 
 ```text
-Use $sdlc-delivery-system.
+Use sdlc-delivery-system.
 Run the app-idea-to-production harness for this idea:
 <idea>
 Create the product docs, architecture plan, implementation plan, then implement the first vertical slice in a worktree.
@@ -52,7 +53,7 @@ Use `codex exec` for deterministic stages in CI or local scripts:
 
 ```bash
 codex exec --sandbox workspace-write \
-  "Use $sdlc-code-review-quality-gate to review the current diff against docs/product/prd.md and docs/product/bdd."
+  "Use sdlc-code-review-quality-gate to review the current diff against docs/product/prd.md and docs/product/bdd."
 ```
 
 Keep scripted runs narrow. Use separate runs for product docs, architecture review, implementation, QA, and code review when context would otherwise become noisy.

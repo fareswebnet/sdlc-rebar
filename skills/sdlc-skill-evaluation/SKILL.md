@@ -46,7 +46,7 @@ Prove that a skill changes behavior for the better, and notice when a change mak
 
 ## Handoff
 
-`$sdlc-skill-authoring` to apply the fixes, `$sdlc-agent-context-engineering` when the problem is context rather than the skill.
+`sdlc-skill-authoring` to apply the fixes, `sdlc-agent-context-engineering` when the problem is context rather than the skill.
 
 ## Source Guidance
 

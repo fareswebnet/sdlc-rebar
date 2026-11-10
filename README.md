@@ -2,7 +2,7 @@
 
 An agent skill suite for the full product-tech software delivery lifecycle.
 
-This repository packages 65 `$sdlc-*` skills and optional presets to help a team move from idea to production learning:
+This repository packages 65 `sdlc-*` skills and optional presets to help a team move from idea to production learning:
 
 `idea -> discovery -> PRD -> domain model -> bounded contexts -> BDD -> UX/UI -> architecture/data -> contracts -> backlog -> implementation -> tests -> release -> observability -> incidents/support -> improvement`
 
@@ -24,79 +24,86 @@ The suite is designed for startups and scale-ups by default, but each skill can 
 
 ## Install
 
-Copy or install the `skills/` folders into a compatible agent skills location, or reference this repository from tooling that supports Agent Skills.
-
-For Codex-style local use:
+One installer covers every runtime. Skills go where each runtime discovers them, and the only repository memory file is `AGENTS.md` (a managed block that never overwrites your own content).
 
 ```bash
-cp -R skills/sdlc-* ~/.codex/skills/
+python scripts/install.py --runtime codex|claude|antigravity|generic --target /path/to/repo --agents-md --with-kit
+python scripts/install.py --runtime codex --scope user        # user-level skills
+python scripts/install.py --runtime claude --target . --native-roles   # also .claude/agents subagents
 ```
 
-Restart the agent session so new skills are discovered.
+| Runtime | Project skills folder | Invocation |
+|---|---|---|
+| Codex | `.agents/skills` | `$sdlc-<name>` |
+| Claude Code | `.claude/skills` (or plugin via `.claude-plugin/`) | `/sdlc-<name>` or by description |
+| Antigravity | `.agents/skills` (or plugin via `plugin.json`) | mention the skill name |
+| Open-source or other LLM | `.agents/skills`, plus `python scripts/skill_index.py` | name the skill in the prompt |
+
+Restart the agent session so new skills are discovered. Fallbacks for missing tools (subagents, worktrees, MCP) are in `docs/references/runtime-capabilities.md`; per-runtime notes are in `integrations/`.
 
 ## Skills
 
 | Skill | Purpose |
 |---|---|
-| `$sdlc-delivery-system` | Orchestrate the complete lifecycle and route to the right skill. |
-| `$sdlc-maturity-assessment` | Score maturity, gaps, and improvement roadmap. |
-| `$sdlc-idea-framing` | Clarify raw product ideas. |
-| `$sdlc-market-user-discovery` | Research users, market, and evidence. |
-| `$sdlc-product-strategy` | Shape outcomes, MVP, appetite, and roadmap. |
-| `$sdlc-prd-requirements` | Write precise, testable PRDs and requirements. |
-| `$sdlc-domain-modeling` | Model business concepts, rules, and invariants. |
-| `$sdlc-bounded-context-map` | Map DDD context boundaries and ownership. |
-| `$sdlc-bdd-specifications` | Specify behavior with examples and Gherkin. |
-| `$sdlc-ux-product-design` | Design user journeys, flows, and states. |
-| `$sdlc-ui-design-system` | Plan UI components, tokens, and accessibility. |
-| `$sdlc-architecture-rfc` | Create architecture RFCs and ADR candidates. |
-| `$sdlc-application-architecture` | Design modules, layers, services, and boundaries. |
-| `$sdlc-data-database-architecture` | Design data ownership, schemas, migrations, and audit. |
-| `$sdlc-api-integration-contracts` | Specify APIs, events, webhooks, and contracts. |
-| `$sdlc-identity-access-multitenancy` | Model auth, permissions, tenants, and privileged access. |
-| `$sdlc-security-privacy-compliance` | Integrate AppSec, privacy, compliance, and threat modeling. |
-| `$sdlc-ai-assisted-development` | Govern AI-assisted coding workflows. |
-| `$sdlc-ai-product-architecture` | Design LLM, RAG, agent, eval, safety, and AI observability. |
-| `$sdlc-delivery-roadmap-backlog` | Slice roadmap and backlog into executable work. |
-| `$sdlc-implementation-planning` | Plan safe code changes. |
-| `$sdlc-code-change-execution` | Execute scoped repository changes. |
-| `$sdlc-quality-test-strategy` | Design quality strategy and tests by risk. |
-| `$sdlc-code-review-quality-gate` | Review code against quality gates. |
-| `$sdlc-devops-ci-cd-platform` | Design delivery platform and CI/CD. |
-| `$sdlc-release-production-readiness` | Prepare safe releases and production readiness. |
-| `$sdlc-observability-reliability` | Design SLOs, telemetry, alerts, and runbooks. |
-| `$sdlc-incident-support-feedback` | Close incident, support, and feedback loops. |
-| `$sdlc-performance-scalability-cost` | Balance performance, scale, and FinOps. |
-| `$sdlc-product-analytics-experimentation` | Design metrics, tracking, experiments, and data quality. |
-| `$sdlc-technical-debt-evolution` | Manage debt, refactoring, and architecture evolution. |
-| `$sdlc-documentation-knowledge` | Keep documentation and onboarding useful. |
-| `$sdlc-third-party-ip-risk` | Review dependencies, licenses, vendors, and IP risk. |
-| `$sdlc-project-constitution` | Define non-negotiable engineering principles. |
-| `$sdlc-spec-clarification` | Resolve spec ambiguity before planning. |
-| `$sdlc-requirements-checklist` | Unit-test the requirements themselves. |
-| `$sdlc-task-breakdown` | Create dependency-ordered executable tasks. |
-| `$sdlc-cross-artifact-analysis` | Audit spec, plan, tasks for consistency. |
-| `$sdlc-spec-convergence` | Reconcile built code against the spec. |
-| `$sdlc-design-brainstorming` | Design gate before any implementation. |
-| `$sdlc-test-driven-development` | Red, green, refactor with proof. |
-| `$sdlc-systematic-debugging` | Root cause before any fix. |
-| `$sdlc-verification-before-completion` | Evidence before any done claim. |
-| `$sdlc-subagent-driven-execution` | Execute tasks with fresh agents and reviews. |
-| `$sdlc-branch-worktree-lifecycle` | Isolate work and finish branches safely. |
-| `$sdlc-code-review-reception` | Evaluate review feedback before implementing. |
-| `$sdlc-skill-authoring` | Write and test new agent skills. |
-| `$sdlc-legacy-inventory-registry` | Freeze everything the legacy system exposes. |
-| `$sdlc-legacy-reverse-engineering` | Extract business rules and behavior from legacy code. |
-| `$sdlc-characterization-testing` | Pin legacy behavior with oracles and golden masters. |
-| `$sdlc-migration-batch-orchestration` | Drive a migration in verified vertical batches. |
-| `$sdlc-independent-verification` | Refute porting claims in a separate context. |
-| `$sdlc-reachability-anti-simulation` | Block unrouted code and faked clients. |
-| `$sdlc-system-merge-convergence` | Merge two systems or estates into one target. |
-| `$sdlc-data-migration-reconciliation` | Move and reconcile data with proof. |
-| `$sdlc-cutover-rollback` | Rehearse go-live, parallel run, and retreat. |
-| `$sdlc-performance-budgets` | Set and enforce measurable performance budgets. |
-| `$sdlc-accessibility-engineering` | Build and verify WCAG-conformant interfaces. |
-| `$sdlc-api-versioning-deprecation` | Evolve APIs without breaking consumers. |
+| `sdlc-delivery-system` | Orchestrate the complete lifecycle and route to the right skill. |
+| `sdlc-maturity-assessment` | Score maturity, gaps, and improvement roadmap. |
+| `sdlc-idea-framing` | Clarify raw product ideas. |
+| `sdlc-market-user-discovery` | Research users, market, and evidence. |
+| `sdlc-product-strategy` | Shape outcomes, MVP, appetite, and roadmap. |
+| `sdlc-prd-requirements` | Write precise, testable PRDs and requirements. |
+| `sdlc-domain-modeling` | Model business concepts, rules, and invariants. |
+| `sdlc-bounded-context-map` | Map DDD context boundaries and ownership. |
+| `sdlc-bdd-specifications` | Specify behavior with examples and Gherkin. |
+| `sdlc-ux-product-design` | Design user journeys, flows, and states. |
+| `sdlc-ui-design-system` | Plan UI components, tokens, and accessibility. |
+| `sdlc-architecture-rfc` | Create architecture RFCs and ADR candidates. |
+| `sdlc-application-architecture` | Design modules, layers, services, and boundaries. |
+| `sdlc-data-database-architecture` | Design data ownership, schemas, migrations, and audit. |
+| `sdlc-api-integration-contracts` | Specify APIs, events, webhooks, and contracts. |
+| `sdlc-identity-access-multitenancy` | Model auth, permissions, tenants, and privileged access. |
+| `sdlc-security-privacy-compliance` | Integrate AppSec, privacy, compliance, and threat modeling. |
+| `sdlc-ai-assisted-development` | Govern AI-assisted coding workflows. |
+| `sdlc-ai-product-architecture` | Design LLM, RAG, agent, eval, safety, and AI observability. |
+| `sdlc-delivery-roadmap-backlog` | Slice roadmap and backlog into executable work. |
+| `sdlc-implementation-planning` | Plan safe code changes. |
+| `sdlc-code-change-execution` | Execute scoped repository changes. |
+| `sdlc-quality-test-strategy` | Design quality strategy and tests by risk. |
+| `sdlc-code-review-quality-gate` | Review code against quality gates. |
+| `sdlc-devops-ci-cd-platform` | Design delivery platform and CI/CD. |
+| `sdlc-release-production-readiness` | Prepare safe releases and production readiness. |
+| `sdlc-observability-reliability` | Design SLOs, telemetry, alerts, and runbooks. |
+| `sdlc-incident-support-feedback` | Close incident, support, and feedback loops. |
+| `sdlc-performance-scalability-cost` | Balance performance, scale, and FinOps. |
+| `sdlc-product-analytics-experimentation` | Design metrics, tracking, experiments, and data quality. |
+| `sdlc-technical-debt-evolution` | Manage debt, refactoring, and architecture evolution. |
+| `sdlc-documentation-knowledge` | Keep documentation and onboarding useful. |
+| `sdlc-third-party-ip-risk` | Review dependencies, licenses, vendors, and IP risk. |
+| `sdlc-project-constitution` | Define non-negotiable engineering principles. |
+| `sdlc-spec-clarification` | Resolve spec ambiguity before planning. |
+| `sdlc-requirements-checklist` | Unit-test the requirements themselves. |
+| `sdlc-task-breakdown` | Create dependency-ordered executable tasks. |
+| `sdlc-cross-artifact-analysis` | Audit spec, plan, tasks for consistency. |
+| `sdlc-spec-convergence` | Reconcile built code against the spec. |
+| `sdlc-design-brainstorming` | Design gate before any implementation. |
+| `sdlc-test-driven-development` | Red, green, refactor with proof. |
+| `sdlc-systematic-debugging` | Root cause before any fix. |
+| `sdlc-verification-before-completion` | Evidence before any done claim. |
+| `sdlc-subagent-driven-execution` | Execute tasks with fresh agents and reviews. |
+| `sdlc-branch-worktree-lifecycle` | Isolate work and finish branches safely. |
+| `sdlc-code-review-reception` | Evaluate review feedback before implementing. |
+| `sdlc-skill-authoring` | Write and test new agent skills. |
+| `sdlc-legacy-inventory-registry` | Freeze everything the legacy system exposes. |
+| `sdlc-legacy-reverse-engineering` | Extract business rules and behavior from legacy code. |
+| `sdlc-characterization-testing` | Pin legacy behavior with oracles and golden masters. |
+| `sdlc-migration-batch-orchestration` | Drive a migration in verified vertical batches. |
+| `sdlc-independent-verification` | Refute porting claims in a separate context. |
+| `sdlc-reachability-anti-simulation` | Block unrouted code and faked clients. |
+| `sdlc-system-merge-convergence` | Merge two systems or estates into one target. |
+| `sdlc-data-migration-reconciliation` | Move and reconcile data with proof. |
+| `sdlc-cutover-rollback` | Rehearse go-live, parallel run, and retreat. |
+| `sdlc-performance-budgets` | Set and enforce measurable performance budgets. |
+| `sdlc-accessibility-engineering` | Build and verify WCAG-conformant interfaces. |
+| `sdlc-api-versioning-deprecation` | Evolve APIs without breaking consumers. |
 
 ## Spec-Driven and Disciplined Execution
 
@@ -104,10 +111,10 @@ Inspired by GitHub Spec Kit and Superpowers (see `docs/references/method-sources
 
 `constitution -> brainstorm -> clarify -> checklist -> plan -> tasks -> analyze + trace -> TDD execution (subagent-driven, worktree-isolated) -> verify against definition of done -> review -> converge -> retrospective`
 
-- Spec chain: `$sdlc-project-constitution`, `$sdlc-design-brainstorming`, `$sdlc-spec-clarification`, `$sdlc-requirements-checklist`, `$sdlc-task-breakdown`, `$sdlc-cross-artifact-analysis`, `$sdlc-spec-convergence`.
-- Execution discipline: `$sdlc-test-driven-development`, `$sdlc-systematic-debugging`, `$sdlc-verification-before-completion`, `$sdlc-subagent-driven-execution`, `$sdlc-branch-worktree-lifecycle`, `$sdlc-code-review-reception`.
-- Beyond both sources: `$sdlc-traceability-ledger` (script-checked requirement-to-test chain), `$sdlc-definition-of-done` (depth-scaled, evidence-first), `$sdlc-agent-context-engineering`, `$sdlc-tasks-to-issues`, `$sdlc-delivery-retrospective`, `$sdlc-skill-evaluation`.
-- Meta: `$sdlc-skill-authoring`.
+- Spec chain: `sdlc-project-constitution`, `sdlc-design-brainstorming`, `sdlc-spec-clarification`, `sdlc-requirements-checklist`, `sdlc-task-breakdown`, `sdlc-cross-artifact-analysis`, `sdlc-spec-convergence`.
+- Execution discipline: `sdlc-test-driven-development`, `sdlc-systematic-debugging`, `sdlc-verification-before-completion`, `sdlc-subagent-driven-execution`, `sdlc-branch-worktree-lifecycle`, `sdlc-code-review-reception`.
+- Beyond both sources: `sdlc-traceability-ledger` (script-checked requirement-to-test chain), `sdlc-definition-of-done` (depth-scaled, evidence-first), `sdlc-agent-context-engineering`, `sdlc-tasks-to-issues`, `sdlc-delivery-retrospective`, `sdlc-skill-evaluation`.
+- Meta: `sdlc-skill-authoring`.
 
 Supporting assets: `docs/references/depth-matrix.md` (which steps at Lean, Standard, Enterprise-ready), `harnesses/spec-driven-delivery.yaml`, `pipelines/spec-driven-delivery.md`, `scripts/sdlc_trace.py` with `scripts/test_sdlc_trace.py`, and a worked fixture in `examples/spec-driven-trace/`.
 
@@ -121,7 +128,7 @@ Migrating a legacy estate, or merging two, fails when progress is counted on wha
 
 `frozen registry -> batches -> reverse engineering -> oracles -> test-first build -> reachability ratchet -> independent verification and visa -> rehearsed cutover -> lessons`
 
-- Skills: `$sdlc-legacy-inventory-registry`, `$sdlc-legacy-reverse-engineering`, `$sdlc-characterization-testing`, `$sdlc-migration-batch-orchestration`, `$sdlc-independent-verification`, `$sdlc-reachability-anti-simulation`, `$sdlc-system-merge-convergence`, `$sdlc-data-migration-reconciliation`, `$sdlc-cutover-rollback`.
+- Skills: `sdlc-legacy-inventory-registry`, `sdlc-legacy-reverse-engineering`, `sdlc-characterization-testing`, `sdlc-migration-batch-orchestration`, `sdlc-independent-verification`, `sdlc-reachability-anti-simulation`, `sdlc-system-merge-convergence`, `sdlc-data-migration-reconciliation`, `sdlc-cutover-rollback`.
 - Agents: `legacy-analyst` and `independent-verifier` (the verifier runs in a separate context and cannot visa its own work).
 - Harnesses: `harnesses/legacy-migration.yaml`, `harnesses/system-merge.yaml`; pipelines `pipelines/legacy-migration.md`, `pipelines/system-merge.md`.
 - Tool: `scripts/sdlc_registry.py` (init, check, report, sample, claim, visa, ratchet), tested by `scripts/test_sdlc_registry.py`.
@@ -131,22 +138,22 @@ python scripts/sdlc_registry.py report docs/migration/registry.csv
 python examples/legacy-migration-invoicing/run_example.py   # full worked example
 ```
 
-Specialized quality skills: `$sdlc-performance-budgets`, `$sdlc-accessibility-engineering`, `$sdlc-api-versioning-deprecation`.
+Specialized quality skills: `sdlc-performance-budgets`, `sdlc-accessibility-engineering`, `sdlc-api-versioning-deprecation`.
 
 ## Presets
 
-- `$preset-fintech-regulated`
-- `$preset-b2b-saas`
-- `$preset-ai-agent-product`
-- `$preset-mobile-offline`
-- `$preset-marketplace`
-- `$preset-data-product`
-- `$preset-enterprise-ready`
-- `$preset-legacy-migration`
-- `$preset-system-merge`
-- `$preset-healthtech-regulated`
-- `$preset-public-sector`
-- `$preset-ecommerce-retail`
+- `preset-fintech-regulated`
+- `preset-b2b-saas`
+- `preset-ai-agent-product`
+- `preset-mobile-offline`
+- `preset-marketplace`
+- `preset-data-product`
+- `preset-enterprise-ready`
+- `preset-legacy-migration`
+- `preset-system-merge`
+- `preset-healthtech-regulated`
+- `preset-public-sector`
+- `preset-ecommerce-retail`
 
 Presets are stored in `presets/` and tune skill depth for domain-specific projects.
 

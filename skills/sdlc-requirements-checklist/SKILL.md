@@ -39,13 +39,13 @@ Treat requirements as the system under test: every checklist item asks whether t
 ## Guardrails
 
 - Bad item: `Verify the login button works`. Good item: `Is the failure behavior for expired sessions specified with a measurable timeout?`
-- Do not generate implementation test cases here; hand those to `$sdlc-quality-test-strategy`.
+- Do not generate implementation test cases here; hand those to `sdlc-quality-test-strategy`.
 - Cap each checklist to the items that change a decision; avoid exhaustive boilerplate lists.
 - Cite the requirement, not general best practice, so reviewers can act on each item.
 
 ## Handoff
 
-`$sdlc-spec-clarification` for failures, `$sdlc-implementation-planning` once items pass.
+`sdlc-spec-clarification` for failures, `sdlc-implementation-planning` once items pass.
 
 ## Source Guidance
 

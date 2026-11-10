@@ -23,7 +23,7 @@ Turn implicit behavior into explicit, id-addressable rules that tests can prove 
 4. Mine tests, fixtures, production data shapes, logs, and support tickets for behavior the code hides; label each rule as observed, inferred, or confirmed by the business.
 5. Record bugs and accidental behavior separately as `LEGACY_DEFECT` with a decision: reproduce only if the business depends on it, otherwise improve in the target.
 6. List unknowns and contradictions as questions with an owner; they block the batch only if they affect an R1 rule.
-7. Link each rule to registry keys and, later, to scenarios and tests so `$sdlc-traceability-ledger` can check coverage.
+7. Link each rule to registry keys and, later, to scenarios and tests so `sdlc-traceability-ledger` can check coverage.
 
 ## Expected Inputs
 
@@ -46,7 +46,7 @@ Turn implicit behavior into explicit, id-addressable rules that tests can prove 
 
 ## Handoff
 
-`$sdlc-characterization-testing` to prove the rules, `$sdlc-bdd-specifications` to express them as scenarios.
+`sdlc-characterization-testing` to prove the rules, `sdlc-bdd-specifications` to express them as scenarios.
 
 ## Source Guidance
 

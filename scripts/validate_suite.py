@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 import subprocess
 import sys
@@ -56,6 +57,8 @@ EXPECTED_INTEGRATIONS = {
     "openclaw",
     "github-actions",
     "mcp",
+    "antigravity",
+    "generic-llm",
 }
 EXPECTED_EXAMPLE_FILES = {
     "fintech-cfo-b2b/sdlc-case-study.md",
@@ -265,9 +268,14 @@ def main() -> int:
             errors.append(f"{matrix.relative_to(ROOT)}: missing matrix row for {agent}")
     read_checked(ROOT / "docs" / "references" / "agent-runtime-matrix.md", errors)
     validate_example_files(known_skills, errors)
-    for required in ("scripts/sdlc_trace.py", "scripts/test_sdlc_trace.py", "scripts/sdlc_registry.py", "scripts/test_sdlc_registry.py", "docs/references/depth-matrix.md", "docs/references/method-sources.md"):
+    for required in ("scripts/sdlc_trace.py", "scripts/test_sdlc_trace.py", "scripts/sdlc_registry.py", "scripts/install.py", "scripts/skill_index.py", "scripts/test_install.py", "templates/AGENTS.md", "plugin.json", ".claude-plugin/plugin.json", ".claude-plugin/marketplace.json", "docs/references/runtime-capabilities.md", "scripts/test_sdlc_registry.py", "docs/references/depth-matrix.md", "docs/references/method-sources.md"):
         if not (ROOT / required).exists():
             errors.append(f"{required}: missing")
+    for manifest in ("plugin.json", ".claude-plugin/plugin.json", ".claude-plugin/marketplace.json"):
+        try:
+            json.loads((ROOT / manifest).read_text())
+        except (OSError, ValueError) as exc:
+            errors.append(f"{manifest}: invalid JSON ({exc})")
     trace = subprocess.run([sys.executable, str(ROOT / "scripts" / "sdlc_trace.py"), "--target", str(EXAMPLES / "spec-driven-trace"), "--strict"], capture_output=True, text=True)
     example = subprocess.run([sys.executable, str(EXAMPLES / "legacy-migration-invoicing" / "run_example.py")], capture_output=True, text=True)
     if example.returncode != 0:

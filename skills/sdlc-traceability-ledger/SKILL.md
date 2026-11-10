@@ -46,7 +46,7 @@ Make 'is every requirement built and proven?' a command you can run, not an opin
 
 ## Handoff
 
-`$sdlc-cross-artifact-analysis` for semantic checks the script cannot do, `$sdlc-release-production-readiness` for downstream links.
+`sdlc-cross-artifact-analysis` for semantic checks the script cannot do, `sdlc-release-production-readiness` for downstream links.
 
 ## Source Guidance
 

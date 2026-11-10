@@ -46,7 +46,7 @@ Prove equivalence by executing both sides on the same inputs, not by reading cod
 
 ## Handoff
 
-`$sdlc-independent-verification` for the visa, `$sdlc-test-driven-development` for new behavior.
+`sdlc-independent-verification` for the visa, `sdlc-test-driven-development` for new behavior.
 
 ## Source Guidance
 

@@ -22,7 +22,7 @@ Replace guess-and-patch with an evidence-driven investigation that fixes the cau
 3. Compare: find similar working code, list differences, and check assumptions and dependencies.
 4. Hypothesize: state one specific hypothesis (`X is the cause because Y`), make the smallest change that tests it, and change one variable at a time.
 5. If the hypothesis is wrong, revert and form a new one; do not stack fixes.
-6. Fix: write a failing reproduction test via `$sdlc-test-driven-development`, apply a single targeted fix at the root cause, and verify with `$sdlc-verification-before-completion`.
+6. Fix: write a failing reproduction test via `sdlc-test-driven-development`, apply a single targeted fix at the root cause, and verify with `sdlc-verification-before-completion`.
 7. After three failed fix attempts, stop and question the architecture or the premise with the user before a fourth attempt.
 
 ## Expected Inputs
@@ -54,7 +54,7 @@ Replace guess-and-patch with an evidence-driven investigation that fixes the cau
 
 ## Handoff
 
-`$sdlc-test-driven-development` for the regression test; `$sdlc-incident-support-feedback` for production causes.
+`sdlc-test-driven-development` for the regression test; `sdlc-incident-support-feedback` for production causes.
 
 ## Source Guidance
 

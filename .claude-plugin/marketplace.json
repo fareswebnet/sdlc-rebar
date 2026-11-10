@@ -1,0 +1,11 @@
+{
+  "name": "ai-sdlc-skills",
+  "owner": { "name": "fareswebnet" },
+  "plugins": [
+    {
+      "name": "ai-sdlc-skills",
+      "source": "./",
+      "description": "65 sdlc-* skills with harnesses, agent roles, and verification scripts."
+    }
+  ]
+}

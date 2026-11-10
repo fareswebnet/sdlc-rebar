@@ -21,7 +21,7 @@ Make the switch reversible, rehearsed, and measured, so go-live is a decision, n
 2. For parallel runs, send the same traffic to both systems, compare outputs automatically within the contract tolerances, and review every divergence before widening.
 3. Prepare switches: feature flags or routing rules, data sync direction, freeze windows, and communication plan.
 4. Rehearse the cutover and rollback end to end on production-shaped data; time each step and record the point of no return.
-5. Set exit gates from `$sdlc-observability-reliability`: error rate, latency budget (`$sdlc-performance-budgets`), reconciliation clean, support readiness.
+5. Set exit gates from `sdlc-observability-reliability`: error rate, latency budget (`sdlc-performance-budgets`), reconciliation clean, support readiness.
 6. Execute in stages (internal, pilot tenants, wider), checking gates between stages; rollback on a gate breach without debate.
 7. Hold go/no-go with a named owner, and keep the legacy read-only until the retention decision is recorded.
 8. After cutover, monitor a defined period, then decommission the old system only with sign-off and archived data.
@@ -47,7 +47,7 @@ Make the switch reversible, rehearsed, and measured, so go-live is a decision, n
 
 ## Handoff
 
-`$sdlc-release-production-readiness` for general release gates, `$sdlc-incident-support-feedback` for the post-cutover loop.
+`sdlc-release-production-readiness` for general release gates, `sdlc-incident-support-feedback` for the post-cutover loop.
 
 ## Source Guidance
 

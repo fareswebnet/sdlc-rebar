@@ -54,7 +54,7 @@ Make every status claim traceable to evidence produced now, not remembered or as
 
 ## Handoff
 
-`$sdlc-definition-of-done` for the full criteria; `$sdlc-branch-worktree-lifecycle` to finish.
+`sdlc-definition-of-done` for the full criteria; `sdlc-branch-worktree-lifecycle` to finish.
 
 ## Source Guidance
 

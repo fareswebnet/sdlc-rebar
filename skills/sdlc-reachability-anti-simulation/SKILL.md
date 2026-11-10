@@ -23,7 +23,7 @@ Stop delivery of code that exists but cannot be reached, calls nothing, or is do
 4. Freeze pre-existing violations in a baseline and run `python scripts/sdlc_registry.py ratchet <baseline> <current>`; a new violation fails and a resolved one must be removed from the baseline.
 5. Never regenerate the baseline to pass a new violation; fix the cause: add the route, contract and test, replace the fake with a real call, correct the reference.
 6. Test the detectors themselves with a fixture containing known positives and negatives, and write their conventions in their error messages and in project config, not in agent memory.
-7. Remember the limit: reachable is not conformant. A reachable route that ignores legacy form fields remains a refusal under `$sdlc-independent-verification`.
+7. Remember the limit: reachable is not conformant. A reachable route that ignores legacy form fields remains a refusal under `sdlc-independent-verification`.
 
 ## Expected Inputs
 
@@ -46,7 +46,7 @@ Stop delivery of code that exists but cannot be reached, calls nothing, or is do
 
 ## Handoff
 
-`$sdlc-independent-verification` for behavior, `$sdlc-quality-test-strategy` for broader gates.
+`sdlc-independent-verification` for behavior, `sdlc-quality-test-strategy` for broader gates.
 
 ## Source Guidance
 

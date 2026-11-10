@@ -1,0 +1,9 @@
+{
+  "name": "ai-sdlc-skills",
+  "version": "0.3.0",
+  "description": "AI SDLC skill suite: spec-driven delivery, disciplined execution, legacy migration and system merge, quality gates, and agent orchestration.",
+  "author": { "name": "fareswebnet" },
+  "repository": "https://github.com/fareswebnet/ai-sdlc-skills",
+  "license": "MIT",
+  "keywords": ["sdlc", "spec-driven", "tdd", "migration", "agents"]
+}

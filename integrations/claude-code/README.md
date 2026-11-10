@@ -4,11 +4,17 @@ Use Claude Code as a terminal coding agent for repo-local execution, implementat
 
 ## Install Skills
 
-Claude Code does not need the skills to live in a Codex-specific path. Keep this repository checked out and reference the relevant skill folders in prompts, or mirror the `skills/` tree into the target repo under `.agents/skills/` for cross-tool consistency.
+Use the installer, which puts skills in `.claude/skills` of the target repo:
+
+```bash
+python scripts/install.py --runtime claude --target /path/to/repo --agents-md --with-kit --native-roles
+```
+
+Or install this repository as a plugin through its marketplace (`.claude-plugin/marketplace.json`). Invoke a skill with `/sdlc-<name>` or let it trigger from its description.
 
 ## Project Memory
 
-Run Claude Code setup for the target repository and keep the generated project memory concise. Add this guidance to `CLAUDE.md`:
+The single memory file is `AGENTS.md`; `--agents-md` maintains a managed block in it. If your Claude Code version only reads `CLAUDE.md`, create a one-line `CLAUDE.md` containing `@AGENTS.md` rather than duplicating content. The block looks like:
 
 ```md
 Use the AI SDLC suite as the delivery method.

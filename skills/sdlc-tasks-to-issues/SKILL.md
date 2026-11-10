@@ -17,7 +17,7 @@ Keep the repo task list and the tracker consistent without creating noise or dup
 
 ## Workflow
 
-1. Confirm `docs/engineering/tasks.md` passed `$sdlc-cross-artifact-analysis` and `python scripts/sdlc_trace.py`; do not sync a plan with HIGH findings.
+1. Confirm `docs/engineering/tasks.md` passed `sdlc-cross-artifact-analysis` and `python scripts/sdlc_trace.py`; do not sync a plan with HIGH findings.
 2. Verify the remote: show the target repository or project and wait for approval before creating anything.
 3. Create one epic per feature and one issue per user story; keep individual tasks as checklist items unless they need separate owners.
 4. Put in each issue: goal, acceptance scenarios, requirement ids, task ids, dependencies, validation command, and the MVP flag.
@@ -44,9 +44,13 @@ Keep the repo task list and the tracker consistent without creating noise or dup
 - Do not paste secrets or customer data into issue bodies.
 - No bulk edits of existing issues without a diff and approval.
 
+## Runtime Fallbacks
+
+Without tracker access, output each issue as Markdown (title, body, labels, dependencies) for a human to create, then record the real issue numbers they return; never invent identifiers. See `docs/references/runtime-capabilities.md`.
+
 ## Handoff
 
-`$sdlc-subagent-driven-execution` to run the tasks, `$sdlc-delivery-roadmap-backlog` for prioritization.
+`sdlc-subagent-driven-execution` to run the tasks, `sdlc-delivery-roadmap-backlog` for prioritization.
 
 ## Source Guidance
 

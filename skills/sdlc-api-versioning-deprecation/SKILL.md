@@ -23,7 +23,7 @@ Let contracts change on purpose, with consumers informed and protected.
 4. Add consumer-driven contract tests and run them against the provider before merge.
 5. For deprecation: announce with date, publish a migration guide, add deprecation and sunset headers or schema flags, and measure remaining traffic per consumer.
 6. Support old and new in parallel for a stated period; remove only when telemetry shows zero or accepted residual use, with a rollback window.
-7. During legacy migration, keep the legacy contract until the target serves it identically in `$sdlc-characterization-testing`, then deprecate on schedule.
+7. During legacy migration, keep the legacy contract until the target serves it identically in `sdlc-characterization-testing`, then deprecate on schedule.
 
 ## Expected Inputs
 
@@ -46,7 +46,7 @@ Let contracts change on purpose, with consumers informed and protected.
 
 ## Handoff
 
-`$sdlc-api-integration-contracts` for contract design, `$sdlc-cutover-rollback` when replacing a legacy interface.
+`sdlc-api-integration-contracts` for contract design, `sdlc-cutover-rollback` when replacing a legacy interface.
 
 ## Source Guidance
 

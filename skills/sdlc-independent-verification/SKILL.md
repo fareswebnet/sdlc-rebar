@@ -45,9 +45,13 @@ Make verification a separate role so a green gate cannot be produced by the same
 - Never grant on a green test or documentation alone.
 - Never accept a server or dataset simulated by the implementer.
 
+## Runtime Fallbacks
+
+With a single model, run the verification in a new session that receives only the registry, the repo, and this skill; never paste the implementer's reasoning or report. If no separate session is possible, a human must act as the second verifier for priority-1 lines. See `docs/references/runtime-capabilities.md`.
+
 ## Handoff
 
-`$sdlc-migration-batch-orchestration` to reopen or close the batch, `$sdlc-delivery-retrospective` for repeated refusal causes.
+`sdlc-migration-batch-orchestration` to reopen or close the batch, `sdlc-delivery-retrospective` for repeated refusal causes.
 
 ## Source Guidance
 

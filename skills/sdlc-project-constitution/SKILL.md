@@ -17,7 +17,7 @@ Give humans and agents one short, testable set of rules that outrank convenience
 
 ## Workflow
 
-1. Collect candidate principles from the user, existing docs, `AGENTS.md`/`CLAUDE.md`, ADRs, CI config, and incident history.
+1. Collect candidate principles from the user, existing docs, `AGENTS.md`, ADRs, CI config, and incident history.
 2. Keep only principles that are specific, testable, and costly to violate (for example: tests precede implementation, no secrets in repo, every public API has a contract, tenants never share data paths).
 3. Phrase each as `MUST` / `SHOULD` with a one-line rationale and the check that proves compliance (CI job, review checklist item, test).
 4. Version the document with semantic versioning: MAJOR for removed or redefined principles, MINOR for added principles, PATCH for wording fixes. Record the amendment date and reason.
@@ -45,7 +45,7 @@ Give humans and agents one short, testable set of rules that outrank convenience
 
 ## Handoff
 
-`$sdlc-design-brainstorming` to start features under the principles; `$sdlc-cross-artifact-analysis` to enforce them.
+`sdlc-design-brainstorming` to start features under the principles; `sdlc-cross-artifact-analysis` to enforce them.
 
 ## Source Guidance
 

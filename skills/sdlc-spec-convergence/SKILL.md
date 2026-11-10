@@ -21,7 +21,7 @@ Close the loop between intent and code so remaining work is explicit instead of 
 2. Inspect the repository and tests for evidence per requirement: implemented and tested, implemented only, partial, missing, or diverged from the spec.
 3. Run the existing test suite and acceptance scenarios; treat failing or absent tests as evidence, not assumptions.
 4. Classify drift: code ahead of spec (propose spec update), code behind spec (new task), or deliberate deviation (record a decision).
-5. Append new tasks to the task list using the same id and format rules as `$sdlc-task-breakdown`; never renumber or delete completed tasks.
+5. Append new tasks to the task list using the same id and format rules as `sdlc-task-breakdown`; never renumber or delete completed tasks.
 6. Summarize the delta: done, remaining, drifted, risky, and the next safe step.
 
 ## Expected Inputs
@@ -45,7 +45,7 @@ Close the loop between intent and code so remaining work is explicit instead of 
 
 ## Handoff
 
-`$sdlc-subagent-driven-execution` to build appended tasks; `$sdlc-delivery-retrospective` for recurring drift.
+`sdlc-subagent-driven-execution` to build appended tasks; `sdlc-delivery-retrospective` for recurring drift.
 
 ## Source Guidance
 

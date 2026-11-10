@@ -45,7 +45,7 @@ Catch the cheap-to-fix problems between documents before they become expensive c
 
 ## Handoff
 
-`$sdlc-spec-clarification` or `$sdlc-task-breakdown` to fix findings; `$sdlc-traceability-ledger` for the script-checked matrix.
+`sdlc-spec-clarification` or `sdlc-task-breakdown` to fix findings; `sdlc-traceability-ledger` for the script-checked matrix.
 
 ## Source Guidance
 

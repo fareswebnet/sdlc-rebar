@@ -23,7 +23,7 @@ Prevent building the wrong thing by making design approval a hard gate, scaled t
 4. Propose two or three approaches with trade-offs and a recommendation, and apply YAGNI: remove features that are not needed to meet the goal.
 5. Present the design in sections sized to their complexity (architecture, components, data flow, error handling, testing) and confirm after each section.
 6. Write the approved design to `docs/product/` or the feature spec folder, self-review it for ambiguity, contradictions, and scope creep, then ask the user to review the written file.
-7. Only after approval, hand off to `$sdlc-implementation-planning` or `$sdlc-task-breakdown`; never jump straight to code.
+7. Only after approval, hand off to `sdlc-implementation-planning` or `sdlc-task-breakdown`; never jump straight to code.
 
 ## Expected Inputs
 
@@ -53,7 +53,7 @@ Prevent building the wrong thing by making design approval a hard gate, scaled t
 
 ## Handoff
 
-`$sdlc-spec-clarification` for gaps, then `$sdlc-implementation-planning`.
+`sdlc-spec-clarification` for gaps, then `sdlc-implementation-planning`.
 
 ## Source Guidance
 

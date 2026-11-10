@@ -21,7 +21,7 @@ Keep the main checkout safe and give every change a clean start and a deliberate
 2. Prefer the project's declared worktree location; if none, use an ignored directory (verify with `git check-ignore`) so worktree contents are never committed.
 3. Create the branch and worktree, run project setup, and run the test suite to record a clean baseline. Report failures before starting rather than blaming new work later.
 4. Work in small commits tied to task ids.
-5. To finish: verify tests with `$sdlc-verification-before-completion`, then offer exactly these options: merge locally, push and open a PR, keep as is, or discard.
+5. To finish: verify tests with `sdlc-verification-before-completion`, then offer exactly these options: merge locally, push and open a PR, keep as is, or discard.
 6. Discard requires typed confirmation listing the branch and commits being lost. Clean up the worktree only for merge and discard.
 7. Never force-push or rewrite shared history without explicit approval.
 
@@ -44,9 +44,13 @@ Keep the main checkout safe and give every change a clean start and a deliberate
 - Do not merge with failing tests.
 - Keep unrelated user changes untouched.
 
+## Runtime Fallbacks
+
+Without worktree support, use a plain branch in a clean checkout and record the baseline test result before starting. If the tree is dirty, stop and ask before continuing. See `docs/references/runtime-capabilities.md`.
+
 ## Handoff
 
-`$sdlc-code-review-quality-gate` before merge; `$sdlc-release-production-readiness` for release.
+`sdlc-code-review-quality-gate` before merge; `sdlc-release-production-readiness` for release.
 
 ## Source Guidance
 

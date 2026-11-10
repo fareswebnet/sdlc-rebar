@@ -46,7 +46,7 @@ Turn review feedback into correct changes without performative agreement or blin
 
 ## Handoff
 
-`$sdlc-verification-before-completion` after fixes; `$sdlc-delivery-retrospective` for repeated findings.
+`sdlc-verification-before-completion` after fixes; `sdlc-delivery-retrospective` for repeated findings.
 
 ## Source Guidance
 

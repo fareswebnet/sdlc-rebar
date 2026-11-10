@@ -46,7 +46,7 @@ Make the plan executable: each task is small, unambiguous, traceable to a requir
 
 ## Handoff
 
-`$sdlc-cross-artifact-analysis` and `$sdlc-traceability-ledger` before execution; `$sdlc-tasks-to-issues` when tracked externally.
+`sdlc-cross-artifact-analysis` and `sdlc-traceability-ledger` before execution; `sdlc-tasks-to-issues` when tracked externally.
 
 ## Source Guidance
 

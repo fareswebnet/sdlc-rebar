@@ -47,7 +47,7 @@ Give the migration a denominator: a registry nobody can quietly shrink, where 10
 
 ## Handoff
 
-`$sdlc-migration-batch-orchestration` to cut batches, `$sdlc-legacy-reverse-engineering` to extract rules.
+`sdlc-migration-batch-orchestration` to cut batches, `sdlc-legacy-reverse-engineering` to extract rules.
 
 ## Source Guidance
 
