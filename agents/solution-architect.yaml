@@ -12,6 +12,8 @@ skills:
   - sdlc-data-database-architecture
   - sdlc-api-integration-contracts
   - sdlc-identity-access-multitenancy
+  - sdlc-data-migration-reconciliation
+  - sdlc-api-versioning-deprecation
 inputs:
   - PRD, BDD examples, and context map
   - current repo architecture

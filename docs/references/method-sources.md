@@ -32,4 +32,18 @@ These skills have no direct upstream equivalent and extend the idea of both proj
 | `sdlc-delivery-retrospective` | Evidence-based loop that changes constitution, templates, skills, and CI |
 | `sdlc-skill-evaluation` | Rubric-scored baseline-versus-skill evaluation with version history |
 
+## Migration and specialized skills
+
+The migration layer generalizes, in English and project-agnostic form, the practice of a real multi-source migration program (frozen registry as denominator, vertical batches, independent verifier, reachability ratchet, cumulative non-regression, separate visas per source). Project-specific paths, tools, and business rules were removed; commands here use `scripts/sdlc_registry.py`.
+
+| Skill | Basis |
+|---|---|
+| `sdlc-legacy-inventory-registry`, `sdlc-migration-batch-orchestration` | Registry-driven migration programs |
+| `sdlc-legacy-reverse-engineering`, `sdlc-characterization-testing` | Spec mining, golden master, differential testing |
+| `sdlc-independent-verification`, `sdlc-reachability-anti-simulation` | Independent audit, mutation testing, ratchet gates |
+| `sdlc-system-merge-convergence`, `sdlc-data-migration-reconciliation`, `sdlc-cutover-rollback` | Multi-source convergence, data reconciliation, strangler and parallel run |
+| `sdlc-performance-budgets` | Web performance budgets, SRE objectives |
+| `sdlc-accessibility-engineering` | WCAG 2.2 |
+| `sdlc-api-versioning-deprecation` | Semantic versioning, consumer-driven contracts |
+
 Both upstream projects are MIT-licensed; review their current licenses before copying any text.

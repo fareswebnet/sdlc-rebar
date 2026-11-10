@@ -30,18 +30,24 @@ EXPECTED_AGENTS = {
     "devops-sre",
     "code-reviewer",
     "release-manager",
+    "legacy-analyst",
+    "independent-verifier",
 }
 EXPECTED_HARNESSES = {
     "app-idea-to-production",
     "feature-to-production",
     "production-feedback-loop",
     "spec-driven-delivery",
+    "legacy-migration",
+    "system-merge",
 }
 EXPECTED_PIPELINES = {
     "idea-to-pr.md",
     "pr-to-production.md",
     "production-feedback-loop.md",
     "spec-driven-delivery.md",
+    "legacy-migration.md",
+    "system-merge.md",
 }
 EXPECTED_INTEGRATIONS = {
     "codex",
@@ -184,8 +190,8 @@ def main() -> int:
         if BAD.search(text):
             errors.append(f"{skill.name}: contains placeholder text")
     count = len(list(SKILLS.glob("sdlc-*")))
-    if count != 53:
-        errors.append(f"expected 53 skills, found {count}")
+    if count != 65:
+        errors.append(f"expected 65 skills, found {count}")
 
     known_agents = {path.stem for path in AGENTS.glob("*.yaml")}
     if known_agents != EXPECTED_AGENTS:
@@ -259,7 +265,7 @@ def main() -> int:
             errors.append(f"{matrix.relative_to(ROOT)}: missing matrix row for {agent}")
     read_checked(ROOT / "docs" / "references" / "agent-runtime-matrix.md", errors)
     validate_example_files(known_skills, errors)
-    for required in ("scripts/sdlc_trace.py", "scripts/test_sdlc_trace.py", "docs/references/depth-matrix.md", "docs/references/method-sources.md"):
+    for required in ("scripts/sdlc_trace.py", "scripts/test_sdlc_trace.py", "scripts/sdlc_registry.py", "scripts/test_sdlc_registry.py", "docs/references/depth-matrix.md", "docs/references/method-sources.md"):
         if not (ROOT / required).exists():
             errors.append(f"{required}: missing")
     trace = subprocess.run([sys.executable, str(ROOT / "scripts" / "sdlc_trace.py"), "--target", str(EXAMPLES / "spec-driven-trace"), "--strict"], capture_output=True, text=True)

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Accessibility Engineering"
+  short_description: "Build and verify WCAG-conformant interfaces"
+  default_prompt: "Use $sdlc-accessibility-engineering to make accessibility a tested requirement with evidence, not a late audit."

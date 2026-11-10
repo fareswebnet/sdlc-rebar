@@ -12,6 +12,7 @@ skills:
   - sdlc-observability-reliability
   - sdlc-performance-scalability-cost
   - sdlc-incident-support-feedback
+  - sdlc-performance-budgets
 inputs:
   - implementation diff
   - release plan

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC API Versioning And Deprecation"
+  short_description: "Evolve APIs without breaking consumers"
+  default_prompt: "Use $sdlc-api-versioning-deprecation to let contracts change on purpose, with consumers informed and protected."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Legacy Reverse Engineering"
+  short_description: "Extract business rules and behavior from legacy code"
+  default_prompt: "Use $sdlc-legacy-reverse-engineering to turn implicit behavior into explicit, id-addressable rules that tests can prove and owners can approve."

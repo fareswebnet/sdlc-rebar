@@ -10,3 +10,4 @@ jobs:
           python-version: "3.12"
       - run: python scripts/validate_suite.py
       - run: python scripts/test_sdlc_trace.py
+      - run: python scripts/test_sdlc_registry.py

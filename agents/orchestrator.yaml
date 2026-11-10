@@ -17,6 +17,7 @@ skills:
   - sdlc-tasks-to-issues
   - sdlc-delivery-retrospective
   - sdlc-skill-evaluation
+  - sdlc-migration-batch-orchestration
 inputs:
   - raw idea or work request
   - repo state and current delivery artifacts

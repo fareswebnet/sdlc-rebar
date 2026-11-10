@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Data Migration Reconciliation"
+  short_description: "Move and reconcile data with proof"
+  default_prompt: "Use $sdlc-data-migration-reconciliation to show that every record that mattered arrived, correctly, once, with a way back."

@@ -19,6 +19,15 @@ Which steps of the spec-driven chain are required at each depth. Skipping a step
 | Convergence | `$sdlc-spec-convergence` | after build | after build and review | after build, review, and release |
 | Learning | `$sdlc-delivery-retrospective` | after incidents | each release | each release with metrics |
 
+## Migration and merge depth
+
+| Step | Lean | Standard | Enterprise-ready |
+|---|---|---|---|
+| Registry | script inventory, one disposition per line | plus field files and framework cross-check | plus business sign-off per abandoned line |
+| Characterization | golden masters for R1 rules | oracle against the real legacy | plus fuzz with recorded seeds and mutation checks |
+| Verification | sampled by a second agent | independent context, public-interface proof | two verifiers on priority-1 lines |
+| Cutover | staged switch with rollback plan | rehearsed rollback | parallel run with automated comparison |
+
 ## Risk escalators
 
 Move up one depth when the change touches: payments, authentication or authorization, tenant isolation, personal data, irreversible migrations, regulated flows, or AI behavior visible to customers.

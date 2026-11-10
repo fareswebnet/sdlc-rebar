@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Performance Budgets"
+  short_description: "Set and enforce measurable performance budgets"
+  default_prompt: "Use $sdlc-performance-budgets to turn 'it should be fast' into numbers with owners, tests, and consequences."

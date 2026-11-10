@@ -52,3 +52,15 @@ sdlc-agent-context-engineering,automation,SDLC Agent Context Engineering,Design 
 sdlc-tasks-to-issues,delivery,SDLC Tasks To Issues,Sync tasks with the issue tracker safely
 sdlc-delivery-retrospective,evolution,SDLC Delivery Retrospective,Turn delivery evidence into process upgrades
 sdlc-skill-evaluation,automation,SDLC Skill Evaluation,Measure whether skills improve agent output
+sdlc-legacy-inventory-registry,migration,SDLC Legacy Inventory Registry,Freeze everything the legacy system exposes
+sdlc-legacy-reverse-engineering,migration,SDLC Legacy Reverse Engineering,Extract business rules and behavior from legacy code
+sdlc-characterization-testing,migration,SDLC Characterization Testing,Pin legacy behavior with oracles and golden masters
+sdlc-migration-batch-orchestration,migration,SDLC Migration Batch Orchestration,Drive a migration in verified vertical batches
+sdlc-independent-verification,migration,SDLC Independent Verification,Refute porting claims in a separate context
+sdlc-reachability-anti-simulation,migration,SDLC Reachability And Anti-Simulation,Block unrouted code and faked clients
+sdlc-system-merge-convergence,migration,SDLC System Merge Convergence,Merge two systems or estates into one target
+sdlc-data-migration-reconciliation,migration,SDLC Data Migration Reconciliation,Move and reconcile data with proof
+sdlc-cutover-rollback,migration,SDLC Cutover And Rollback,"Rehearse go-live, parallel run, and retreat"
+sdlc-performance-budgets,performance-cost,SDLC Performance Budgets,Set and enforce measurable performance budgets
+sdlc-accessibility-engineering,design,SDLC Accessibility Engineering,Build and verify WCAG-conformant interfaces
+sdlc-api-versioning-deprecation,architecture,SDLC API Versioning And Deprecation,Evolve APIs without breaking consumers

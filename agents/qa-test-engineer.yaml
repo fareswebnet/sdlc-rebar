@@ -12,6 +12,7 @@ skills:
   - sdlc-requirements-checklist
   - sdlc-traceability-ledger
   - sdlc-definition-of-done
+  - sdlc-characterization-testing
   - sdlc-product-analytics-experimentation
 inputs:
   - PRD and BDD examples

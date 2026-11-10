@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Cutover And Rollback"
+  short_description: "Rehearse go-live, parallel run, and retreat"
+  default_prompt: "Use $sdlc-cutover-rollback to make the switch reversible, rehearsed, and measured, so go-live is a decision, not a leap."

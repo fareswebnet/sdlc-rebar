@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Independent Verification"
+  short_description: "Refute porting claims in a separate context"
+  default_prompt: "Use $sdlc-independent-verification to make verification a separate role so a green gate cannot be produced by the same agent that wrote the work."

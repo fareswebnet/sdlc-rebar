@@ -1,0 +1,72 @@
+id: system-merge
+name: System Merge
+purpose: Merge an incoming system or estate into an existing target with independent inventory, classified rule convergence, explicit data ownership, cumulative non-regression, and independent verification.
+entrypoint: orchestrator
+autonomy_level: medium-with-human-gates
+human_gates:
+  - decision owner resolves contradictory rules
+  - approve data ownership and identity resolution rules
+  - approve destructive data migrations, cutover, and decommissioning
+stages:
+  - id: incoming-inventory
+    agent: legacy-analyst
+    skills:
+      - sdlc-legacy-inventory-registry
+      - sdlc-legacy-reverse-engineering
+    outputs:
+      - incoming source registry
+      - rule matrix for the incoming source
+    gate: registry check clean and rule matrix exists before any implementation
+  - id: classification
+    agent: legacy-analyst
+    skills:
+      - sdlc-system-merge-convergence
+    outputs:
+      - rule classification table
+      - convergence slices
+    gate: every rule pair is equivalent, parameterizable, additive, or contradictory with an owner
+  - id: ownership-and-data
+    agent: solution-architect
+    skills:
+      - sdlc-bounded-context-map
+      - sdlc-data-migration-reconciliation
+      - sdlc-api-versioning-deprecation
+    outputs:
+      - ownership decisions
+      - data mapping and crosswalk
+    gate: owners named for data, identifiers, contracts, and decisions
+  - id: build
+    agent: fullstack-builder
+    skills:
+      - sdlc-test-driven-development
+      - sdlc-branch-worktree-lifecycle
+    outputs:
+      - converged vertical slices
+    gate: slices pass their own tests and public-interface proofs
+  - id: cumulative-regression
+    agent: qa-test-engineer
+    skills:
+      - sdlc-characterization-testing
+    outputs:
+      - cumulative regression results for every source
+    gate: earlier sources stay green or their lines reopen
+  - id: verify
+    agent: independent-verifier
+    skills:
+      - sdlc-reachability-anti-simulation
+      - sdlc-independent-verification
+    outputs:
+      - audit report with per-source visas
+    gate: visas are per source and none is copied between sources
+  - id: cutover
+    agent: release-manager
+    skills:
+      - sdlc-cutover-rollback
+    outputs:
+      - rehearsed switch and rollback
+      - go/no-go record
+    gate: reconciliation clean and rollback rehearsed
+completion_criteria:
+  - each source has its own inventory, proofs, and visas
+  - contradictions are decided by a named owner
+  - cumulative regression is green for all sources

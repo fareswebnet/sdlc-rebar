@@ -1,0 +1,83 @@
+id: legacy-migration
+name: Legacy Migration
+purpose: Migrate or modernize a legacy system in verified vertical batches measured against a frozen registry, with an independent verification gate at every batch close and a rehearsed cutover.
+entrypoint: orchestrator
+autonomy_level: medium-with-human-gates
+human_gates:
+  - business owner reviews abandoned and deferred registry lines
+  - approve each batch plan and any dependency addition
+  - approve destructive data migrations, cutover, and decommissioning
+stages:
+  - id: registry
+    agent: legacy-analyst
+    skills:
+      - sdlc-legacy-inventory-registry
+    outputs:
+      - docs/migration/registry.csv
+      - field files for write actions
+    gate: scripts/sdlc_registry.py check is clean and counts match framework output
+  - id: batching
+    agent: orchestrator
+    skills:
+      - sdlc-migration-batch-orchestration
+      - sdlc-bounded-context-map
+    outputs:
+      - batch plan covering every registry line
+    gate: no open registry line is unbatched
+  - id: reverse-engineering
+    agent: legacy-analyst
+    skills:
+      - sdlc-legacy-reverse-engineering
+    outputs:
+      - business-rule matrix
+      - defect and question lists
+    gate: R1 rules confirmed by the business or an executed oracle
+  - id: contracts-and-oracles
+    agent: qa-test-engineer
+    skills:
+      - sdlc-characterization-testing
+      - sdlc-api-versioning-deprecation
+    outputs:
+      - interface contracts
+      - golden masters and differential suite
+    gate: oracles run against the real legacy and tolerances are written
+  - id: build
+    agent: fullstack-builder
+    skills:
+      - sdlc-branch-worktree-lifecycle
+      - sdlc-test-driven-development
+      - sdlc-data-migration-reconciliation
+    outputs:
+      - vertical slice with tests
+      - claimed registry lines with proof
+    gate: every claimed line has proof through the public interface
+  - id: batch-close
+    agent: independent-verifier
+    skills:
+      - sdlc-reachability-anti-simulation
+      - sdlc-independent-verification
+    outputs:
+      - batch audit report
+      - visas and refusals
+    gate: ratchet is green and the sample has no unresolved refusal
+  - id: cutover
+    agent: release-manager
+    skills:
+      - sdlc-cutover-rollback
+      - sdlc-performance-budgets
+    outputs:
+      - rehearsal log
+      - go/no-go record
+    gate: rollback rehearsed and reliability gates met
+  - id: capitalize
+    agent: orchestrator
+    skills:
+      - sdlc-delivery-retrospective
+    outputs:
+      - batch report
+      - lessons applied to remaining batches
+    gate: lessons have owners
+completion_criteria:
+  - every registry line is PORTED, REPLACED, ABANDONED with signer, or DEFERRED to a named batch
+  - every PORTED line has proof and a visa from a verifier other than the implementer
+  - cutover and rollback were rehearsed

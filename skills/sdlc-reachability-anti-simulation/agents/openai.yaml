@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Reachability And Anti-Simulation"
+  short_description: "Block unrouted code and faked clients"
+  default_prompt: "Use $sdlc-reachability-anti-simulation to stop delivery of code that exists but cannot be reached, calls nothing, or is documented but absent."

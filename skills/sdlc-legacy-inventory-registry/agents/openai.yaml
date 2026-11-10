@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Legacy Inventory Registry"
+  short_description: "Freeze everything the legacy system exposes"
+  default_prompt: "Use $sdlc-legacy-inventory-registry to give the migration a denominator: a registry nobody can quietly shrink, where 100 percent means 100 percent of the old system."

@@ -32,6 +32,7 @@ For autonomous work, follow:
 - `harnesses/app-idea-to-production.yaml` for greenfield products
 - `harnesses/feature-to-production.yaml` for feature work
 - `harnesses/spec-driven-delivery.yaml` for traceable, test-first, evidence-gated delivery
+- `harnesses/legacy-migration.yaml` and `harnesses/system-merge.yaml` for registry-driven migrations and merges
 - `harnesses/production-feedback-loop.yaml` for incidents and production signals
 ```
 

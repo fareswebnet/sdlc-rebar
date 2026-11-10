@@ -10,6 +10,7 @@ skills:
   - sdlc-observability-reliability
   - sdlc-incident-support-feedback
   - sdlc-product-analytics-experimentation
+  - sdlc-cutover-rollback
 inputs:
   - approved PR or release candidate
   - CI output

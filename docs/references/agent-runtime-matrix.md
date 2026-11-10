@@ -35,6 +35,8 @@ This matrix separates stable SDLC method from runtime-specific execution.
 | `devops-sre` | Codex | Hermes | release, telemetry, and runbooks |
 | `code-reviewer` | Codex | Claude Code | merge gate review |
 | `release-manager` | Hermes | Codex | rollout, approvals, and follow-up |
+| `legacy-analyst` | Codex | Claude Code | registry, rule matrices, convergence classification |
+| `independent-verifier` | Claude Code | Codex | separate-context audit and visas |
 
 ## Required Human Gates
 

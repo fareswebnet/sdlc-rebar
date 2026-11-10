@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Characterization Testing"
+  short_description: "Pin legacy behavior with oracles and golden masters"
+  default_prompt: "Use $sdlc-characterization-testing to prove equivalence by executing both sides on the same inputs, not by reading code."

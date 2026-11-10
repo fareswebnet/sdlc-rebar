@@ -10,3 +10,5 @@ security-reviewer,codex,claude-code,"sdlc-security-privacy-compliance;sdlc-third
 devops-sre,codex,hermes,"sdlc-devops-ci-cd-platform;sdlc-observability-reliability;sdlc-performance-scalability-cost","release, telemetry, and runbook artifacts","rollback and observability are ready"
 code-reviewer,codex,claude-code,"sdlc-code-review-quality-gate;sdlc-technical-debt-evolution","merge gate review","no unresolved blocker remains"
 release-manager,hermes,codex,"sdlc-release-production-readiness;sdlc-incident-support-feedback","go/no-go and post-release loop","human approves production deployment"
+legacy-analyst,codex,claude-code,"sdlc-legacy-inventory-registry;sdlc-legacy-reverse-engineering;sdlc-system-merge-convergence","frozen registry and rule matrices","business owner reviews abandoned and deferred lines"
+independent-verifier,claude-code,codex,"sdlc-independent-verification;sdlc-reachability-anti-simulation;sdlc-characterization-testing","audit report and visas","verifier differs from implementer and sample drawn first"

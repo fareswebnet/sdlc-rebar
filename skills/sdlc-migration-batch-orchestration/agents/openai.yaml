@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Migration Batch Orchestration"
+  short_description: "Drive a migration in verified vertical batches"
+  default_prompt: "Use $sdlc-migration-batch-orchestration to keep large migrations honest: progress is counted on the registry, a batch closes only on proof, and drift is caught early."
