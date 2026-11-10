@@ -128,6 +128,7 @@ Migrating a legacy estate, or merging two, fails when progress is counted on wha
 
 ```bash
 python scripts/sdlc_registry.py report docs/migration/registry.csv
+python examples/legacy-migration-invoicing/run_example.py   # full worked example
 ```
 
 Specialized quality skills: `$sdlc-performance-budgets`, `$sdlc-accessibility-engineering`, `$sdlc-api-versioning-deprecation`.

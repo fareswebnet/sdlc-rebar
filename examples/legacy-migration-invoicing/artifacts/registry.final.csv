@@ -1,0 +1,8 @@
+key,source,kind,name,note,disposition,proof_type,proof_ref,batch,priority,justification,signer,implementer,verifier_visa,visa_date
+billing:compute_invoice,legacy-billing,ACTION,compute_invoice,"fields: lines(qty,price), customer_type, country",PORTED,DIFFERENTIAL,tests/test_characterization.py::test_compute_invoice_matches_legacy,B1,1,,,builder-agent,verifier-agent,2026-11-10
+billing:late_fee,legacy-billing,ACTION,late_fee,"fields: amount, days_late",PORTED,DIFFERENTIAL,tests/test_characterization.py::test_late_fee_matches_legacy,B1,2,,,builder-agent,verifier-agent,2026-11-10
+billing:vat_rates,legacy-billing,TABLE,vat_rates,reference data behind the country choice,PORTED,DIFFERENTIAL,tests/test_characterization.py::test_vat_reference_data,B1,2,,,builder-agent,verifier-agent,2026-11-10
+billing:invoice,legacy-billing,ENTITY,invoice,"totals: subtotal, discount, vat, total",PORTED,DIFFERENTIAL,tests/test_characterization.py::test_compute_invoice_matches_legacy,B1,2,,,builder-agent,verifier-agent,2026-11-10
+billing:export_csv,legacy-billing,ACTION,export_csv,not needed for the first release,DEFERRED,,,B2,3,,,,,
+web:invoice_form,legacy-billing,SCREEN,invoice_form,server-rendered form,REPLACED,,,B2,3,Replaced by the InvoiceForm component in the web target,,,,
+billing:debug_dump,legacy-billing,ACTION,debug_dump,developer-only dump of internal state,ABANDONED,,,B1,3,"Developer-only dump, no business use",J. Martin (Finance owner),,,

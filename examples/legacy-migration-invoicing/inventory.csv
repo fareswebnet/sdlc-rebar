@@ -1,0 +1,8 @@
+key,source,kind,name,note,priority,batch
+billing:compute_invoice,legacy-billing,ACTION,compute_invoice,"fields: lines(qty,price), customer_type, country",1,B1
+billing:late_fee,legacy-billing,ACTION,late_fee,"fields: amount, days_late",2,B1
+billing:vat_rates,legacy-billing,TABLE,vat_rates,reference data behind the country choice,2,B1
+billing:invoice,legacy-billing,ENTITY,invoice,"totals: subtotal, discount, vat, total",2,B1
+billing:export_csv,legacy-billing,ACTION,export_csv,not needed for the first release,3,B2
+web:invoice_form,legacy-billing,SCREEN,invoice_form,server-rendered form,3,B2
+billing:debug_dump,legacy-billing,ACTION,debug_dump,developer-only dump of internal state,3,B1

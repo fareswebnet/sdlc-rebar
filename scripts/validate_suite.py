@@ -269,6 +269,9 @@ def main() -> int:
         if not (ROOT / required).exists():
             errors.append(f"{required}: missing")
     trace = subprocess.run([sys.executable, str(ROOT / "scripts" / "sdlc_trace.py"), "--target", str(EXAMPLES / "spec-driven-trace"), "--strict"], capture_output=True, text=True)
+    example = subprocess.run([sys.executable, str(EXAMPLES / "legacy-migration-invoicing" / "run_example.py")], capture_output=True, text=True)
+    if example.returncode != 0:
+        errors.append("examples/legacy-migration-invoicing: run failed\n" + example.stdout + example.stderr)
     if trace.returncode != 0:
         errors.append("examples/spec-driven-trace: traceability check failed\n" + trace.stdout)
 
