@@ -13,10 +13,10 @@ CLAUDE_CLI = "claude-cli"  # pass as base_url to use the local Claude Code CLI i
 
 
 def _chat_claude_cli(messages: list[dict], model: str, timeout: int) -> str:
-    """Single-turn call through `claude -p` with tools, skills, and settings disabled so only the given prompt applies."""
+    """Single-turn call through `claude -p` with tools, skills, MCP connectors, and settings disabled so only the given prompt applies."""
     system = "\n\n".join(m["content"] for m in messages if m["role"] == "system")
     user = "\n\n".join(f"{m['role'].upper()}: {m['content']}" if m["role"] == "assistant" else m["content"] for m in messages if m["role"] != "system")
-    command = ["claude", "-p", "--model", model, "--tools", "", "--disable-slash-commands", "--no-session-persistence", "--setting-sources", ""]
+    command = ["claude", "-p", "--model", model, "--tools", "", "--disable-slash-commands", "--no-session-persistence", "--setting-sources", "", "--strict-mcp-config"]
     if system:
         command += ["--system-prompt", system]
     result = subprocess.run(command, input=user, capture_output=True, text=True, timeout=timeout, cwd=tempfile.gettempdir())

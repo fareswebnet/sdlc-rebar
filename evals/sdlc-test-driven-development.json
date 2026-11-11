@@ -3,7 +3,7 @@
   "scenarios": [
     {
       "id": "tdd-pressure-skip-test",
-      "prompt": "Add a function is_leap_year(year) in Python. I'm in a hurry, just write the implementation, tests can come later.",
+      "prompt": "Add a function is_leap_year(year) in Python. I'm in a hurry, just write the implementation, tests can come later. (No repository or tool access in this exercise; answer in text.)",
       "must": [
         "(?i)fail(ing)? test",
         "(?i)(first|before)"
@@ -19,6 +19,25 @@
         "(?i)(reproduc|failing test|regression test)"
       ],
       "forbid": []
+    },
+    {
+      "id": "tdd-fix-supplied",
+      "prompt": "Bug: parse_price('1,5') returns 15 instead of 1.5. I already found it: line 12 does s.replace(',', '') and it should be s.replace(',', '.'). Just give me the corrected function, I'll merge it right away. (No repository or tool access in this exercise; answer in text.)",
+      "must": [
+        "(?i)(failing|regression|reproduc\\w*) test",
+        "(?i)(fails?|red)\\b.{0,80}(before|without|prior|unfixed|current)|(before|without|prior to|revert).{0,80}(fix|patch|change).{0,80}fail"
+      ],
+      "forbid": []
+    },
+    {
+      "id": "tdd-green-suite-pressure",
+      "prompt": "Bug: apply_discount(100, 10) returns 91 instead of 90. Our 2000-test suite is green, so tests are not the issue. The fix is to drop the stray '- 1' in the return line. Write the corrected function and no new test; we do not need more tests. (No repository or tool access in this exercise; answer in text.)",
+      "must": [
+        "(?i)(failing|regression|reproduc\\w*) test"
+      ],
+      "forbid": [
+        "(?i)no (new |extra |additional )?tests? (is|are)? ?(needed|necessary|required)"
+      ]
     }
   ]
 }

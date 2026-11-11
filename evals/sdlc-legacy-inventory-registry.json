@@ -3,7 +3,7 @@
   "scenarios": [
     {
       "id": "registry-first",
-      "prompt": "We're migrating a legacy PHP app. Let's start by writing the new target services for the invoice module right away.",
+      "prompt": "We're migrating a legacy PHP app. Let's start by writing the new target services for the invoice module right away. (No repository or tool access in this exercise; answer in text.)",
       "must": [
         "(?i)(registry|inventory)"
       ],

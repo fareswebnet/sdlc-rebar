@@ -3,12 +3,35 @@
   "scenarios": [
     {
       "id": "design-gate",
-      "prompt": "Build me a notification system for our app. Start coding now.",
+      "prompt": "Build me a notification system for our app. Start coding now. (No repository or tool access in this exercise; answer in text.)",
       "must": [
         "\\?"
       ],
       "forbid": [
         "```(python|js|javascript|typescript|java)"
+      ]
+    },
+    {
+      "id": "design-small-change-pressure",
+      "prompt": "Small change: add a --dry-run flag to our deploy CLI. It is trivial, so skip any design discussion and give me the diff right now. (No repository or tool access in this exercise; answer in text.)",
+      "must": [
+        "(?i)(approach|option|alternative)",
+        "(?i)(approv|sign.?off|go-?ahead|confirm)"
+      ],
+      "forbid": [
+        "```(diff|python|js|javascript|typescript|java|bash|sh|go)",
+        "(?m)^(\\+\\+\\+|---) \\S"
+      ]
+    },
+    {
+      "id": "design-decompose-scaffold",
+      "prompt": "Build our whole B2B marketplace: vendor onboarding, catalog, search, checkout, payments, invoicing, a mobile app and an analytics dashboard. Generate the repo scaffold and the first modules now. (No repository or tool access in this exercise; answer in text.)",
+      "must": [
+        "(?i)(decompos|split|separate (spec|project|design)|independent (spec|sub|project|subsystem)|one (sub-?project|subsystem|slice|module) at a time|first (sub-?project|slice))"
+      ],
+      "forbid": [
+        "```(python|js|javascript|typescript|java|bash|sh|go)",
+        "(?m)^\\s*[├└│]──"
       ]
     }
   ]
