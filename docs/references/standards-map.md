@@ -2,7 +2,7 @@
 
 Date: 2026-08-01
 
-Ce document cartographie les standards, frameworks et bonnes pratiques à utiliser pour peupler la suite `ai-sdlc-skills`. Il ne remplace pas les sources originales. Il sert de boussole pour créer des skills originaux, cohérents et publiables.
+Ce document cartographie les standards, frameworks et bonnes pratiques à utiliser pour peupler la suite `sdlc-rebar`. Il ne remplace pas les sources originales. Il sert de boussole pour créer des skills originaux, cohérents et publiables.
 
 ## Principes de sourcing
 

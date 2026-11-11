@@ -1,6 +1,8 @@
-# AI SDLC Skills
+# SDLC Rebar
 
-An agent skill suite for the full product-tech software delivery lifecycle.
+*Reinforcement for AI-driven delivery: evidence, verification, no unproven claims.*
+
+Rebar is poured into your existing delivery process, not in place of it: an agent skill suite (58 `sdlc-*` skills, agent roles, harnesses, evals) for the full product-tech software lifecycle, with independent verification and measured effect.
 
 This repository packages 58 `sdlc-*` skills and optional presets to help a team move from idea to production learning:
 

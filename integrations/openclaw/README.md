@@ -22,7 +22,7 @@ Add the agent and harness folders as workspace context files or keep them in the
 Add or update workspace `AGENTS.md` with:
 
 ```md
-Use `ai-sdlc-skills` for full software delivery.
+Use `sdlc-rebar` for full software delivery.
 
 Route work through:
 - `harnesses/app-idea-to-production.yaml`

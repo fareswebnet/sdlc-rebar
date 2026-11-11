@@ -10,7 +10,7 @@ Use the installer, which puts skills in `.claude/skills` of the target repo:
 python scripts/install.py --runtime claude --target /path/to/repo --agents-md --with-kit --native-roles
 ```
 
-Or install this repository as a plugin through its marketplace (`.claude-plugin/marketplace.json`). Invoke a skill with `/sdlc-<name>` or let it trigger from its description.
+Or install it as a plugin: `/plugin marketplace add fareswebnet/sdlc-rebar`, then `/plugin install rebar@sdlc-rebar`. Plugin skills are namespaced (`/rebar:sdlc-<name>`); skills copied by `install.py` are invoked as `/sdlc-<name>`. Either way they also trigger from their description.
 
 ## Project Memory
 

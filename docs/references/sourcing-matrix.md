@@ -70,7 +70,7 @@ Légende:
 
 ## Prochaine étape recommandée
 
-Créer le squelette du dépôt `ai-sdlc-skills` avec:
+Créer le squelette du dépôt `sdlc-rebar` avec:
 
 ```text
 README.md

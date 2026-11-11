@@ -1,11 +1,11 @@
 {
-  "name": "ai-sdlc-skills",
+  "name": "sdlc-rebar",
   "owner": { "name": "fareswebnet" },
   "plugins": [
     {
-      "name": "ai-sdlc-skills",
+      "name": "rebar",
       "source": "./",
-      "description": "58 sdlc-* skills with harnesses, agent roles, and verification scripts."
+      "description": "Reinforcement for AI-driven delivery: evidence, verification, no unproven claims. 58 sdlc-* skills with harnesses, agent roles, and verification scripts."
     }
   ]
 }
