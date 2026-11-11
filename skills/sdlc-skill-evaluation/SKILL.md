@@ -23,7 +23,8 @@ Prove that a skill changes behavior for the better, and notice when a change mak
 4. Score both runs by the rubric. Keep a skill only if it improves the score or prevents a recorded failure; otherwise simplify or delete it.
 5. Store scenarios and scores next to the skill (`evals/<skill>/`) so changes can be re-run and compared by version.
 6. Run the repository checks: `python scripts/validate_suite.py` for structure and `python scripts/sdlc_trace.py` fixtures for traceable artifacts.
-7. Review trigger quality: confirm descriptions fire on the right requests and not on near misses.
+7. Run `python scripts/run_evals.py --model <model> --runs 3` against any OpenAI-compatible endpoint to compare baseline and with-skill scores, and add your scenarios under `evals/`.
+8. Review trigger quality: confirm descriptions fire on the right requests and not on near misses.
 
 ## Expected Inputs
 

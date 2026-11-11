@@ -39,6 +39,8 @@ python scripts/install.py --runtime claude --target . --native-roles   # also .c
 | Antigravity | `.agents/skills` (or plugin via `plugin.json`) | mention the skill name |
 | Open-source or other LLM | `.agents/skills`, plus `python scripts/skill_index.py` | name the skill in the prompt |
 
+Small models and runtimes without skills: `compact/` holds shortened skills, `python scripts/sdlc_runner.py` runs a gated loop against any OpenAI-compatible endpoint, and `python scripts/run_evals.py` measures whether a model follows the skills (see `evals/README.md` and `integrations/generic-llm/`).
+
 Restart the agent session so new skills are discovered. Fallbacks for missing tools (subagents, worktrees, MCP) are in `docs/references/runtime-capabilities.md`; per-runtime notes are in `integrations/`.
 
 ## Skills

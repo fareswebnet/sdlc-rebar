@@ -268,7 +268,7 @@ def main() -> int:
             errors.append(f"{matrix.relative_to(ROOT)}: missing matrix row for {agent}")
     read_checked(ROOT / "docs" / "references" / "agent-runtime-matrix.md", errors)
     validate_example_files(known_skills, errors)
-    for required in ("scripts/sdlc_trace.py", "scripts/test_sdlc_trace.py", "scripts/sdlc_registry.py", "scripts/install.py", "scripts/skill_index.py", "scripts/test_install.py", "templates/AGENTS.md", "plugin.json", ".claude-plugin/plugin.json", ".claude-plugin/marketplace.json", "docs/references/runtime-capabilities.md", "scripts/test_sdlc_registry.py", "docs/references/depth-matrix.md", "docs/references/method-sources.md"):
+    for required in ("scripts/sdlc_trace.py", "scripts/test_sdlc_trace.py", "scripts/sdlc_registry.py", "scripts/install.py", "scripts/llm_client.py", "scripts/sdlc_runner.py", "scripts/run_evals.py", "scripts/compact_skills.py", "scripts/test_llm_tools.py", "evals/README.md", "compact/INDEX.md", "scripts/skill_index.py", "scripts/test_install.py", "templates/AGENTS.md", "plugin.json", ".claude-plugin/plugin.json", ".claude-plugin/marketplace.json", "docs/references/runtime-capabilities.md", "scripts/test_sdlc_registry.py", "docs/references/depth-matrix.md", "docs/references/method-sources.md"):
         if not (ROOT / required).exists():
             errors.append(f"{required}: missing")
     for manifest in ("plugin.json", ".claude-plugin/plugin.json", ".claude-plugin/marketplace.json"):
@@ -276,6 +276,19 @@ def main() -> int:
             json.loads((ROOT / manifest).read_text())
         except (OSError, ValueError) as exc:
             errors.append(f"{manifest}: invalid JSON ({exc})")
+    compact = subprocess.run([sys.executable, str(ROOT / "scripts" / "compact_skills.py"), "--check"], capture_output=True, text=True)
+    if compact.returncode != 0:
+        errors.append("compact/ is out of date; run python scripts/compact_skills.py\n" + compact.stdout)
+    for scenario_file in sorted((ROOT / "evals").glob("sdlc-*.json")):
+        try:
+            data = json.loads(scenario_file.read_text())
+            assert data["skill"] == scenario_file.stem and (SKILLS / data["skill"]).exists()
+            assert all(s.get("id") and s.get("prompt") and s.get("must") is not None for s in data["scenarios"])
+            for scenario in data["scenarios"]:
+                for pattern in scenario.get("must", []) + scenario.get("forbid", []):
+                    re.compile(pattern)
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"{scenario_file.relative_to(ROOT)}: invalid scenario file ({exc})")
     trace = subprocess.run([sys.executable, str(ROOT / "scripts" / "sdlc_trace.py"), "--target", str(EXAMPLES / "spec-driven-trace"), "--strict"], capture_output=True, text=True)
     example = subprocess.run([sys.executable, str(EXAMPLES / "legacy-migration-invoicing" / "run_example.py")], capture_output=True, text=True)
     if example.returncode != 0:

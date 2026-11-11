@@ -1,0 +1,25 @@
+# sdlc-delivery-system (compact)
+
+When: End-to-end product-tech SDLC orchestrator for moving from idea, discovery, PRD, domain modeling, BDD, architecture, backlog, implementation, tests, release, observability, support feedback, and continuous improvement.
+
+Goal: Coordinate the complete SDLC without turning it into bureaucracy.
+
+Steps:
+1. Classify the work as greenfield, feature, refactor, incident, audit, or production improvement.
+2. Select Lean, Standard, or Enterprise-ready depth based on team size, regulation, risk, and maturity.
+3. Route to the smallest set of specialized sdlc-* skills needed for the current decision.
+4. Keep a traceability chain from idea to requirements, BDD examples, architecture, tickets, tests, release, and production metrics.
+5. When the user wants automation, select the smallest relevant harness from `harnesses/`: app idea to production, feature to…
+6. Use `agents/` role files to assign bounded specialist work with permissions, gates, and handoffs.
+7. Use the scaffold script when the target repo needs the standard docs tree.
+8. For spec-driven work, run the chain in order and skip steps only with a stated reason: `sdlc-project-constitution` once per repo…
+9. For execution, require `sdlc-branch-worktree-lifecycle` for isolation, `sdlc-test-driven-development` for behavior changes…
+10. Make traceability executable with `sdlc-traceability-ledger` and `python scripts/sdlc_trace.py`, and close tasks only against…
+11. For legacy replacement or merging two systems, switch to `sdlc-migration-batch-orchestration` and…
+12. After a build pass, run `sdlc-spec-convergence` to append remaining work, and `sdlc-code-review-reception` when feedback arrives.
+
+Never:
+- Do not start coding until the expected behavior, affected architecture/data boundaries, tests, and validation…
+- Do not delegate production deployment, secrets, destructive migrations, customer data, payments, or…
+- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
+- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

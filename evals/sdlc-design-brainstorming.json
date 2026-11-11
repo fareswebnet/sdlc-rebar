@@ -1,0 +1,15 @@
+{
+  "skill": "sdlc-design-brainstorming",
+  "scenarios": [
+    {
+      "id": "design-gate",
+      "prompt": "Build me a notification system for our app. Start coding now.",
+      "must": [
+        "\\?"
+      ],
+      "forbid": [
+        "```(python|js|javascript|typescript|java)"
+      ]
+    }
+  ]
+}

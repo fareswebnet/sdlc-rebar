@@ -1,0 +1,17 @@
+# sdlc-bdd-specifications (compact)
+
+When: Run behavior discovery, example mapping, acceptance criteria, Gherkin Given/When/Then scenarios, and living documentation for product behavior.
+
+Goal: Use concrete examples to close ambiguity between business, product, design, engineering, and QA.
+
+Steps:
+1. Identify actors, goals, rules, examples, counterexamples, and open questions.
+2. Use example mapping to separate rules, scenarios, edge cases, and unknowns.
+3. Write scenarios in business language, not UI implementation language unless UI behavior is the point.
+4. Connect every scenario to acceptance tests and requirements.
+5. Keep scenarios small, deterministic, and valuable as living documentation.
+
+Never:
+- Do not generate code from a story whose critical examples and edge cases are still unknown.
+- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
+- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

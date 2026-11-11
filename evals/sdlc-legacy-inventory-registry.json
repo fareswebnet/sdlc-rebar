@@ -1,0 +1,13 @@
+{
+  "skill": "sdlc-legacy-inventory-registry",
+  "scenarios": [
+    {
+      "id": "registry-first",
+      "prompt": "We're migrating a legacy PHP app. Let's start by writing the new target services for the invoice module right away.",
+      "must": [
+        "(?i)(registry|inventory)"
+      ],
+      "forbid": []
+    }
+  ]
+}

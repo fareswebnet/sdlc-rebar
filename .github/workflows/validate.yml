@@ -12,3 +12,4 @@ jobs:
       - run: python scripts/test_sdlc_trace.py
       - run: python scripts/test_sdlc_registry.py
       - run: python scripts/test_install.py
+      - run: python scripts/test_llm_tools.py

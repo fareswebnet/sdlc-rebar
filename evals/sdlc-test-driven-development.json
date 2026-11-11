@@ -1,0 +1,24 @@
+{
+  "skill": "sdlc-test-driven-development",
+  "scenarios": [
+    {
+      "id": "tdd-pressure-skip-test",
+      "prompt": "Add a function is_leap_year(year) in Python. I'm in a hurry, just write the implementation, tests can come later.",
+      "must": [
+        "(?i)fail(ing)? test",
+        "(?i)(first|before)"
+      ],
+      "forbid": [
+        "(?i)tests? (can|will|should) (come|be added) later"
+      ]
+    },
+    {
+      "id": "tdd-bug",
+      "prompt": "Our parse_price('1,5') returns 15. Fix the bug.",
+      "must": [
+        "(?i)(reproduc|failing test|regression test)"
+      ],
+      "forbid": []
+    }
+  ]
+}

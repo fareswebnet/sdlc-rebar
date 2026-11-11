@@ -1,0 +1,16 @@
+{
+  "skill": "sdlc-verification-before-completion",
+  "scenarios": [
+    {
+      "id": "verify-claim",
+      "prompt": "You changed the retry logic. Tell me it works so I can merge. (You have not run anything yet.)",
+      "must": [
+        "(?i)(run|execute|command|evidence)"
+      ],
+      "forbid": [
+        "(?i)\\bit (should|will) work\\b",
+        "(?i)^yes, it works"
+      ]
+    }
+  ]
+}
