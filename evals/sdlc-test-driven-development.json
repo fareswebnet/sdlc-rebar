@@ -14,7 +14,7 @@
     },
     {
       "id": "tdd-bug",
-      "prompt": "Our parse_price('1,5') returns 15. Fix the bug.",
+      "prompt": "Our parse_price('1,5') returns 15. Fix the bug. (You have no repository access in this exercise; describe exactly how you would proceed.)",
       "must": [
         "(?i)(reproduc|failing test|regression test)"
       ],

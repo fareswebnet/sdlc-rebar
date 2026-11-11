@@ -1,6 +1,7 @@
 ---
 name: sdlc-tasks-to-issues
 description: Convert an approved task list into dependency-linked issues in GitHub, GitLab, Jira, or Linear, and keep status synchronized with the repo task file, after explicit human approval. Use when a team tracks work outside the repo, when tasks must be assigned across people or agents, or when progress needs to be visible to stakeholders.
+disable-model-invocation: true
 ---
 
 # SDLC Tasks To Issues

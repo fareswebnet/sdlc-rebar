@@ -42,6 +42,25 @@ Review the current diff against docs/product/prd.md, docs/product/bdd, and docs/
 Lead with blocking findings and missing tests.
 ```
 
+## Measured on Claude
+
+`python scripts/run_evals.py --model sonnet --base-url claude-cli --workers 4 --runs 3` uses your local Claude Code CLI (tools, skills, and settings disabled, so only the scenario prompt and the compact skill apply). Results from 2026-11-11, 7 scenarios, 3 runs each (`evals/results/`):
+
+| Model | Without skill | With compact skill |
+|---|---|---|
+| Sonnet | 9/21 | 20/21 (the miss is an over-strict regex on a correct reply; see below) |
+| Haiku | 10/21 | 21/21 |
+
+Where the skills changed behavior: independent verification (refusing a self-visa), registry before target code, TDD under time pressure, and root cause before a quick patch. Where they did not: design gate, TDD for a bug fix, and not claiming unverified success. Claude already behaves correctly there without a skill, so those scenarios do not discriminate; harder pressure cases would be needed to show a benefit.
+
+Caveats: string checks are a floor, the sample is small, and the debugging regex was widened after the run because the reply was correct (`evidence`, `stack trace`). Re-run on your own models and prompts.
+
+## Claude Code notes
+
+- Skills with side effects (`sdlc-tasks-to-issues`, `sdlc-cutover-rollback`, `sdlc-data-migration-reconciliation`) set `disable-model-invocation: true`, so they only run when you invoke them explicitly with `/sdlc-<name>`.
+- Claude Code shows skill descriptions to the model within a limited budget. The 65 descriptions total about 21,000 characters; if you install many other skills, descriptions may be shortened. Install only the subset you use, or rely on the harnesses and explicit `/sdlc-<name>` calls.
+- Subagents: `--native-roles` writes `.claude/agents/*.md`; run the `independent-verifier` role as its own subagent so it does not see the builder's reasoning.
+
 ## MCP Connectors
 
 Use MCP for authorized private context:

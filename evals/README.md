@@ -7,7 +7,7 @@ python scripts/run_evals.py --model llama3.1 --base-url http://localhost:11434/v
 python scripts/run_evals.py --model gpt-4o --base-url https://api.openai.com/v1 --api-key "$OPENAI_API_KEY" --skill sdlc-test-driven-development
 ```
 
-Any OpenAI-compatible endpoint works (Ollama, vLLM, llama.cpp server, LM Studio, hosted APIs).
+`--base-url claude-cli` runs the scenarios through your local Claude Code CLI (`--model sonnet`, `haiku`, or `opus`) with tools and skills disabled. Any OpenAI-compatible endpoint also works (Ollama, vLLM, llama.cpp server, LM Studio, hosted APIs).
 
 ## How to read results
 

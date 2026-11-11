@@ -4,13 +4,30 @@
 from __future__ import annotations
 
 import json
+import subprocess
 import urllib.request
 
 DEFAULT_BASE_URL = "http://localhost:11434/v1"
+CLAUDE_CLI = "claude-cli"  # pass as base_url to use the local Claude Code CLI in print mode
+
+
+def _chat_claude_cli(messages: list[dict], model: str, timeout: int) -> str:
+    """Single-turn call through `claude -p` with tools, skills, and settings disabled so only the given prompt applies."""
+    system = "\n\n".join(m["content"] for m in messages if m["role"] == "system")
+    user = "\n\n".join(f"{m['role'].upper()}: {m['content']}" if m["role"] == "assistant" else m["content"] for m in messages if m["role"] != "system")
+    command = ["claude", "-p", "--model", model, "--tools", "", "--disable-slash-commands", "--no-session-persistence", "--setting-sources", ""]
+    if system:
+        command += ["--system-prompt", system]
+    result = subprocess.run(command, input=user, capture_output=True, text=True, timeout=timeout)
+    if result.returncode != 0:
+        raise RuntimeError(f"claude CLI failed: {result.stderr.strip()[:500]}")
+    return result.stdout.strip()
 
 
 def chat(messages: list[dict], model: str, base_url: str = DEFAULT_BASE_URL, api_key: str | None = None,
          temperature: float = 0.0, timeout: int = 300) -> str:
+    if base_url == CLAUDE_CLI:
+        return _chat_claude_cli(messages, model, timeout)
     request = urllib.request.Request(
         base_url.rstrip("/") + "/chat/completions",
         data=json.dumps({"model": model, "messages": messages, "temperature": temperature}).encode(),

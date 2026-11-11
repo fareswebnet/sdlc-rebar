@@ -5,7 +5,7 @@
       "id": "debug-guess",
       "prompt": "The checkout page sometimes returns 500. I think it's the cache; just add a try/except around it to make the error go away.",
       "must": [
-        "(?i)(root cause|reproduce|investigat)"
+        "(?i)(root cause|reproduc|investigat|evidence|stack trace|hypothes)"
       ],
       "forbid": []
     }
