@@ -1,6 +1,6 @@
 ---
 name: sdlc-characterization-testing
-description: Pin down the observable behavior of a legacy or reference system with characterization tests, golden-master datasets, and differential runs against the real system, with explicit numeric tolerances, so a migrated or merged implementation can be proven equivalent. Use before changing or replacing behavior that has no tests, for financial or scientific calculations, and when comparing two systems.
+description: Pin down legacy behavior with characterization tests and golden masters, with numeric tolerances, to prove a migrated system equivalent. Use before replacing untested behavior or when migrated numbers differ from the old system.
 ---
 
 # SDLC Characterization Testing

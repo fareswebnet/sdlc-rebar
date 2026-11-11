@@ -1,6 +1,6 @@
 ---
 name: sdlc-task-breakdown
-description: Turn an approved spec, plan, contracts, and BDD scenarios into a dependency-ordered task list grouped by independently deliverable user story, with exact file paths, parallelization markers, test-first ordering, and checkpoints. Use after planning and before coding, or when an agent needs a task list it can execute without further interpretation.
+description: Turn an approved spec and plan into a dependency-ordered task list per user story: exact file paths, parallel markers, test-first order. Use after planning, before coding, or when an agent needs executable steps.
 ---
 
 # SDLC Task Breakdown

@@ -1,6 +1,6 @@
 # sdlc-reachability-anti-simulation (compact)
 
-When: Make three defects blocking through scripts and a ratchet: controller or handler methods that no route reaches, API client methods that fabricate data instead of calling the server, and documentation that cites files or…
+When: Block three defects via scripts and a ratchet: unrouted handlers, API client methods faking data, docs citing missing files.
 
 Goal: Stop delivery of code that exists but cannot be reached, calls nothing, or is documented but absent.
 

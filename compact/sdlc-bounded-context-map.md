@@ -1,6 +1,6 @@
 # sdlc-bounded-context-map (compact)
 
-When: Create DDD bounded context maps, ownership boundaries, upstream/downstream relationships, shared kernels, anti-corruption layers, context interfaces, and team/data ownership.
+When: Map DDD bounded contexts: which team or module owns which data and capability, upstream/downstream links, anti-corruption layers.
 
 Goal: Prevent one vague model from spreading across unrelated parts of the system.
 

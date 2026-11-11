@@ -1,6 +1,6 @@
 # sdlc-market-user-discovery (compact)
 
-When: Plan and synthesize market research, user research, interviews, competitor review, segmentation, jobs-to-be-done, opportunity mapping, and evidence gathering for software products.
+When: Plan and synthesize market and user research: interviews, competitor review, segmentation, jobs-to-be-done.
 
 Goal: Replace internal guesses with evidence and well-labeled uncertainty.
 

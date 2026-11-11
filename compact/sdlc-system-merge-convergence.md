@@ -1,6 +1,6 @@
 # sdlc-system-merge-convergence (compact)
 
-When: Merge two or more systems, codebases, or business estates into one target by inventorying each independently, classifying every rule as equivalent, parameterizable, additive, or contradictory, deciding data and contract…
+When: Merge several systems into one target: classify rules as equivalent, parameterizable, additive, or contradictory; prove non-regression per source.
 
 Goal: Converge without silently losing either side: every source is inventoried alone, every rule is classified and proven, and the earlier sources stay green.
 

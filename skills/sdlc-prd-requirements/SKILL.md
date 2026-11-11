@@ -1,6 +1,6 @@
 ---
 name: sdlc-prd-requirements
-description: Create and refine PRDs, requirements, user stories, acceptance criteria, assumptions, open questions, constraints, and out-of-scope decisions for software products. Use when turning strategy or discovery into precise, testable, non-ambiguous requirements before BDD, architecture, design, tickets, or implementation.
+description: Create and refine PRDs, user stories, assumptions, and out-of-scope decisions. Use to turn strategy or discovery into testable requirements before BDD, architecture, or tickets.
 ---
 
 # SDLC PRD Requirements

@@ -1,6 +1,6 @@
 ---
 name: sdlc-data-database-architecture
-description: Design data architecture, database schemas, ownership, source of truth, migrations, indexes, audit trails, retention, multi-tenant data isolation, analytics events, and data quality controls. Use before implementing persistence, reporting, imports, billing, compliance workflows, or data-heavy features.
+description: Design data architecture: schemas, source of truth, migrations, indexes, audit trails, retention, tenant isolation. Use before implementing persistence, reporting, imports, or billing.
 ---
 
 # SDLC Data Database Architecture

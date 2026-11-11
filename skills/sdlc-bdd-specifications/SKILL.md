@@ -1,6 +1,6 @@
 ---
 name: sdlc-bdd-specifications
-description: Run behavior discovery, example mapping, acceptance criteria, Gherkin Given/When/Then scenarios, and living documentation for product behavior. Use when requirements need clarification, stakeholder alignment, testable acceptance criteria, or traceability from PRD to tests.
+description: Run behavior discovery, example mapping, and Gherkin Given/When/Then scenarios as living documentation. Use for unclear requirements, testable acceptance criteria, or PRD-to-test traceability.
 ---
 
 # SDLC BDD Specifications

@@ -1,6 +1,6 @@
 # sdlc-cross-artifact-analysis (compact)
 
-When: Run a strictly read-only consistency and coverage audit across the constitution, spec, plan, BDD, and tasks, detecting duplication, ambiguity, underspecification, contradictions, uncovered requirements, and orphan…
+When: Run a read-only consistency audit across constitution, spec, plan, BDD, and tasks for contradictions, uncovered requirements, orphan tasks.
 
 Goal: Catch the cheap-to-fix problems between documents before they become expensive code.
 

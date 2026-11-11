@@ -1,6 +1,6 @@
 # sdlc-idea-framing (compact)
 
-When: Frame raw software, SaaS, fintech, AI, marketplace, internal-tool, or platform ideas into a clear problem, audience, value proposition, alternatives, assumptions, constraints, and no-go areas.
+When: Frame a raw product idea into problem, audience, value proposition, alternatives, assumptions, and no-go areas.
 
 Goal: Convert a vague idea into a testable product thesis.
 

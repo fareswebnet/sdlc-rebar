@@ -1,6 +1,6 @@
 # sdlc-third-party-ip-risk (compact)
 
-When: Review third-party dependencies, open-source licenses, IP risk, AI-generated code policy, vendor lock-in, SBOM, provenance, dependency health, commercial SaaS reliance, and due diligence readiness.
+When: Review dependencies, open-source licenses, IP risk, AI-generated code policy, SBOM, provenance, and vendor lock-in.
 
 Goal: Make external code, services, models, and licenses visible before they become due diligence problems.
 

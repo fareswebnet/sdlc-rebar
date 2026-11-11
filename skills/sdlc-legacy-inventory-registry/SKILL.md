@@ -1,6 +1,6 @@
 ---
 name: sdlc-legacy-inventory-registry
-description: Produce a frozen, script-generated registry of everything callable or visible in a legacy system (actions, routes, screens, entities, tables, commands, outbound calls, business rules), with one mandatory disposition per line, so migration progress is measured against what existed rather than what was written. Use before any target code in a migration, rewrite, or merge, and for each newly added source repository.
+description: Produce a frozen script-generated registry of everything callable or visible in a legacy system, one disposition per line. Use before any target code in a migration, rewrite, or merge.
 ---
 
 # SDLC Legacy Inventory Registry

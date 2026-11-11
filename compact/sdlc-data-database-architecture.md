@@ -1,6 +1,6 @@
 # sdlc-data-database-architecture (compact)
 
-When: Design data architecture, database schemas, ownership, source of truth, migrations, indexes, audit trails, retention, multi-tenant data isolation, analytics events, and data quality controls.
+When: Design data architecture: schemas, source of truth, migrations, indexes, audit trails, retention, tenant isolation.
 
 Goal: Make data ownership, persistence, and evolution explicit.
 

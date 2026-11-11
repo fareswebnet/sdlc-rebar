@@ -1,6 +1,6 @@
 # sdlc-branch-worktree-lifecycle (compact)
 
-When: Start feature work in an isolated git worktree or branch with a clean verified baseline, and finish it with explicit options (merge locally, open a PR, keep, or discard) after tests pass, with safe cleanup.
+When: Start work in an isolated git worktree with a verified baseline; finish by merge, PR, keep, or discard.
 
 Goal: Keep the main checkout safe and give every change a clean start and a deliberate ending.
 

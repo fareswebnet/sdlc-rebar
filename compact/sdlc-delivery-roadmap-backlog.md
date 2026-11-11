@@ -1,6 +1,6 @@
 # sdlc-delivery-roadmap-backlog (compact)
 
-When: Create delivery roadmaps, prioritized backlogs, vertical slices, ticket readiness checks, dependencies, release grouping, and outcome-based planning.
+When: Create delivery roadmaps, prioritized backlogs, vertical slices, and ticket readiness checks.
 
 Goal: Turn strategy and specs into small, valuable, buildable slices.
 

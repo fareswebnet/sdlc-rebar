@@ -1,6 +1,6 @@
 ---
 name: sdlc-third-party-ip-risk
-description: Review third-party dependencies, open-source licenses, IP risk, AI-generated code policy, vendor lock-in, SBOM, provenance, dependency health, commercial SaaS reliance, and due diligence readiness. Use before release, fundraising, enterprise sales, major dependency adoption, or supply-chain review.
+description: Review dependencies, open-source licenses, IP risk, AI-generated code policy, SBOM, provenance, and vendor lock-in. Use before release, fundraising, enterprise sales, or adopting a major dependency.
 ---
 
 # SDLC Third Party IP Risk

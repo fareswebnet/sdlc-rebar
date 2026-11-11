@@ -1,6 +1,6 @@
 ---
 name: sdlc-incident-support-feedback
-description: Handle incident response, postmortems, support ticket normalization, customer feedback triage, bug reproduction, customer impact prioritization, and feedback-to-roadmap loops. Use during incidents, after production issues, or when support/customer success signals should improve product quality.
+description: Handle incident response, postmortems, support ticket triage, bug reproduction, and feedback loops. Use during or after incidents, or when customer feedback should drive the roadmap.
 ---
 
 # SDLC Incident Support Feedback

@@ -1,6 +1,6 @@
 ---
 name: sdlc-domain-modeling
-description: Discover and model the business domain using DDD vocabulary, ubiquitous language, entities, value objects, aggregates, invariants, state transitions, policies, and domain services. Use before architecture, database design, BDD, API contracts, or implementation in domains with meaningful business rules.
+description: Model the business domain with DDD: ubiquitous language, entities, aggregates, invariants, state transitions. Use before architecture, database, or BDD work in domains with real business rules.
 ---
 
 # SDLC Domain Modeling

@@ -1,6 +1,6 @@
 # sdlc-requirements-checklist (compact)
 
-When: Generate a domain-specific checklist that tests the quality of written requirements - completeness, clarity, consistency, measurability, and coverage of edge cases - rather than testing the implementation.
+When: Generate a checklist that tests the quality of written requirements (completeness, clarity, measurability, edge cases), not the implementation.
 
 Goal: Treat requirements as the system under test: every checklist item asks whether the requirement is well written, never whether the code works.
 

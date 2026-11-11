@@ -1,6 +1,6 @@
 # sdlc-subagent-driven-execution (compact)
 
-When: Execute a task list by dispatching a fresh subagent per task with exactly the context it needs, followed by a spec-compliance review and a code-quality review, and by running genuinely independent work in parallel.
+When: Execute a task list with a fresh subagent per task, then spec-compliance and code-quality reviews, parallelizing independent work.
 
 Goal: Keep each agent focused and each change reviewed, so large plans execute reliably without context pollution.
 

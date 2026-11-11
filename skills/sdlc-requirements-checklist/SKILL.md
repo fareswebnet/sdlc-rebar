@@ -1,6 +1,6 @@
 ---
 name: sdlc-requirements-checklist
-description: Generate a domain-specific checklist that tests the quality of written requirements - completeness, clarity, consistency, measurability, and coverage of edge cases - rather than testing the implementation. Use before sign-off of a PRD or spec, before planning, or when a reviewer asks whether requirements are good enough to build from.
+description: Generate a checklist that tests the quality of written requirements (completeness, clarity, measurability, edge cases), not the implementation. Use before PRD or spec sign-off, or before planning.
 ---
 
 # SDLC Requirements Checklist

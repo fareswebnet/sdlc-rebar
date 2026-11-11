@@ -1,6 +1,6 @@
 ---
 name: sdlc-bounded-context-map
-description: Create DDD bounded context maps, ownership boundaries, upstream/downstream relationships, shared kernels, anti-corruption layers, context interfaces, and team/data ownership. Use when a product has multiple domains, modules, teams, services, tenants, or integration boundaries.
+description: Map DDD bounded contexts: which team or module owns which data and capability, upstream/downstream links, anti-corruption layers. Use with several domains, teams, services, or tenants.
 ---
 
 # SDLC Bounded Context Map

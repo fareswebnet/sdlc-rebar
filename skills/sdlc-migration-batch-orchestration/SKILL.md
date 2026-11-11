@@ -1,6 +1,6 @@
 ---
 name: sdlc-migration-batch-orchestration
-description: Plan and run a migration or modernization as vertical batches cut from the frozen registry, with a measured exit criterion per phase, an independent verification gate at each batch close, and capitalization of lessons. Use when a legacy system is rewritten or replatformed incrementally, and when an agent system must keep honest progress numbers.
+description: Run migration as vertical batches cut from the frozen registry, with measured exit criteria and an independent verification gate per batch. Use for incremental rewrites or replatforming.
 ---
 
 # SDLC Migration Batch Orchestration

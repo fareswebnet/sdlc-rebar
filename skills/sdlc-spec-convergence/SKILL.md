@@ -1,6 +1,6 @@
 ---
 name: sdlc-spec-convergence
-description: Compare the current codebase to the spec, plan, and task list to find what was actually built, what is partial, and what remains, then append the missing work as new tasks. Use after an implementation pass, after an interrupted agent run, or when a feature branch has drifted from its spec.
+description: Compare code to spec, plan, and tasks to find what is built, partial, or missing, and append missing work as tasks. Use after an implementation pass, an interrupted agent run, or spec drift.
 ---
 
 # SDLC Spec Convergence

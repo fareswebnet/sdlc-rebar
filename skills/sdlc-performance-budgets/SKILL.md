@@ -1,6 +1,6 @@
 ---
 name: sdlc-performance-budgets
-description: Define performance budgets (latency percentiles, throughput, payload and bundle size, memory, startup, query counts, cost per request) tied to user journeys and SLOs, measure them in CI and production, and treat a breach as a failing gate. Use when designing user-facing or high-volume features, before release, or when performance regressions keep slipping through.
+description: Define performance budgets (latency, bundle size, memory) tied to SLOs and enforced in CI as failing gates. Use for user-facing features, before release, or when regressions keep slipping.
 ---
 
 # SDLC Performance Budgets

@@ -1,6 +1,6 @@
 ---
 name: sdlc-ui-design-system
-description: Create UI design system guidance, component inventory, interaction conventions, design tokens, responsive behavior, accessibility rules, visual hierarchy, and implementation-ready UI specifications. Use before building UI-heavy features, dashboards, admin tools, SaaS screens, or reusable frontend components.
+description: Create UI design system guidance: components, design tokens, interaction conventions, responsive rules. Use before building UI-heavy features, dashboards, or reusable frontend components.
 ---
 
 # SDLC UI Design System

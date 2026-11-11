@@ -1,6 +1,6 @@
 # sdlc-tasks-to-issues (compact)
 
-When: Convert an approved task list into dependency-linked issues in GitHub, GitLab, Jira, or Linear, and keep status synchronized with the repo task file, after explicit human approval.
+When: Convert an approved task list into issues in GitHub, GitLab, Jira, or Linear and keep status synced with the repo task file, after human approval.
 
 Goal: Keep the repo task list and the tracker consistent without creating noise or duplicate work.
 

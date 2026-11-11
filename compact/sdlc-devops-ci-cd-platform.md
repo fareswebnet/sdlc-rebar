@@ -1,6 +1,6 @@
 # sdlc-devops-ci-cd-platform (compact)
 
-When: Design developer environment, CI/CD, build, test, lint, typecheck, security scan, artifact provenance, environments, secrets, infrastructure as code, preview deployments, and developer experience.
+When: Design the delivery platform: CI/CD pipelines, security scans, artifact provenance, environments, secrets, IaC.
 
 Goal: Make build, test, preview, and deploy boring enough for fast teams.
 

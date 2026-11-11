@@ -1,6 +1,6 @@
 ---
 name: sdlc-independent-verification
-description: Act as an independent verifier whose job is to refute lines claimed as done: draw a reproducible sample, exercise each line through the public interface on the real server, try cross-tenant and wrong-role accounts, run mutations, and grant or refuse a visa. Use at every batch close, release gate, or whenever the author of a change must not be its only judge.
+description: Act as independent verifier: refute done claims via sampled real-server checks, cross-tenant and wrong-role accounts, and mutations, then grant or refuse a visa. Use at batch close or release gate.
 ---
 
 # SDLC Independent Verification

@@ -1,6 +1,6 @@
 ---
 name: sdlc-ai-assisted-development
-description: Plan and govern AI-assisted software development with context engineering, task decomposition, agent roles, coding guardrails, review loops, traceability from spec to code, and output evaluation. Use when coding with agents, creating agent workflows, splitting work across agents, or preventing AI-generated code from drifting from specs.
+description: Govern AI-assisted coding: task decomposition, agent roles, guardrails, review loops. Use when coding with agents, splitting work across agents, or preventing code drift from specs.
 ---
 
 # SDLC AI Assisted Development

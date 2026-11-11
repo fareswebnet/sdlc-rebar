@@ -1,6 +1,6 @@
 # sdlc-architecture-rfc (compact)
 
-When: Create architecture RFCs, C4-style diagrams, ADR candidates, viewpoints, constraints, risks, trade-off tables, and architecture review packets.
+When: Write architecture RFCs with C4 diagrams, ADR candidates, trade-offs, and risks for review.
 
 Goal: Make significant architecture choices explicit, reviewable, and traceable.
 

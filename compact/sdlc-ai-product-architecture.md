@@ -1,6 +1,6 @@
 # sdlc-ai-product-architecture (compact)
 
-When: Design AI, LLM, RAG, prompt, context, agent tooling, evaluation, safety, observability, cost, permissions, and human oversight architecture for AI-enabled products.
+When: Design the architecture of an AI-enabled product: assistants, copilots, LLM and RAG pipelines, prompts, tool use, evals, safety, cost, human oversight.
 
 Goal: Make AI product behavior measurable, governable, and safe enough for the use case.
 

@@ -1,6 +1,6 @@
 # sdlc-skill-evaluation (compact)
 
-When: Evaluate skills, agents, and harnesses with repeatable scenarios: baseline run without the skill, run with the skill, score against a rubric, and track regressions across versions.
+When: Evaluate skills with repeatable scenarios: baseline vs with-skill runs, rubric scoring, regression tracking.
 
 Goal: Prove that a skill changes behavior for the better, and notice when a change makes it worse.
 

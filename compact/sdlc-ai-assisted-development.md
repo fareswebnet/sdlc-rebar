@@ -1,6 +1,6 @@
 # sdlc-ai-assisted-development (compact)
 
-When: Plan and govern AI-assisted software development with context engineering, task decomposition, agent roles, coding guardrails, review loops, traceability from spec to code, and output evaluation.
+When: Govern AI-assisted coding: task decomposition, agent roles, guardrails, review loops.
 
 Goal: Use AI coding agents as supervised engineering workflows, not free-form generators.
 

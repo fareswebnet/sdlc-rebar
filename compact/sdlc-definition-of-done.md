@@ -1,6 +1,6 @@
 # sdlc-definition-of-done (compact)
 
-When: Define and apply a Definition of Done that scales with Lean, Standard, or Enterprise-ready depth and risk, where every criterion names the evidence that proves it.
+When: Define a Definition of Done scaled by depth and risk, each criterion naming its proving evidence.
 
 Goal: Replace subjective 'done' with a short checklist whose every line has a proof.
 

@@ -1,6 +1,6 @@
 ---
 name: sdlc-test-driven-development
-description: Enforce the red-green-refactor cycle for features, bug fixes, and behavior changes: write one failing test, watch it fail for the right reason, write the minimal code to pass, then refactor with tests green. Use when implementing any behavior change, before writing production code, or when tests are being added after the fact.
+description: Enforce red-green-refactor: write one failing test, watch it fail, write minimal code to pass, then refactor. Use when implementing any behavior change or bug fix, before writing production code.
 ---
 
 # SDLC Test-Driven Development

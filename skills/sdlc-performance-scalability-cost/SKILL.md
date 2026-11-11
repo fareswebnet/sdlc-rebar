@@ -1,6 +1,6 @@
 ---
 name: sdlc-performance-scalability-cost
-description: Review performance, scalability, capacity, cloud cost, FinOps, unit economics, LLM/API costs, database bottlenecks, caching, queues, storage, observability cost, and architecture trade-offs. Use when designing high-volume features, optimizing production, forecasting infrastructure cost, or preparing investor/enterprise diligence.
+description: Review scalability, capacity, and cloud or LLM cost: FinOps, unit economics, bottlenecks, caching. Use when designing high-volume features, optimizing production, or forecasting infrastructure cost.
 ---
 
 # SDLC Performance Scalability Cost

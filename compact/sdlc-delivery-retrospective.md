@@ -1,6 +1,6 @@
 # sdlc-delivery-retrospective (compact)
 
-When: Run an evidence-based retrospective after a feature, release, or incident that compares plan with outcome, mines review findings, waivers, rework, and escapes, and converts the lessons into concrete changes to the…
+When: Run an evidence-based retrospective after a release, sprint, or incident and turn lessons into changes to process, definition of done, skills, or CI.
 
 Goal: Close the loop so each delivery makes the next one cheaper and safer, with changes landing in the system rather than in meeting notes.
 

@@ -1,6 +1,6 @@
 # sdlc-ui-design-system (compact)
 
-When: Create UI design system guidance, component inventory, interaction conventions, design tokens, responsive behavior, accessibility rules, visual hierarchy, and implementation-ready UI specifications.
+When: Create UI design system guidance: components, design tokens, interaction conventions, responsive rules.
 
 Goal: Turn product flows into consistent, accessible, maintainable interfaces.
 

@@ -1,6 +1,6 @@
 ---
 name: sdlc-delivery-system
-description: End-to-end product-tech SDLC orchestrator for moving from idea, discovery, PRD, domain modeling, BDD, architecture, backlog, implementation, tests, release, observability, support feedback, and continuous improvement. Use when starting a project, auditing an existing delivery flow, choosing which sdlc-* skill to run next, or scaffolding repo-first SDLC artifacts.
+description: Orchestrate the end-to-end SDLC from idea to release and feedback. Use when starting a project, auditing a delivery flow, or choosing which sdlc-* skill to run next.
 ---
 
 # SDLC Delivery System

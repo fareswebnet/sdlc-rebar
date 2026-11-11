@@ -1,6 +1,6 @@
 # sdlc-characterization-testing (compact)
 
-When: Pin down the observable behavior of a legacy or reference system with characterization tests, golden-master datasets, and differential runs against the real system, with explicit numeric tolerances, so a migrated or…
+When: Pin down legacy behavior with characterization tests and golden masters, with numeric tolerances, to prove a migrated system equivalent.
 
 Goal: Prove equivalence by executing both sides on the same inputs, not by reading code.
 

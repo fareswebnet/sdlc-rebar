@@ -1,6 +1,6 @@
 # sdlc-spec-convergence (compact)
 
-When: Compare the current codebase to the spec, plan, and task list to find what was actually built, what is partial, and what remains, then append the missing work as new tasks.
+When: Compare code to spec, plan, and tasks to find what is built, partial, or missing, and append missing work as tasks.
 
 Goal: Close the loop between intent and code so remaining work is explicit instead of assumed.
 

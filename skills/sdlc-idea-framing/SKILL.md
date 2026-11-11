@@ -1,6 +1,6 @@
 ---
 name: sdlc-idea-framing
-description: Frame raw software, SaaS, fintech, AI, marketplace, internal-tool, or platform ideas into a clear problem, audience, value proposition, alternatives, assumptions, constraints, and no-go areas. Use before PRD, architecture, backlog, or MVP planning when the idea is still ambiguous.
+description: Frame a raw product idea into problem, audience, value proposition, alternatives, assumptions, and no-go areas. Use before PRD, architecture, or MVP planning when the idea is still ambiguous.
 ---
 
 # SDLC Idea Framing

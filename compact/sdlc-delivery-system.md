@@ -1,6 +1,6 @@
 # sdlc-delivery-system (compact)
 
-When: End-to-end product-tech SDLC orchestrator for moving from idea, discovery, PRD, domain modeling, BDD, architecture, backlog, implementation, tests, release, observability, support feedback, and continuous improvement.
+When: Orchestrate the end-to-end SDLC from idea to release and feedback.
 
 Goal: Coordinate the complete SDLC without turning it into bureaucracy.
 

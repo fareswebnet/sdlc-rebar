@@ -1,6 +1,6 @@
 ---
 name: sdlc-skill-evaluation
-description: Evaluate skills, agents, and harnesses with repeatable scenarios: baseline run without the skill, run with the skill, score against a rubric, and track regressions across versions. Use before publishing or changing a skill, when choosing between two skill designs, or when you suspect a skill is ignored or harmful.
+description: Evaluate skills with repeatable scenarios: baseline vs with-skill runs, rubric scoring, regression tracking. Use before publishing or changing a skill, or when one seems ignored or harmful.
 ---
 
 # SDLC Skill Evaluation

@@ -1,6 +1,6 @@
 # sdlc-domain-modeling (compact)
 
-When: Discover and model the business domain using DDD vocabulary, ubiquitous language, entities, value objects, aggregates, invariants, state transitions, policies, and domain services.
+When: Model the business domain with DDD: ubiquitous language, entities, aggregates, invariants, state transitions.
 
 Goal: Make the business model explicit before the software model hardens.
 

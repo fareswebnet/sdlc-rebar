@@ -1,6 +1,6 @@
 ---
 name: sdlc-architecture-rfc
-description: Create architecture RFCs, C4-style diagrams, ADR candidates, viewpoints, constraints, risks, trade-off tables, and architecture review packets. Use when choosing or changing architecture style, platform boundaries, module structure, integrations, data ownership, or production-critical technical decisions.
+description: Write architecture RFCs with C4 diagrams, ADR candidates, trade-offs, and risks for review. Use when choosing or changing architecture style, platform boundaries, integrations, or data ownership.
 ---
 
 # SDLC Architecture RFC

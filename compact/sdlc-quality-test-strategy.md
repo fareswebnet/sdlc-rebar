@@ -1,6 +1,6 @@
 # sdlc-quality-test-strategy (compact)
 
-When: Define quality strategy, acceptance tests, unit tests, integration tests, contract tests, e2e tests, regression risk, exploratory testing, non-functional testing, and quality gates.
+When: Define test strategy across unit, integration, contract, e2e, exploratory, and non-functional tests plus quality gates.
 
 Goal: Test what matters by risk, behavior, and quality attributes rather than coverage theater.
 

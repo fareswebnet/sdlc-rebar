@@ -1,6 +1,6 @@
 ---
 name: sdlc-ux-product-design
-description: Design UX journeys, information architecture, user flows, states, edge cases, onboarding, permissions, error handling, empty states, and accessibility-aware product interactions. Use before UI implementation, design review, PRD finalization, or when a workflow feels confusing or incomplete.
+description: Design UX journeys, information architecture, flows, edge cases, onboarding, and error and empty states. Use before UI implementation, at design review, or when a workflow feels confusing.
 ---
 
 # SDLC UX Product Design

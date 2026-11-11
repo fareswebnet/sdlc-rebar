@@ -1,6 +1,6 @@
 ---
 name: sdlc-reachability-anti-simulation
-description: Make three defects blocking through scripts and a ratchet: controller or handler methods that no route reaches, API client methods that fabricate data instead of calling the server, and documentation that cites files or classes that do not exist. Use at every batch close, before every validation, and in CI for any generated or agent-written code.
+description: Block three defects via scripts and a ratchet: unrouted handlers, API client methods faking data, docs citing missing files. Use at batch close, before validation, and in CI for agent-written code.
 ---
 
 # SDLC Reachability And Anti-Simulation

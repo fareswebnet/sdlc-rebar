@@ -1,6 +1,6 @@
 ---
 name: sdlc-design-brainstorming
-description: Turn a rough idea or feature request into an approved design through collaborative dialogue: explore context, ask one question at a time, compare two or three approaches with trade-offs, present the design in reviewable sections, and obtain explicit approval before any planning or code. Use before any creative or behavior-changing work, including changes that seem too small to need design.
+description: Turn a rough idea or feature request into an approved design via dialogue: one question at a time, compare approaches, get explicit approval before planning or code. Use before any behavior-changing work, even small changes.
 ---
 
 # SDLC Design Brainstorming

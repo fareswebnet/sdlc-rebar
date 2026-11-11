@@ -1,6 +1,6 @@
 ---
 name: sdlc-data-migration-reconciliation
-description: Plan and prove data migration or merge: source-to-target mapping, transformation rules, deduplication and identity resolution, ownership, dry runs, reconciliation counts and checksums, and rehearsed rollback. Use when moving data between systems, merging two datasets, changing schemas with live data, or preparing a cutover.
+description: Plan and prove data migration or merge: mapping, deduplication, dry runs, reconciliation counts and checksums, rollback. Use when moving or merging datasets, changing live schemas, or before cutover.
 disable-model-invocation: true
 ---
 

@@ -1,6 +1,6 @@
 # sdlc-performance-scalability-cost (compact)
 
-When: Review performance, scalability, capacity, cloud cost, FinOps, unit economics, LLM/API costs, database bottlenecks, caching, queues, storage, observability cost, and architecture trade-offs.
+When: Review scalability, capacity, and cloud or LLM cost: FinOps, unit economics, bottlenecks, caching.
 
 Goal: Treat cost and scalability as first-class architecture constraints.
 

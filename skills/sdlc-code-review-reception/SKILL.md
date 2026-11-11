@@ -1,6 +1,6 @@
 ---
 name: sdlc-code-review-reception
-description: Handle code review feedback with technical rigor: read all feedback, restate it, verify each item against the codebase, ask about anything unclear, push back with evidence when feedback is wrong, and implement one item at a time with tests. Use when receiving review comments from humans or agents, before applying suggested changes.
+description: Handle received review feedback rigorously: verify each item against the code, push back with evidence, implement one at a time. Use when receiving review comments from humans or agents.
 ---
 
 # SDLC Code Review Reception

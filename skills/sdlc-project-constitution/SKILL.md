@@ -1,6 +1,6 @@
 ---
 name: sdlc-project-constitution
-description: Create or amend a versioned project constitution of non-negotiable engineering, quality, security, and AI-usage principles that every later spec, plan, task, and review is checked against. Use at project kickoff, when principles drift, or before onboarding agents to a repository.
+description: Create or amend a versioned constitution of non-negotiable engineering, quality, security, and AI principles. Use at project kickoff, when principles drift, or before onboarding agents.
 ---
 
 # SDLC Project Constitution

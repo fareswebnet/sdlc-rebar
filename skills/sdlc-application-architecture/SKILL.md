@@ -1,6 +1,6 @@
 ---
 name: sdlc-application-architecture
-description: Design application architecture including modular monoliths, layered architecture, hexagonal ports/adapters, clean architecture, services, background jobs, CQRS, event-driven flows, dependency rules, and module boundaries. Use after domain/context modeling and before implementation or large refactors.
+description: Design application structure: modular monolith, layered, hexagonal, CQRS, event-driven, module boundaries, dependency rules. Use after domain modeling and before implementation or large refactors.
 ---
 
 # SDLC Application Architecture

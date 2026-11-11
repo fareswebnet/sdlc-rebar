@@ -1,6 +1,6 @@
 ---
 name: sdlc-legacy-reverse-engineering
-description: Recover the behavior of a legacy system from code, data, logs, and observed execution into a business-rule matrix with stable ids, data flows, and unknowns, before any target design. Use when documentation is missing or stale, when estimating a migration, or when two systems must be compared rule by rule.
+description: Recover legacy behavior from code, data, and logs into a business-rule matrix with stable ids. Use when docs are missing or stale, before estimating a migration, or comparing systems by rule.
 ---
 
 # SDLC Legacy Reverse Engineering

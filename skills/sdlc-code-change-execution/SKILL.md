@@ -1,6 +1,6 @@
 ---
 name: sdlc-code-change-execution
-description: Execute scoped code changes in a repository while preserving local patterns, tests, architecture boundaries, user changes, migration safety, and verification evidence. Use when implementing approved features, fixes, refactors, tests, migrations, or production remediations.
+description: Implement scoped code changes preserving local patterns, tests, boundaries, and user changes, with verification evidence. Use for approved features, fixes, refactors, or migrations.
 ---
 
 # SDLC Code Change Execution

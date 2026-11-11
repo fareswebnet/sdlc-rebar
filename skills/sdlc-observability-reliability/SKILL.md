@@ -1,6 +1,6 @@
 ---
 name: sdlc-observability-reliability
-description: Design observability, reliability, SLIs, SLOs, error budgets, logs, metrics, traces, dashboards, alerts, runbooks, capacity signals, and production health checks. Use when preparing production, diagnosing reliability gaps, setting monitoring, or improving operational maturity.
+description: Design observability and reliability: SLIs, SLOs, error budgets, logs, metrics, traces, alerts, runbooks. Use when preparing production, diagnosing reliability gaps, or setting up monitoring.
 ---
 
 # SDLC Observability Reliability

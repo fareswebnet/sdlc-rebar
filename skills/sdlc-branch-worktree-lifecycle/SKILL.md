@@ -1,6 +1,6 @@
 ---
 name: sdlc-branch-worktree-lifecycle
-description: Start feature work in an isolated git worktree or branch with a clean verified baseline, and finish it with explicit options (merge locally, open a PR, keep, or discard) after tests pass, with safe cleanup. Use when starting any implementation that should not disturb the main workspace, and when implementation is complete and needs integration.
+description: Start work in an isolated git worktree with a verified baseline; finish by merge, PR, keep, or discard. Use when starting isolated implementation or integrating finished work.
 ---
 
 # SDLC Branch Worktree Lifecycle

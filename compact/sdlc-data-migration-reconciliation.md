@@ -1,6 +1,6 @@
 # sdlc-data-migration-reconciliation (compact)
 
-When: Plan and prove data migration or merge: source-to-target mapping, transformation rules, deduplication and identity resolution, ownership, dry runs, reconciliation counts and checksums, and rehearsed rollback.
+When: Plan and prove data migration or merge: mapping, deduplication, dry runs, reconciliation counts and checksums, rollback.
 
 Goal: Show that every record that mattered arrived, correctly, once, with a way back.
 

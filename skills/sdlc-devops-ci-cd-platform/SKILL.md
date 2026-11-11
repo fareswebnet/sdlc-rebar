@@ -1,6 +1,6 @@
 ---
 name: sdlc-devops-ci-cd-platform
-description: Design developer environment, CI/CD, build, test, lint, typecheck, security scan, artifact provenance, environments, secrets, infrastructure as code, preview deployments, and developer experience. Use when setting up or improving delivery platform, pipelines, environments, or deployment automation.
+description: Design the delivery platform: CI/CD pipelines, security scans, artifact provenance, environments, secrets, IaC. Use when setting up or improving pipelines or deployment automation.
 ---
 
 # SDLC DevOps CI CD Platform

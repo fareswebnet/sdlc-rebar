@@ -1,6 +1,6 @@
 ---
 name: sdlc-market-user-discovery
-description: Plan and synthesize market research, user research, interviews, competitor review, segmentation, jobs-to-be-done, opportunity mapping, and evidence gathering for software products. Use before product strategy, PRD, MVP scope, or when a team is building from weak assumptions.
+description: Plan and synthesize market and user research: interviews, competitor review, segmentation, jobs-to-be-done. Use before product strategy, PRD, or MVP scope, or when building from weak assumptions.
 ---
 
 # SDLC Market User Discovery

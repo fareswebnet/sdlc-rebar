@@ -1,6 +1,6 @@
 # sdlc-bdd-specifications (compact)
 
-When: Run behavior discovery, example mapping, acceptance criteria, Gherkin Given/When/Then scenarios, and living documentation for product behavior.
+When: Run behavior discovery, example mapping, and Gherkin Given/When/Then scenarios as living documentation.
 
 Goal: Use concrete examples to close ambiguity between business, product, design, engineering, and QA.
 

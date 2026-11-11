@@ -1,6 +1,6 @@
 ---
 name: sdlc-code-review-quality-gate
-description: Perform code review and quality gates focused on correctness, maintainability, architecture boundaries, tests, security, performance, UX impact, migrations, observability, and release risk. Use before merge, before release, after AI-generated code, or when auditing a change set.
+description: Review a change set as a quality gate: correctness, architecture, tests, security, performance, release risk. Use before merge or release, or after AI-generated code.
 ---
 
 # SDLC Code Review Quality Gate

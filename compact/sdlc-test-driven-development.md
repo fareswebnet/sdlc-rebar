@@ -1,6 +1,6 @@
 # sdlc-test-driven-development (compact)
 
-When: Enforce the red-green-refactor cycle for features, bug fixes, and behavior changes: write one failing test, watch it fail for the right reason, write the minimal code to pass, then refactor with tests green.
+When: Enforce red-green-refactor: write one failing test, watch it fail, write minimal code to pass, then refactor.
 
 Goal: Make tests drive design and prove behavior, so passing tests mean something.
 

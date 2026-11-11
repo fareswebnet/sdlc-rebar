@@ -1,6 +1,6 @@
 # sdlc-spec-clarification (compact)
 
-When: Find and resolve underspecified areas in a PRD, feature spec, or BDD set by asking a small number of high-impact questions, one at a time, with a recommended answer, and writing each decision back into the spec.
+When: Resolve underspecified areas in a PRD or spec by asking a few high-impact questions one at a time with a recommended answer, writing decisions back.
 
 Goal: Remove costly ambiguity early, with a bounded interview that ends in recorded decisions instead of an open-ended discussion.
 

@@ -1,6 +1,6 @@
 # sdlc-verification-before-completion (compact)
 
-When: Require fresh verification evidence before claiming work is complete, fixed, passing, or ready: identify the proving command, run it in full, read the output and exit code, and only then state the result.
+When: Require fresh evidence before claiming work is done: run the proving command in full, read output and exit code, then report.
 
 Goal: Make every status claim traceable to evidence produced now, not remembered or assumed.
 

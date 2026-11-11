@@ -1,6 +1,6 @@
 # sdlc-accessibility-engineering (compact)
 
-When: Engineer accessibility in from requirements: target a WCAG 2.2 level, write accessibility acceptance criteria, build with semantic structure and keyboard and screen-reader support, test automatically and manually with…
+When: Build in accessibility from requirements: WCAG 2.2 target, criteria, keyboard and screen-reader support, assistive-tech testing.
 
 Goal: Make accessibility a tested requirement with evidence, not a late audit.
 

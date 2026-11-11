@@ -1,6 +1,6 @@
 # sdlc-incident-support-feedback (compact)
 
-When: Handle incident response, postmortems, support ticket normalization, customer feedback triage, bug reproduction, customer impact prioritization, and feedback-to-roadmap loops.
+When: Handle incident response, postmortems, support ticket triage, bug reproduction, and feedback loops.
 
 Goal: Convert production and customer pain into learning and durable improvements.
 

@@ -1,6 +1,6 @@
 ---
 name: sdlc-definition-of-done
-description: Define and apply a Definition of Done that scales with Lean, Standard, or Enterprise-ready depth and risk, where every criterion names the evidence that proves it. Use when setting team working agreements, before closing a task, story, or release, or when 'done' is argued instead of demonstrated.
+description: Define a Definition of Done scaled by depth and risk, each criterion naming its proving evidence. Use when setting team agreements, closing a story or release, or when done is argued not shown.
 ---
 
 # SDLC Definition Of Done

@@ -1,6 +1,6 @@
 ---
 name: sdlc-spec-clarification
-description: Find and resolve underspecified areas in a PRD, feature spec, or BDD set by asking a small number of high-impact questions, one at a time, with a recommended answer, and writing each decision back into the spec. Use before architecture or planning when requirements feel vague, or when a plan keeps stalling on open questions.
+description: Resolve underspecified areas in a PRD or spec by asking a few high-impact questions one at a time with a recommended answer, writing decisions back. Use before planning when requirements feel vague.
 ---
 
 # SDLC Spec Clarification

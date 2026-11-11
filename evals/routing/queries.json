@@ -1,0 +1,318 @@
+[
+[
+"Our site must meet WCAG 2.2 AA before the public tender; where do we begin?",
+"accessibility-engineering"
+],
+[
+"Agents keep repeating the same mistakes in our repo; how do I write the instruction file they read?",
+"agent-context-engineering"
+],
+[
+"Define the HTTP status contract for removing the v1 /orders endpoint and notify the 30 clients that still call it.",
+"api-versioning-deprecation"
+],
+[
+"Should the billing app be a modular monolith or hexagonal? Design the layers and dependency rules.",
+"application-architecture"
+],
+[
+"Write an RFC with a C4 diagram and trade-off table for moving to event-driven integration.",
+"architecture-rfc"
+],
+[
+"Turn this vague requirement into Given/When/Then scenarios the QA team can sign.",
+"bdd-specifications"
+],
+[
+"We have five teams and three domains stepping on each other; draw the ownership boundaries and anti-corruption layers.",
+"bounded-context-map"
+],
+[
+"Create an isolated git worktree for this feature and tell me how to wrap up when tests pass.",
+"branch-worktree-lifecycle"
+],
+[
+"The old payroll engine has no tests; capture its current outputs so we can prove the rewrite computes the same numbers.",
+"characterization-testing"
+],
+[
+"Implement the approved ticket: add pagination to the users endpoint without breaking existing code.",
+"code-change-execution"
+],
+[
+"Review this pull request for correctness, security and missing tests before I merge.",
+"code-review-quality-gate"
+],
+[
+"The reviewer left 12 comments on my PR, two look wrong. How should I handle them?",
+"code-review-reception"
+],
+[
+"Check that the spec, plan, BDD and tasks are consistent with each other and nothing is uncovered, without editing anything.",
+"cross-artifact-analysis"
+],
+[
+"Move all customers from the old CRM to the new platform next weekend with a way back if it fails.",
+"cutover-rollback"
+],
+[
+"Design the Postgres schema, retention and tenant isolation for our invoicing data.",
+"data-database-architecture"
+],
+[
+"We are merging two customer databases; plan the field mapping, deduplication and the row-count reconciliation.",
+"data-migration-reconciliation"
+],
+[
+"What must be true before we call a story done in our team?",
+"definition-of-done"
+],
+[
+"Run a retrospective on last release: what did the review findings and escapes teach us, and what should change in our process?",
+"delivery-retrospective"
+],
+[
+"Slice the roadmap into prioritized vertical increments with dependencies for next quarter.",
+"delivery-roadmap-backlog"
+],
+[
+"I am starting a new product from scratch; which SDLC steps should I run in what order?",
+"delivery-system"
+],
+[
+"I want a notification feature. Let's think it through before anything is built.",
+"design-brainstorming"
+],
+[
+"Set up our CI pipeline with lint, typecheck, secret scanning and preview deployments.",
+"devops-ci-cd-platform"
+],
+[
+"Write the onboarding guide and runbooks for the new engineers and keep them from going stale.",
+"documentation-knowledge"
+],
+[
+"Model the insurance claims domain: entities, aggregates, invariants and the shared vocabulary.",
+"domain-modeling"
+],
+[
+"I have a rough idea for a marketplace for local farmers; help me turn it into a clear problem and audience.",
+"idea-framing"
+],
+[
+"Plan the code change: which files are affected, tests needed, rollback and validation commands.",
+"implementation-planning"
+],
+[
+"Production was down for an hour. Triage, write the postmortem and turn customer complaints into roadmap input.",
+"incident-support-feedback"
+],
+[
+"The agent says 40 migrated screens are done. Someone other than the author must try to refute that sample.",
+"independent-verification"
+],
+[
+"Before writing any new code, list every route, screen and table of the old PHP app and assign each a disposition.",
+"legacy-inventory-registry"
+],
+[
+"Nobody documented this 15-year-old COBOL system; extract the business rules from the code and logs.",
+"legacy-reverse-engineering"
+],
+[
+"Plan interviews and a competitor review to learn who actually has this problem.",
+"market-user-discovery"
+],
+[
+"Run the legacy rewrite in vertical batches with an exit criterion and a verification gate per batch.",
+"migration-batch-orchestration"
+],
+[
+"Set SLOs, error budgets, alerts and dashboards for our API.",
+"observability-reliability"
+],
+[
+"Our p95 latency keeps regressing; define budgets for latency, bundle size and query count and fail CI when breached.",
+"performance-budgets"
+],
+[
+"Forecast our cloud and LLM API bill at 10x traffic and find database and caching bottlenecks.",
+"performance-scalability-cost"
+],
+[
+"Write the PRD with user stories, acceptance criteria and out-of-scope items for the export feature.",
+"prd-requirements"
+],
+[
+"Define our tracking plan, event taxonomy, funnels and A/B test setup.",
+"product-analytics-experimentation"
+],
+[
+"Write down the non-negotiable engineering principles every spec and review will be checked against.",
+"project-constitution"
+],
+[
+"What test pyramid and quality gates do we need for this release?",
+"quality-test-strategy"
+],
+[
+"Controllers exist that no route reaches and API client methods return fake data; add a gate that blocks that.",
+"reachability-anti-simulation"
+],
+[
+"Are these written requirements good enough to build from? Check completeness and measurability.",
+"requirements-checklist"
+],
+[
+"Threat-model our payments feature and list security and privacy requirements for release.",
+"security-privacy-compliance"
+],
+[
+"Does our skill actually help? Compare runs with and without it and track regressions.",
+"skill-evaluation"
+],
+[
+"The spec has gaps; ask me the few most important questions one at a time and record the answers.",
+"spec-clarification"
+],
+[
+"An agent run was interrupted; compare the code with the spec and tasks and tell me what remains.",
+"spec-convergence"
+],
+[
+"Dispatch each task of the plan to a fresh subagent with spec and quality reviews.",
+"subagent-driven-execution"
+],
+[
+"We acquired a competitor; combine their platform with ours and prove nothing regresses for either customer base.",
+"system-merge-convergence"
+],
+[
+"Checkout throws a 500 intermittently and I do not know why; find the cause.",
+"systematic-debugging"
+],
+[
+"Break the approved plan into an ordered task list with file paths and parallel markers.",
+"task-breakdown"
+],
+[
+"Create Jira issues from the task list and keep their status in sync.",
+"tasks-to-issues"
+],
+[
+"Implement is_leap_year with red-green-refactor.",
+"test-driven-development"
+],
+[
+"Audit our open-source licenses, SBOM and vendor lock-in for the due diligence.",
+"third-party-ip-risk"
+],
+[
+"I need to prove that every requirement is covered by a test, task and commit with a script.",
+"traceability-ledger"
+],
+[
+"Define design tokens, components and responsive rules for our admin dashboard.",
+"ui-design-system"
+],
+[
+"Map the onboarding journey, empty states and error flows before we build screens.",
+"ux-product-design"
+],
+[
+"Before I tell the team the bug is fixed, what do I need to have run?",
+"verification-before-completion"
+],
+[
+"Let's govern how our coding agents work: roles, review loops and keeping generated code aligned with specs.",
+"ai-assisted-development"
+],
+[
+"Design the RAG pipeline, evaluation, safety and human oversight for our support copilot.",
+"ai-product-architecture"
+],
+[
+"Fix this intermittent test failure; I think it is the cache, just wrap it.",
+"systematic-debugging"
+],
+[
+"I merged my own PR after the agent said it was fine; who should double-check the work before we call it complete?",
+"independent-verification"
+],
+[
+"I said it was fixed but never ran anything; what should I run before saying that to my manager?",
+"verification-before-completion"
+],
+[
+"Our latency budget keeps slipping in production, add an automatic check that fails when p99 goes over target.",
+"performance-budgets"
+],
+[
+"How much will running our LLM calls cost next year as users grow?",
+"performance-scalability-cost"
+],
+[
+"The assistant should answer from our docs and call tools safely; how do we structure the whole thing?",
+"ai-product-architecture"
+],
+[
+"How do I give my coding agents the right project facts without bloating the prompt file?",
+"agent-context-engineering"
+],
+[
+"Which words should be in our shared glossary so devs and business people mean the same thing by 'order'?",
+"domain-modeling"
+],
+[
+"Whose team owns the customer data and how do the modules talk to each other?",
+"bounded-context-map"
+],
+[
+"Before the sprint starts, are our stories ready, ordered and linked to each other?",
+"delivery-roadmap-backlog"
+],
+[
+"Turn the written plan into steps an agent can execute, with the files each step touches.",
+"task-breakdown"
+],
+[
+"The migration is 'done' per the dev, but the numbers do not match the old system. How do we show equivalence?",
+"characterization-testing"
+],
+[
+"We keep shipping the same kind of bug again and again; change our process so it stops.",
+"delivery-retrospective"
+],
+[
+"Is it safe to rename this response field in our public API?",
+"api-versioning-deprecation"
+],
+[
+"We need a failing test first for the pricing bug and then the smallest fix.",
+"test-driven-development"
+],
+[
+"Why does the build fail only on CI? I have not looked at logs yet.",
+"systematic-debugging"
+],
+[
+"What would a good README, ADR folder and runbook set look like for this repo?",
+"documentation-knowledge"
+],
+[
+"Are our dependencies' licenses compatible with selling this to enterprises?",
+"third-party-ip-risk"
+],
+[
+"Users get lost in the settings screens; design the flows and states.",
+"ux-product-design"
+],
+[
+"Spell out component specs, spacing and color tokens for the new dashboard.",
+"ui-design-system"
+],
+[
+"Which data events should we track to know whether onboarding works?",
+"product-analytics-experimentation"
+]
+]

@@ -1,6 +1,6 @@
 # sdlc-code-review-quality-gate (compact)
 
-When: Perform code review and quality gates focused on correctness, maintainability, architecture boundaries, tests, security, performance, UX impact, migrations, observability, and release risk.
+When: Review a change set as a quality gate: correctness, architecture, tests, security, performance, release risk.
 
 Goal: Find defects and risk before they reach users.
 

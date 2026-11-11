@@ -1,6 +1,6 @@
 ---
 name: sdlc-api-versioning-deprecation
-description: Manage API and event contract evolution: classify changes as compatible or breaking, choose a versioning approach, run contract tests with consumer-driven expectations, and execute deprecation with telemetry, notice periods, and sunset dates. Use when changing a public or cross-team API, replacing a legacy interface during migration, or supporting several client versions.
+description: Manage API contract evolution: classify breaking changes, choose versioning, run consumer-driven contract tests, deprecate with sunset dates. Use when changing a public or cross-team API.
 ---
 
 # SDLC API Versioning And Deprecation

@@ -1,6 +1,6 @@
 ---
 name: sdlc-delivery-roadmap-backlog
-description: Create delivery roadmaps, prioritized backlogs, vertical slices, ticket readiness checks, dependencies, release grouping, and outcome-based planning. Use after strategy, PRD, BDD, architecture, and design when turning decisions into executable work.
+description: Create delivery roadmaps, prioritized backlogs, vertical slices, and ticket readiness checks. Use after strategy, PRD, BDD, architecture, and design to turn decisions into executable work.
 ---
 
 # SDLC Delivery Roadmap Backlog

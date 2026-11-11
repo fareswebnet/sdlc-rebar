@@ -1,6 +1,6 @@
 # sdlc-security-privacy-compliance (compact)
 
-When: Integrate secure SDLC, threat modeling, privacy, compliance, abuse cases, security requirements, secure architecture, secure coding review, secrets/config review, data protection, and release security gates.
+When: Integrate secure SDLC: threat modeling, privacy, compliance, abuse cases, data protection, release security gates.
 
 Goal: Build security and privacy into the SDLC before release pressure hides risk.
 

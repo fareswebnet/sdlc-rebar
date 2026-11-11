@@ -1,6 +1,6 @@
 # sdlc-product-analytics-experimentation (compact)
 
-When: Design product analytics, tracking plans, event taxonomy, funnels, activation, retention, cohorts, experiments, feature flags, metric governance, data quality checks, dashboards, and business intelligence readiness.
+When: Design product analytics: tracking plans, event taxonomy, funnels, retention, experiments, feature flags, metric governance.
 
 Goal: Measure whether the product creates value, not only whether the system works.
 

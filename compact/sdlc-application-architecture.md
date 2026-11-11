@@ -1,6 +1,6 @@
 # sdlc-application-architecture (compact)
 
-When: Design application architecture including modular monoliths, layered architecture, hexagonal ports/adapters, clean architecture, services, background jobs, CQRS, event-driven flows, dependency rules, and module…
+When: Design application structure: modular monolith, layered, hexagonal, CQRS, event-driven, module boundaries, dependency rules.
 
 Goal: Choose a structure the team can build, test, and evolve.
 

@@ -1,6 +1,6 @@
 # sdlc-agent-context-engineering (compact)
 
-When: Design the context agents receive: a concise repo-level AGENTS.md, per-task context packs, subagent briefs, and memory and handoff notes, so agents get exactly the facts, constraints, and commands they need and nothing…
+When: Design the context agents receive: AGENTS.md, task context packs, subagent briefs, handoff notes.
 
 Goal: Treat context as an engineered artifact: small, accurate, versioned, and tested by whether agents behave better with it.
 

@@ -1,6 +1,6 @@
 ---
 name: sdlc-security-privacy-compliance
-description: Integrate secure SDLC, threat modeling, privacy, compliance, abuse cases, security requirements, secure architecture, secure coding review, secrets/config review, data protection, and release security gates. Use when designing or reviewing features with sensitive data, auth, payments, AI, fintech, healthcare, B2B, or regulatory exposure.
+description: Integrate secure SDLC: threat modeling, privacy, compliance, abuse cases, data protection, release security gates. Use for features with sensitive data, auth, payments, AI, or regulatory exposure.
 ---
 
 # SDLC Security Privacy Compliance

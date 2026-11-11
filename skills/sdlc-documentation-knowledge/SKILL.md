@@ -1,6 +1,6 @@
 ---
 name: sdlc-documentation-knowledge
-description: Create and maintain repo-first documentation architecture, onboarding guides, API docs, ADRs, runbooks, user docs, knowledge base updates, and stale-doc checks. Use when documenting a project, onboarding developers, preparing support, exposing APIs, or making SDLC artifacts living and versioned.
+description: Create and maintain repo-first docs: onboarding guides, API docs, ADRs, runbooks, stale-doc checks. Use when documenting a project, onboarding developers, or making SDLC artifacts living.
 ---
 
 # SDLC Documentation Knowledge

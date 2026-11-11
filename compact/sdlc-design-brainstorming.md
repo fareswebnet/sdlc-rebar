@@ -1,6 +1,6 @@
 # sdlc-design-brainstorming (compact)
 
-When: Turn a rough idea or feature request into an approved design through collaborative dialogue: explore context, ask one question at a time, compare two or three approaches with trade-offs, present the design in reviewable…
+When: Turn a rough idea or feature request into an approved design via dialogue: one question at a time, compare approaches, get explicit approval before planning or code.
 
 Goal: Prevent building the wrong thing by making design approval a hard gate, scaled to the size of the change.
 

@@ -1,6 +1,6 @@
 ---
 name: sdlc-ai-product-architecture
-description: Design AI, LLM, RAG, prompt, context, agent tooling, evaluation, safety, observability, cost, permissions, and human oversight architecture for AI-enabled products. Use when a product includes assistants, copilots, extraction, classification, RAG, autonomous tools, or LLM workflows.
+description: Design the architecture of an AI-enabled product: assistants, copilots, LLM and RAG pipelines, prompts, tool use, evals, safety, cost, human oversight. Use when a product answers from documents or calls tools with an LLM.
 ---
 
 # SDLC AI Product Architecture

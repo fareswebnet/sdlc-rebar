@@ -1,6 +1,6 @@
 # sdlc-cutover-rollback (compact)
 
-When: Plan cutover from legacy to target with a strangler or parallel-run strategy, rehearsed switch and rollback, reliability measurements, and an explicit go/no-go owned by a named person.
+When: Plan legacy-to-target cutover with strangler or parallel run, rehearsed rollback, and a named go/no-go owner.
 
 Goal: Make the switch reversible, rehearsed, and measured, so go-live is a decision, not a leap.
 

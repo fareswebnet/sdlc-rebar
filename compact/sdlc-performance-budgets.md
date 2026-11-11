@@ -1,6 +1,6 @@
 # sdlc-performance-budgets (compact)
 
-When: Define performance budgets (latency percentiles, throughput, payload and bundle size, memory, startup, query counts, cost per request) tied to user journeys and SLOs, measure them in CI and production, and treat a…
+When: Define performance budgets (latency, bundle size, memory) tied to SLOs and enforced in CI as failing gates.
 
 Goal: Turn 'it should be fast' into numbers with owners, tests, and consequences.
 

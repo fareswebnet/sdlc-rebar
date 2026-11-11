@@ -1,6 +1,6 @@
 # sdlc-legacy-inventory-registry (compact)
 
-When: Produce a frozen, script-generated registry of everything callable or visible in a legacy system (actions, routes, screens, entities, tables, commands, outbound calls, business rules), with one mandatory disposition per…
+When: Produce a frozen script-generated registry of everything callable or visible in a legacy system, one disposition per line.
 
 Goal: Give the migration a denominator: a registry nobody can quietly shrink, where 100 percent means 100 percent of the old system.
 

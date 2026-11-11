@@ -1,6 +1,6 @@
 ---
 name: sdlc-cutover-rollback
-description: Plan cutover from legacy to target with a strangler or parallel-run strategy, rehearsed switch and rollback, reliability measurements, and an explicit go/no-go owned by a named person. Use when moving traffic or users from an old system to a new one, or when releasing a high-risk migration batch.
+description: Plan legacy-to-target cutover with strangler or parallel run, rehearsed rollback, and a named go/no-go owner. Use when moving traffic or users to a new system or releasing a high-risk batch.
 disable-model-invocation: true
 ---
 

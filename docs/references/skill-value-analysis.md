@@ -46,4 +46,16 @@ The scenarios for the five measured skills are kept in `evals/removed/`. The del
 ## Size
 
 - `SKILL.md` text: 185 KB to 109 KB. Each file repeated the same Operating Depth, Expected Inputs, Source Guidance, and two generic guardrails, 38% of all text; the depth definitions now live once in `depth-matrix.md`.
-- Compact skills: 74 KB. Frontmatter descriptions (the part loaded permanently by Claude Code) total about 18.7 KB (down from 20.8 KB, only because seven skills were removed); they were not rewritten because their trigger wording is untested.
+- Compact skills: 74 KB.
+- Frontmatter descriptions (the part Claude Code always loads): 20.8 KB, then 18.7 KB after removals, now 11.1 KB. Rewritten to one "what" clause plus "Use when" triggers, at most about 230 characters each.
+
+## Description routing test
+
+`python scripts/run_routing.py --model <m> --base-url claude-cli` gives the model all descriptions and 79 realistic requests (59 clear, 20 between neighbouring skills) and checks it picks the right skill.
+
+| Descriptions | Characters | Haiku | Sonnet |
+|---|---|---|---|
+| Original | 18,654 | 74/79 | 79/79 |
+| Rewritten | 11,132 | 74/79 | 79/79 |
+
+Haiku misses move around between runs (invented or truncated skill names, and confusions between neighbours such as task-breakdown / implementation-planning, retrospective / debugging). Seven descriptions were hand-adjusted after a first rewrite scored 72/79, using this same test set, so the result is slightly optimistic.

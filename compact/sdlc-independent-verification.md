@@ -1,6 +1,6 @@
 # sdlc-independent-verification (compact)
 
-When: Act as an independent verifier whose job is to refute lines claimed as done: draw a reproducible sample, exercise each line through the public interface on the real server, try cross-tenant and wrong-role accounts, run…
+When: Act as independent verifier: refute done claims via sampled real-server checks, cross-tenant and wrong-role accounts, and mutations, then grant or refuse a visa.
 
 Goal: Make verification a separate role so a green gate cannot be produced by the same agent that wrote the work.
 

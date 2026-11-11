@@ -1,6 +1,6 @@
 ---
 name: sdlc-agent-context-engineering
-description: Design the context agents receive: a concise repo-level AGENTS.md, per-task context packs, subagent briefs, and memory and handoff notes, so agents get exactly the facts, constraints, and commands they need and nothing more. Use when onboarding agents to a repo, when agents repeat mistakes, before dispatching subagents, or when prompts keep growing.
+description: Design the context agents receive: AGENTS.md, task context packs, subagent briefs, handoff notes. Use when onboarding agents to a repo, agents repeat mistakes, or before dispatching subagents.
 ---
 
 # SDLC Agent Context Engineering

@@ -1,6 +1,6 @@
 # sdlc-observability-reliability (compact)
 
-When: Design observability, reliability, SLIs, SLOs, error budgets, logs, metrics, traces, dashboards, alerts, runbooks, capacity signals, and production health checks.
+When: Design observability and reliability: SLIs, SLOs, error budgets, logs, metrics, traces, alerts, runbooks.
 
 Goal: Help teams understand production behavior from user and business impact, not only infrastructure metrics.
 

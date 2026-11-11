@@ -1,6 +1,6 @@
 # sdlc-implementation-planning (compact)
 
-When: Plan implementation for scoped code changes by identifying affected files, architecture boundaries, data migrations, tests, risks, rollback, validation commands, and sequencing.
+When: Plan scoped code changes: affected files, boundaries, migrations, tests, risks, rollback, validation commands, sequencing.
 
 Goal: Make code work predictable before editing files.
 

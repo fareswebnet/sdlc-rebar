@@ -1,6 +1,6 @@
 ---
 name: sdlc-verification-before-completion
-description: Require fresh verification evidence before claiming work is complete, fixed, passing, or ready: identify the proving command, run it in full, read the output and exit code, and only then state the result. Use before saying done, before commit or PR, before handing off, and when reporting subagent results.
+description: Require fresh evidence before claiming work is done: run the proving command in full, read output and exit code, then report. Use before saying done, committing, opening a PR, or handing off.
 ---
 
 # SDLC Verification Before Completion

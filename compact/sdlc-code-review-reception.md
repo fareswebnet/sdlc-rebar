@@ -1,6 +1,6 @@
 # sdlc-code-review-reception (compact)
 
-When: Handle code review feedback with technical rigor: read all feedback, restate it, verify each item against the codebase, ask about anything unclear, push back with evidence when feedback is wrong, and implement one item…
+When: Handle received review feedback rigorously: verify each item against the code, push back with evidence, implement one at a time.
 
 Goal: Turn review feedback into correct changes without performative agreement or blind implementation.
 

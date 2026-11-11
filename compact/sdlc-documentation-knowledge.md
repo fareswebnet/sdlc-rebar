@@ -1,6 +1,6 @@
 # sdlc-documentation-knowledge (compact)
 
-When: Create and maintain repo-first documentation architecture, onboarding guides, API docs, ADRs, runbooks, user docs, knowledge base updates, and stale-doc checks.
+When: Create and maintain repo-first docs: onboarding guides, API docs, ADRs, runbooks, stale-doc checks.
 
 Goal: Keep knowledge close to the work and useful under pressure.
 

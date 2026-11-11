@@ -1,6 +1,6 @@
 # sdlc-migration-batch-orchestration (compact)
 
-When: Plan and run a migration or modernization as vertical batches cut from the frozen registry, with a measured exit criterion per phase, an independent verification gate at each batch close, and capitalization of lessons.
+When: Run migration as vertical batches cut from the frozen registry, with measured exit criteria and an independent verification gate per batch.
 
 Goal: Keep large migrations honest: progress is counted on the registry, a batch closes only on proof, and drift is caught early.
 

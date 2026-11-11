@@ -1,6 +1,6 @@
 ---
 name: sdlc-quality-test-strategy
-description: Define quality strategy, acceptance tests, unit tests, integration tests, contract tests, e2e tests, regression risk, exploratory testing, non-functional testing, and quality gates. Use when planning validation for a feature, release, refactor, incident fix, architecture change, or BDD specification.
+description: Define test strategy across unit, integration, contract, e2e, exploratory, and non-functional tests plus quality gates. Use when planning validation for a feature, release, refactor, or fix.
 ---
 
 # SDLC Quality Test Strategy

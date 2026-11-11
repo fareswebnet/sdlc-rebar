@@ -1,6 +1,6 @@
 # sdlc-traceability-ledger (compact)
 
-When: Maintain a machine-checkable chain from requirement id to BDD scenario, task, test, commit, release, and production metric, and verify it with scripts/sdlc_trace.py.
+When: Maintain a machine-checked chain from requirement id to scenario, task, test, commit, and release via scripts/sdlc_trace.py.
 
 Goal: Make 'is every requirement built and proven?' a command you can run, not an opinion.
 

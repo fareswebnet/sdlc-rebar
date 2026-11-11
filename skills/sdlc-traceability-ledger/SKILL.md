@@ -1,6 +1,6 @@
 ---
 name: sdlc-traceability-ledger
-description: Maintain a machine-checkable chain from requirement id to BDD scenario, task, test, commit, release, and production metric, and verify it with scripts/sdlc_trace.py. Use when starting spec-driven work, before a review or release gate, or when coverage of requirements is unclear.
+description: Maintain a machine-checked chain from requirement id to scenario, task, test, commit, and release via scripts/sdlc_trace.py. Use when starting spec-driven work or before a release gate.
 ---
 
 # SDLC Traceability Ledger

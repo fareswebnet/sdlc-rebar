@@ -1,6 +1,6 @@
 # sdlc-ux-product-design (compact)
 
-When: Design UX journeys, information architecture, user flows, states, edge cases, onboarding, permissions, error handling, empty states, and accessibility-aware product interactions.
+When: Design UX journeys, information architecture, flows, edge cases, onboarding, and error and empty states.
 
 Goal: Make workflows usable before they become tickets and screens.
 

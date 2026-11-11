@@ -1,6 +1,6 @@
 ---
 name: sdlc-systematic-debugging
-description: Debug bugs, test failures, build breaks, and unexpected behavior by finding the root cause before proposing fixes: read errors fully, reproduce reliably, check recent changes, trace data flow, form one hypothesis at a time, and verify. Use for any technical issue, especially under time pressure, after a failed fix, or when the cause is not understood.
+description: Debug by finding root cause before fixing: reproduce, trace data flow, test one hypothesis at a time. Use for any bug, test failure, or build break, especially under time pressure or after a failed fix.
 ---
 
 # SDLC Systematic Debugging

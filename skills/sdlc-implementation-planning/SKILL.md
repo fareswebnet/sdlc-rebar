@@ -1,6 +1,6 @@
 ---
 name: sdlc-implementation-planning
-description: Plan implementation for scoped code changes by identifying affected files, architecture boundaries, data migrations, tests, risks, rollback, validation commands, and sequencing. Use before modifying a repository for features, fixes, refactors, migrations, or production changes.
+description: Plan scoped code changes: affected files, boundaries, migrations, tests, risks, rollback, validation commands, sequencing. Use before modifying a repository for features, fixes, or refactors.
 ---
 
 # SDLC Implementation Planning

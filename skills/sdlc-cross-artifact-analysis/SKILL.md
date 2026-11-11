@@ -1,6 +1,6 @@
 ---
 name: sdlc-cross-artifact-analysis
-description: Run a strictly read-only consistency and coverage audit across the constitution, spec, plan, BDD, and tasks, detecting duplication, ambiguity, underspecification, contradictions, uncovered requirements, and orphan tasks, with severity and a remediation list. Use after task breakdown and before implementation, or before a release gate.
+description: Run a read-only consistency audit across constitution, spec, plan, BDD, and tasks for contradictions, uncovered requirements, orphan tasks. Use after task breakdown and before implementation.
 ---
 
 # SDLC Cross-Artifact Analysis

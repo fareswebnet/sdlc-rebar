@@ -1,6 +1,6 @@
 # sdlc-legacy-reverse-engineering (compact)
 
-When: Recover the behavior of a legacy system from code, data, logs, and observed execution into a business-rule matrix with stable ids, data flows, and unknowns, before any target design.
+When: Recover legacy behavior from code, data, and logs into a business-rule matrix with stable ids.
 
 Goal: Turn implicit behavior into explicit, id-addressable rules that tests can prove and owners can approve.
 

@@ -1,6 +1,6 @@
 ---
 name: sdlc-system-merge-convergence
-description: Merge two or more systems, codebases, or business estates into one target by inventorying each independently, classifying every rule as equivalent, parameterizable, additive, or contradictory, deciding data and contract ownership, and proving cumulative non-regression of every source. Use for acquisitions, platform consolidation, tenant merges, or integrating a second legacy source into an existing target.
+description: Merge several systems into one target: classify rules as equivalent, parameterizable, additive, or contradictory; prove non-regression per source. Use for acquisitions or platform consolidation.
 ---
 
 # SDLC System Merge Convergence

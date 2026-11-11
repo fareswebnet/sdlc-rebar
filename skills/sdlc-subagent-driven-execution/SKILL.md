@@ -1,6 +1,6 @@
 ---
 name: sdlc-subagent-driven-execution
-description: Execute a task list by dispatching a fresh subagent per task with exactly the context it needs, followed by a spec-compliance review and a code-quality review, and by running genuinely independent work in parallel. Use when tasks are mostly independent, when the plan is written, and when agent context isolation and review gates matter.
+description: Execute a task list with a fresh subagent per task, then spec-compliance and code-quality reviews, parallelizing independent work. Use when the plan is written and tasks are mostly independent.
 ---
 
 # SDLC Subagent-Driven Execution

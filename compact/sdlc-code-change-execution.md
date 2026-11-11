@@ -1,6 +1,6 @@
 # sdlc-code-change-execution (compact)
 
-When: Execute scoped code changes in a repository while preserving local patterns, tests, architecture boundaries, user changes, migration safety, and verification evidence.
+When: Implement scoped code changes preserving local patterns, tests, boundaries, and user changes, with verification evidence.
 
 Goal: Make disciplined changes that satisfy the spec and survive review.
 

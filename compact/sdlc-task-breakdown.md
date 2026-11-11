@@ -1,6 +1,6 @@
 # sdlc-task-breakdown (compact)
 
-When: Turn an approved spec, plan, contracts, and BDD scenarios into a dependency-ordered task list grouped by independently deliverable user story, with exact file paths, parallelization markers, test-first ordering, and…
+When: Turn an approved spec and plan into a dependency-ordered task list per user story: exact file paths, parallel markers, test-first order.
 
 Goal: Make the plan executable: each task is small, unambiguous, traceable to a requirement, and runnable by an agent or human without guessing.
 

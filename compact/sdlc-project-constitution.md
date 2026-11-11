@@ -1,6 +1,6 @@
 # sdlc-project-constitution (compact)
 
-When: Create or amend a versioned project constitution of non-negotiable engineering, quality, security, and AI-usage principles that every later spec, plan, task, and review is checked against.
+When: Create or amend a versioned constitution of non-negotiable engineering, quality, security, and AI principles.
 
 Goal: Give humans and agents one short, testable set of rules that outrank convenience, so plans and reviews have something concrete to be checked against.
 

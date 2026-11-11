@@ -1,6 +1,6 @@
 # sdlc-systematic-debugging (compact)
 
-When: Debug bugs, test failures, build breaks, and unexpected behavior by finding the root cause before proposing fixes: read errors fully, reproduce reliably, check recent changes, trace data flow, form one hypothesis at a…
+When: Debug by finding root cause before fixing: reproduce, trace data flow, test one hypothesis at a time.
 
 Goal: Replace guess-and-patch with an evidence-driven investigation that fixes the cause once.
 

@@ -1,6 +1,6 @@
 ---
 name: sdlc-product-analytics-experimentation
-description: Design product analytics, tracking plans, event taxonomy, funnels, activation, retention, cohorts, experiments, feature flags, metric governance, data quality checks, dashboards, and business intelligence readiness. Use when defining product success, analytics instrumentation, experiments, or investor/product metrics.
+description: Design product analytics: tracking plans, event taxonomy, funnels, retention, experiments, feature flags, metric governance. Use when defining product success, instrumentation, or experiments.
 ---
 
 # SDLC Product Analytics Experimentation

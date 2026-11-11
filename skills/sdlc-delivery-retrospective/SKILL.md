@@ -1,6 +1,6 @@
 ---
 name: sdlc-delivery-retrospective
-description: Run an evidence-based retrospective after a feature, release, or incident that compares plan with outcome, mines review findings, waivers, rework, and escapes, and converts the lessons into concrete changes to the constitution, definition of done, skills, templates, or CI checks. Use at the end of a release or sprint, after incidents, or when the same defect type keeps recurring.
+description: Run an evidence-based retrospective after a release, sprint, or incident and turn lessons into changes to process, definition of done, skills, or CI. Use when the same kind of defect keeps recurring.
 ---
 
 # SDLC Delivery Retrospective

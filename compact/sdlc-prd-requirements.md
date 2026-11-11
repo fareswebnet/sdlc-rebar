@@ -1,6 +1,6 @@
 # sdlc-prd-requirements (compact)
 
-When: Create and refine PRDs, requirements, user stories, acceptance criteria, assumptions, open questions, constraints, and out-of-scope decisions for software products.
+When: Create and refine PRDs, user stories, assumptions, and out-of-scope decisions.
 
 Goal: Create requirements that are specific enough to build and test, without over-specifying implementation.
 
