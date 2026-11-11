@@ -13,5 +13,3 @@ Steps:
 
 Never:
 - Do not introduce one-off UI patterns when an existing component or convention can serve the workflow.
-- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
-- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

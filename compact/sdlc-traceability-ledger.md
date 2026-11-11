@@ -19,4 +19,4 @@ Never:
 - Setup and polish tasks may lack requirement refs; everything else must have one.
 - Do not edit the script output to pass a gate; fix the artifacts instead.
 
-Next: `sdlc-cross-artifact-analysis` for semantic checks the script cannot do, `sdlc-release-production-readiness` for downstream links.
+Next: `sdlc-cross-artifact-analysis` for semantic checks the script cannot do, `sdlc-definition-of-done` for downstream links.

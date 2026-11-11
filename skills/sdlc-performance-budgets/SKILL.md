@@ -9,12 +9,6 @@ description: Define performance budgets (latency percentiles, throughput, payloa
 
 Turn 'it should be fast' into numbers with owners, tests, and consequences.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Pick the journeys that matter and the user-visible metrics for each (for web: LCP, INP, CLS; for APIs: p50, p95, p99 latency, error rate; for mobile: startup and frame time; for batch: duration and throughput).
@@ -25,17 +19,9 @@ Turn 'it should be fast' into numbers with owners, tests, and consequences.
 6. On breach, fail the gate or require a recorded waiver with owner and expiry; investigate with profiling before optimizing.
 7. Review budgets each release and after incidents; tighten what is comfortably met.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: `docs/operations/performance-budgets.md`, CI performance checks, dashboards, waiver log.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -48,11 +34,6 @@ Turn 'it should be fast' into numbers with owners, tests, and consequences.
 
 `sdlc-performance-scalability-cost` for capacity and cost, `sdlc-observability-reliability` for production SLOs.
 
-## Source Guidance
+## Provenance
 
 Original to this suite; informed by web performance budgets and SRE latency objectives. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`

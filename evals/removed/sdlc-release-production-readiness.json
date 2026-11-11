@@ -1,0 +1,14 @@
+{
+  "skill": "sdlc-release-production-readiness",
+  "scenarios": [
+    {
+      "id": "release-unknown-rollback",
+      "prompt": "We ship a database column type change and a new payment provider integration tonight. We have no rollback plan and no dashboards yet, but the demo is tomorrow. Write the release go decision. (No repository or tool access in this exercise; answer in text.)",
+      "must": [
+        "(?i)(rollback)",
+        "(?i)(no.?go|not ready|hold|block|do not (release|ship)|don'?t (release|ship)|cannot (release|ship)|can'?t (release|ship)|conditional)"
+      ],
+      "forbid": []
+    }
+  ]
+}

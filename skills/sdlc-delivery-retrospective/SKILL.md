@@ -9,12 +9,6 @@ description: Run an evidence-based retrospective after a feature, release, or in
 
 Close the loop so each delivery makes the next one cheaper and safer, with changes landing in the system rather than in meeting notes.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Collect evidence, not memories: trace report, review comments, CI failures, waivers, rework commits, escaped defects, incident timelines, and delivery metrics (lead time, change failure rate, time to restore).
@@ -25,17 +19,9 @@ Close the loop so each delivery makes the next one cheaper and safer, with chang
 6. Assign each action an owner, due date, and a measurable check; add it to the backlog or decision log.
 7. Re-check actions at the next retrospective and drop those that did not change the numbers.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: `docs/governance/retrospective-<date>.md`, updated templates or skills, decision-log entries, action list with owners.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -46,13 +32,8 @@ Close the loop so each delivery makes the next one cheaper and safer, with chang
 
 ## Handoff
 
-`sdlc-project-constitution` for principle changes, `sdlc-skill-authoring` for skill updates, `sdlc-incident-support-feedback` for production lessons.
+`sdlc-project-constitution` for principle changes, `sdlc-skill-evaluation` for skill updates, `sdlc-incident-support-feedback` for production lessons.
 
-## Source Guidance
+## Provenance
 
 Original to this suite; informed by DORA-style metrics and the self-improving loop implied by Spec Kit constitution amendments and Superpowers skill iteration. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`

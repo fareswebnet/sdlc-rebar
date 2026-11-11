@@ -13,5 +13,3 @@ Steps:
 
 Never:
 - Do not present architecture as a preference; document the forces, trade-offs, and consequences.
-- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
-- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

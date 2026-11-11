@@ -9,12 +9,6 @@ description: Handle code review feedback with technical rigor: read all feedback
 
 Turn review feedback into correct changes without performative agreement or blind implementation.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Read all feedback completely before acting; do not implement the first item and keep reading.
@@ -25,17 +19,9 @@ Turn review feedback into correct changes without performative agreement or blin
 6. Reply on the review thread with what changed and the commit, so the reviewer can re-check.
 7. If feedback conflicts with an earlier human decision, stop and raise the conflict instead of choosing silently.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: Item-by-item response log, commits per fix, test evidence, list of pushbacks with rationale.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -48,12 +34,6 @@ Turn review feedback into correct changes without performative agreement or blin
 
 `sdlc-verification-before-completion` after fixes; `sdlc-delivery-retrospective` for repeated findings.
 
-## Source Guidance
+## Provenance
 
 Adapted idea, extended beyond the source, not copied text: superpowers receiving-code-review and requesting-code-review. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`
-- `docs/references/sourcing-matrix.md`

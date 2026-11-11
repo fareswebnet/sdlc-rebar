@@ -9,12 +9,6 @@ description: Create or amend a versioned project constitution of non-negotiable 
 
 Give humans and agents one short, testable set of rules that outrank convenience, so plans and reviews have something concrete to be checked against.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Collect candidate principles from the user, existing docs, `AGENTS.md`, ADRs, CI config, and incident history.
@@ -24,17 +18,9 @@ Give humans and agents one short, testable set of rules that outrank convenience
 5. Run a consistency sweep: list templates, harnesses, agents, and skills that cite the constitution and flag any that now contradict it. Report them; do not silently edit them.
 6. Park non-governance requests (features, refactors, deployments) as deferred intents with the suggested next skill instead of executing them.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: `docs/governance/constitution.md`, amendment entry in `docs/governance/decision-log.md`, sync-impact list.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -47,12 +33,6 @@ Give humans and agents one short, testable set of rules that outrank convenience
 
 `sdlc-design-brainstorming` to start features under the principles; `sdlc-cross-artifact-analysis` to enforce them.
 
-## Source Guidance
+## Provenance
 
 Adapted idea, extended beyond the source, not copied text: speckit-constitution (versioned principles, sync-impact sweep, scope guard). Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`
-- `docs/references/sourcing-matrix.md`

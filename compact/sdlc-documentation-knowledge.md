@@ -13,5 +13,3 @@ Steps:
 
 Never:
 - Do not create documents without owner, audience, update trigger, and link to the relevant artifact or code.
-- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
-- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

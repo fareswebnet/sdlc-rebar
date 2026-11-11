@@ -9,12 +9,6 @@ description: Enforce the red-green-refactor cycle for features, bug fixes, and b
 
 Make tests drive design and prove behavior, so passing tests mean something.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. RED: write one minimal test for one behavior, with a clear name and real code rather than mocks where possible.
@@ -25,17 +19,9 @@ Make tests drive design and prove behavior, so passing tests mean something.
 6. Repeat for the next behavior. Map each test back to a BDD scenario or requirement id when one exists.
 7. For bugs: write a failing test that reproduces the bug first, then fix it; the test is the regression guard.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: Failing-then-passing tests tied to requirements, minimal implementation, refactor notes, evidence of the red and green runs.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -56,12 +42,6 @@ Make tests drive design and prove behavior, so passing tests mean something.
 
 `sdlc-verification-before-completion` after each green cycle; `sdlc-code-review-quality-gate` for the diff.
 
-## Source Guidance
+## Provenance
 
 Adapted idea, extended beyond the source, not copied text: superpowers test-driven-development (iron law, verify-red/verify-green). Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`
-- `docs/references/sourcing-matrix.md`

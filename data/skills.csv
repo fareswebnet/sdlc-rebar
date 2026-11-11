@@ -1,9 +1,7 @@
 skill,cluster,display_name,short_description
 sdlc-delivery-system,orchestration,SDLC Delivery System,Orchestrate product-tech delivery
-sdlc-maturity-assessment,governance,SDLC Maturity Assessment,Score maturity and gaps
 sdlc-idea-framing,product,SDLC Idea Framing,Clarify raw product ideas
 sdlc-market-user-discovery,product,SDLC Market User Discovery,Research users and market
-sdlc-product-strategy,product,SDLC Product Strategy,Shape product strategy
 sdlc-prd-requirements,product,SDLC PRD Requirements,Write precise product specs
 sdlc-domain-modeling,domain-architecture,SDLC Domain Modeling,Model business domain rules
 sdlc-bounded-context-map,domain-architecture,SDLC Bounded Context Map,Map DDD context boundaries
@@ -13,8 +11,6 @@ sdlc-ui-design-system,design,SDLC UI Design System,Plan UI system and components
 sdlc-architecture-rfc,architecture,SDLC Architecture RFC,Write architecture RFCs
 sdlc-application-architecture,architecture,SDLC Application Architecture,Design application boundaries
 sdlc-data-database-architecture,data,SDLC Data Database Architecture,Design data and persistence
-sdlc-api-integration-contracts,integration,SDLC API Integration Contracts,Specify APIs and events
-sdlc-identity-access-multitenancy,security,SDLC Identity Access Multitenancy,Model auth and tenant isolation
 sdlc-security-privacy-compliance,security,SDLC Security Privacy Compliance,Integrate AppSec and privacy
 sdlc-ai-assisted-development,ai-engineering,SDLC AI Assisted Development,Control agentic coding work
 sdlc-ai-product-architecture,ai-product,SDLC AI Product Architecture,Design LLM and agent products
@@ -24,12 +20,10 @@ sdlc-code-change-execution,implementation,SDLC Code Change Execution,Execute sco
 sdlc-quality-test-strategy,quality,SDLC Quality Test Strategy,Design quality and tests
 sdlc-code-review-quality-gate,quality,SDLC Code Review Quality Gate,Review code against gates
 sdlc-devops-ci-cd-platform,platform,SDLC DevOps CI CD Platform,Design delivery platform
-sdlc-release-production-readiness,release,SDLC Release Production Readiness,Prepare safe releases
 sdlc-observability-reliability,production,SDLC Observability Reliability,Design reliable production systems
 sdlc-incident-support-feedback,production,SDLC Incident Support Feedback,Close incident and support loops
 sdlc-performance-scalability-cost,performance-cost,SDLC Performance Scalability Cost,Balance scale and cost
 sdlc-product-analytics-experimentation,analytics,SDLC Product Analytics Experimentation,Design metrics and experiments
-sdlc-technical-debt-evolution,evolution,SDLC Technical Debt Evolution,Manage debt and evolution
 sdlc-documentation-knowledge,knowledge,SDLC Documentation Knowledge,Keep docs useful and current
 sdlc-third-party-ip-risk,risk,SDLC Third Party IP Risk,"Review vendors, licenses, IP"
 sdlc-project-constitution,governance,SDLC Project Constitution,Define non-negotiable engineering principles
@@ -45,7 +39,6 @@ sdlc-verification-before-completion,quality,SDLC Verification Before Completion,
 sdlc-subagent-driven-execution,automation,SDLC Subagent-Driven Execution,Execute tasks with fresh agents and reviews
 sdlc-branch-worktree-lifecycle,delivery,SDLC Branch Worktree Lifecycle,Isolate work and finish branches safely
 sdlc-code-review-reception,quality,SDLC Code Review Reception,Evaluate review feedback before implementing
-sdlc-skill-authoring,automation,SDLC Skill Authoring,Write and test new agent skills
 sdlc-traceability-ledger,governance,SDLC Traceability Ledger,Trace requirement to test to release
 sdlc-definition-of-done,quality,SDLC Definition Of Done,Depth-scaled done criteria with evidence
 sdlc-agent-context-engineering,automation,SDLC Agent Context Engineering,Design context packs and briefs for agents

@@ -9,12 +9,6 @@ description: Manage API and event contract evolution: classify changes as compat
 
 Let contracts change on purpose, with consumers informed and protected.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Inventory consumers and their versions from gateway logs, client registries, or contract tests; unknown consumers are a risk to record.
@@ -25,17 +19,9 @@ Let contracts change on purpose, with consumers informed and protected.
 6. Support old and new in parallel for a stated period; remove only when telemetry shows zero or accepted residual use, with a rollback window.
 7. During legacy migration, keep the legacy contract until the target serves it identically in `sdlc-characterization-testing`, then deprecate on schedule.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: Versioning policy, breaking-change CI check, consumer registry, deprecation notices and sunset calendar.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -46,13 +32,8 @@ Let contracts change on purpose, with consumers informed and protected.
 
 ## Handoff
 
-`sdlc-api-integration-contracts` for contract design, `sdlc-cutover-rollback` when replacing a legacy interface.
+`sdlc-api-versioning-deprecation` for contract design, `sdlc-cutover-rollback` when replacing a legacy interface.
 
-## Source Guidance
+## Provenance
 
 Original to this suite; informed by semantic versioning and consumer-driven contract practice. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`

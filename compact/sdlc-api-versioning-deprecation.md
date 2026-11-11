@@ -19,4 +19,4 @@ Never:
 - Error formats and status codes are part of the contract.
 - Customer-facing deprecation notices need human approval.
 
-Next: `sdlc-api-integration-contracts` for contract design, `sdlc-cutover-rollback` when replacing a legacy interface.
+Next: `sdlc-api-versioning-deprecation` for contract design, `sdlc-cutover-rollback` when replacing a legacy interface.

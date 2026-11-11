@@ -9,12 +9,6 @@ description: Start feature work in an isolated git worktree or branch with a cle
 
 Keep the main checkout safe and give every change a clean start and a deliberate ending.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Detect whether you are already in a linked worktree or the main checkout; reuse an existing isolated workspace when present.
@@ -25,17 +19,9 @@ Keep the main checkout safe and give every change a clean start and a deliberate
 6. Discard requires typed confirmation listing the branch and commits being lost. Clean up the worktree only for merge and discard.
 7. Never force-push or rewrite shared history without explicit approval.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: Isolated branch or worktree, baseline test record, commit history, chosen integration outcome, cleanup confirmation.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -50,14 +36,8 @@ Without worktree support, use a plain branch in a clean checkout and record the 
 
 ## Handoff
 
-`sdlc-code-review-quality-gate` before merge; `sdlc-release-production-readiness` for release.
+`sdlc-code-review-quality-gate` before merge; `sdlc-definition-of-done` for release.
 
-## Source Guidance
+## Provenance
 
 Adapted idea, extended beyond the source, not copied text: superpowers using-git-worktrees and finishing-a-development-branch. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`
-- `docs/references/sourcing-matrix.md`

@@ -193,8 +193,8 @@ def main() -> int:
         if BAD.search(text):
             errors.append(f"{skill.name}: contains placeholder text")
     count = len(list(SKILLS.glob("sdlc-*")))
-    if count != 65:
-        errors.append(f"expected 65 skills, found {count}")
+    if count != 58:
+        errors.append(f"expected 58 skills, found {count}")
 
     known_agents = {path.stem for path in AGENTS.glob("*.yaml")}
     if known_agents != EXPECTED_AGENTS:

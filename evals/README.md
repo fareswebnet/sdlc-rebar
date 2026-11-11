@@ -9,6 +9,8 @@ python scripts/run_evals.py --model gpt-4o --base-url https://api.openai.com/v1 
 
 `--base-url claude-cli` runs the scenarios through your local Claude Code CLI (`--model sonnet`, `haiku`, or `opus`) with tools and skills disabled. Any OpenAI-compatible endpoint also works (Ollama, vLLM, llama.cpp server, LM Studio, hosted APIs).
 
+Scenarios for skills that were removed after showing no gain are kept in `evals/removed/`; see `docs/references/skill-value-analysis.md`.
+
 ## How to read results
 
 - The checks are a floor: they detect whether the key behavior appears, not whether the answer is good. Read the replies behind failures.

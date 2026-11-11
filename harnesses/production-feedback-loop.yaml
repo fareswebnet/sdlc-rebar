@@ -30,7 +30,7 @@ stages:
   - id: product-impact
     agent: product-strategist
     skills:
-      - sdlc-product-strategy
+      - sdlc-idea-framing
       - sdlc-product-analytics-experimentation
     outputs:
       - roadmap or KPI impact notes
@@ -38,7 +38,7 @@ stages:
   - id: fix-plan
     agent: solution-architect
     skills:
-      - sdlc-technical-debt-evolution
+      - sdlc-delivery-retrospective
       - sdlc-implementation-planning
     outputs:
       - remediation plan
@@ -59,7 +59,7 @@ stages:
   - id: release-and-learn
     agent: release-manager
     skills:
-      - sdlc-release-production-readiness
+      - sdlc-definition-of-done
       - sdlc-documentation-knowledge
     outputs:
       - release and follow-up notes

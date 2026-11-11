@@ -9,12 +9,6 @@ description: Produce a frozen, script-generated registry of everything callable 
 
 Give the migration a denominator: a registry nobody can quietly shrink, where 100 percent means 100 percent of the old system.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Inventory each source repository with a script or the framework's own route and schema listing; never replace the inventory with a free-form reading. If no extractor exists for the technology, build one with a test before starting.
@@ -26,17 +20,9 @@ Give the migration a denominator: a registry nobody can quietly shrink, where 10
 7. Assign each line a disposition: OPEN, TO_VERIFY, PORTED (proof plus independent visa), REPLACED (replacement named and existing), ABANDONED (written justification and business signer), DEFERRED (named batch). Run `python scripts/sdlc_registry.py check`.
 8. Have the business owner read every ABANDONED and DEFERRED line before the registry is frozen.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: `docs/migration/registry.csv`, per-repository inventory files, field files for write actions, signed list of abandoned and deferred lines.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -49,11 +35,6 @@ Give the migration a denominator: a registry nobody can quietly shrink, where 10
 
 `sdlc-migration-batch-orchestration` to cut batches, `sdlc-legacy-reverse-engineering` to extract rules.
 
-## Source Guidance
+## Provenance
 
 Original to this suite; informed by the frozen-denominator discipline of production migration programs. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`

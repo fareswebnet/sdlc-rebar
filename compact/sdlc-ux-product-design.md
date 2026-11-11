@@ -13,5 +13,3 @@ Steps:
 
 Never:
 - Do not approve a flow that lacks error, empty, loading, permission, and success states.
-- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
-- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

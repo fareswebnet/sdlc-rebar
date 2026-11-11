@@ -9,12 +9,6 @@ description: Design the context agents receive: a concise repo-level AGENTS.md, 
 
 Treat context as an engineered artifact: small, accurate, versioned, and tested by whether agents behave better with it.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Audit what agents currently see: root instruction files, skills in scope, docs they are pointed at, and recent failure transcripts.
@@ -25,17 +19,9 @@ Treat context as an engineered artifact: small, accurate, versioned, and tested 
 6. Keep memory honest: store only verified facts with a date and source, and expire or correct entries that prove wrong.
 7. Measure: compare agent behavior with and without the context change on two or three realistic tasks, and keep the change only if it helps.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: `AGENTS.md`, context pack template, subagent brief template, handoff note template.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -48,11 +34,6 @@ Treat context as an engineered artifact: small, accurate, versioned, and tested 
 
 `sdlc-subagent-driven-execution` to use the briefs, `sdlc-skill-evaluation` to test whether the context helps.
 
-## Source Guidance
+## Provenance
 
 Original to this suite; informed by the Superpowers fresh-context-per-subagent practice and Spec Kit's per-command context, generalized into a design discipline. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`

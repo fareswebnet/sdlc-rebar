@@ -9,12 +9,6 @@ description: Execute a task list by dispatching a fresh subagent per task with e
 
 Keep each agent focused and each change reviewed, so large plans execute reliably without context pollution.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Read the task list once; extract each task's full text, context, files, and validation commands, and create tracking items.
@@ -25,17 +19,9 @@ Keep each agent focused and each change reviewed, so large plans execute reliabl
 6. Choose the lightest sufficient model for each role; reserve stronger models for integration, design, and review of risky tasks.
 7. Verify the integrated result with `sdlc-verification-before-completion`, then finish the branch via `sdlc-branch-worktree-lifecycle`.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: Per-task reports, review verdicts, integrated diff, final verification evidence.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -59,12 +45,6 @@ Without subagents, execute tasks one at a time in the same session, then run the
 
 `sdlc-agent-context-engineering` for briefs; `sdlc-branch-worktree-lifecycle` and `sdlc-spec-convergence` after the run.
 
-## Source Guidance
+## Provenance
 
 Adapted idea, extended beyond the source, not copied text: superpowers subagent-driven-development, dispatching-parallel-agents, executing-plans. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`
-- `docs/references/sourcing-matrix.md`

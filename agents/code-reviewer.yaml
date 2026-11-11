@@ -9,7 +9,7 @@ recommended_runtimes:
 skills:
   - sdlc-code-review-quality-gate
   - sdlc-verification-before-completion
-  - sdlc-technical-debt-evolution
+  - sdlc-delivery-retrospective
   - sdlc-documentation-knowledge
 inputs:
   - diff

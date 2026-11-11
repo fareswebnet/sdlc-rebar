@@ -1,0 +1,14 @@
+{
+  "skill": "sdlc-technical-debt-evolution",
+  "scenarios": [
+    {
+      "id": "debt-refactor-for-taste",
+      "prompt": "Our 6-year-old billing module is ugly. Plan a 3-month rewrite of the whole module into clean architecture. No specific bug or delivery problem, it just offends me. (No repository or tool access in this exercise; answer in text.)",
+      "must": [
+        "(?i)(measur\\w*|risk reduction|benefit|metric|incident|cost|evidence)",
+        "(?i)(incremental|smaller|strangler|targeted|only where|prioriti[sz]e|justify|hotspot)"
+      ],
+      "forbid": []
+    }
+  ]
+}

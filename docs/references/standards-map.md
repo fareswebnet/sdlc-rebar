@@ -18,10 +18,10 @@ Ce document cartographie les standards, frameworks et bonnes pratiques à utilis
 
 | Référence | Rôle | Skills concernés |
 |---|---|---|
-| ISO/IEC/IEEE 12207 - Software life cycle processes | Cadre complet de cycle de vie logiciel | Tous, surtout `sdlc-delivery-system`, `sdlc-maturity-assessment` |
+| ISO/IEC/IEEE 12207 - Software life cycle processes | Cadre complet de cycle de vie logiciel | Tous, surtout `sdlc-delivery-system`, `` |
 | ISO/IEC/IEEE 29148 - Requirements engineering | Exigences, attributs de qualité des exigences, information items | `sdlc-prd-requirements`, `sdlc-bdd-specifications`, `sdlc-quality-test-strategy` |
 | ISO/IEC/IEEE 42010 - Architecture description | Description d'architecture, viewpoints, concerns, stakeholders | `sdlc-architecture-rfc`, `sdlc-application-architecture` |
-| ISO/IEC 25010:2023 - Product quality model | Modèle de qualité produit: sécurité, fiabilité, maintenabilité, performance, utilisabilité, etc. | `sdlc-quality-test-strategy`, `sdlc-code-review-quality-gate`, `sdlc-maturity-assessment` |
+| ISO/IEC 25010:2023 - Product quality model | Modèle de qualité produit: sécurité, fiabilité, maintenabilité, performance, utilisabilité, etc. | `sdlc-quality-test-strategy`, `sdlc-code-review-quality-gate`, `` |
 | DORA metrics | Mesure delivery: throughput, instability, amélioration continue | `sdlc-delivery-system`, `sdlc-devops-ci-cd-platform`, `sdlc-observability-reliability` |
 
 Sources:
@@ -36,8 +36,8 @@ Sources:
 
 | Référence | Ce qu'on reprend | Skills concernés |
 |---|---|---|
-| PRD agile Atlassian | PRD concis, collaboratif, vivant, orienté objectifs, hypothèses, user stories, design, questions ouvertes, hors périmètre | `sdlc-prd-requirements`, `sdlc-product-strategy` |
-| Shape Up | Shaping, appetite, pitch, risques, no-gos, fixed time variable scope | `sdlc-product-strategy`, `sdlc-delivery-roadmap-backlog`, `sdlc-implementation-planning` |
+| PRD agile Atlassian | PRD concis, collaboratif, vivant, orienté objectifs, hypothèses, user stories, design, questions ouvertes, hors périmètre | `sdlc-prd-requirements`, `sdlc-idea-framing` |
+| Shape Up | Shaping, appetite, pitch, risques, no-gos, fixed time variable scope | `sdlc-idea-framing`, `sdlc-delivery-roadmap-backlog`, `sdlc-implementation-planning` |
 | Dual-track discovery/delivery | Discovery continue séparée de l'exécution, mais connectée aux décisions | `sdlc-market-user-discovery`, `sdlc-delivery-system` |
 
 Sources:
@@ -53,7 +53,7 @@ Sources:
 | Domain-Driven Design | Ubiquitous language, domain model, strategic design, complex domain logic | `sdlc-domain-modeling` |
 | Bounded Context | Découpage du domaine, cohérence du modèle, relations entre contextes | `sdlc-bounded-context-map` |
 | C4 model | Diagrams system context, containers, components, code; diagrams as communication and onboarding | `sdlc-architecture-rfc`, `sdlc-application-architecture`, `sdlc-documentation-knowledge` |
-| ADR | Context, decision, consequences, alternatives, lifecycle des décisions | `sdlc-architecture-rfc`, `sdlc-technical-debt-evolution` |
+| ADR | Context, decision, consequences, alternatives, lifecycle des décisions | `sdlc-architecture-rfc`, `sdlc-delivery-retrospective` |
 | Architecture styles | Modular monolith, hexagonal, clean, microservices, event-driven, CQRS, event sourcing, serverless | `sdlc-architecture-rfc`, `sdlc-application-architecture` |
 
 Sources:
@@ -93,9 +93,9 @@ Sources:
 
 | Référence | Ce qu'on reprend | Skills concernés |
 |---|---|---|
-| OpenAPI | Contrats REST/HTTP machine-readable, schémas, endpoints, erreurs, sécurité | `sdlc-api-integration-contracts` |
-| AsyncAPI | Contrats event-driven/message-driven, channels, messages, operations, bindings | `sdlc-api-integration-contracts`, `sdlc-application-architecture` |
-| Contract testing | Backward compatibility, consumer/provider contracts | `sdlc-quality-test-strategy`, `sdlc-api-integration-contracts` |
+| OpenAPI | Contrats REST/HTTP machine-readable, schémas, endpoints, erreurs, sécurité | `sdlc-api-versioning-deprecation` |
+| AsyncAPI | Contrats event-driven/message-driven, channels, messages, operations, bindings | `sdlc-api-versioning-deprecation`, `sdlc-application-architecture` |
+| Contract testing | Backward compatibility, consumer/provider contracts | `sdlc-quality-test-strategy`, `sdlc-api-versioning-deprecation` |
 
 Sources:
 
@@ -107,9 +107,9 @@ Sources:
 | Référence | Ce qu'on reprend | Skills concernés |
 |---|---|---|
 | NIST SSDF SP 800-218 | Secure software development practices intégrables dans tout SDLC | `sdlc-security-privacy-compliance`, `sdlc-code-review-quality-gate`, `sdlc-devops-ci-cd-platform` |
-| OWASP SAMM | Maturité AppSec, roadmap d'amélioration, approche risk-driven | `sdlc-security-privacy-compliance`, `sdlc-maturity-assessment` |
+| OWASP SAMM | Maturité AppSec, roadmap d'amélioration, approche risk-driven | `sdlc-security-privacy-compliance`, `` |
 | OWASP ASVS | Exigences de vérification sécurité applicative | `sdlc-security-privacy-compliance`, `sdlc-quality-test-strategy` |
-| OWASP Cheat Sheets | Bonnes pratiques concrètes par risque | `sdlc-code-review-quality-gate`, `sdlc-identity-access-multitenancy` |
+| OWASP Cheat Sheets | Bonnes pratiques concrètes par risque | `sdlc-code-review-quality-gate`, `sdlc-security-privacy-compliance` |
 | SLSA | Supply chain, provenance, niveaux de confiance build/source | `sdlc-third-party-ip-risk`, `sdlc-devops-ci-cd-platform` |
 | OWASP Top 10 / LLM Top 10 | Risques web et risques spécifiques LLM/agents | `sdlc-security-privacy-compliance`, `sdlc-ai-product-architecture` |
 
@@ -126,9 +126,9 @@ Sources:
 
 | Référence | Ce qu'on reprend | Skills concernés |
 |---|---|---|
-| DORA metrics | Change lead time, deployment frequency, failed deployment recovery time, change fail rate, deployment rework rate | `sdlc-devops-ci-cd-platform`, `sdlc-observability-reliability`, `sdlc-maturity-assessment` |
+| DORA metrics | Change lead time, deployment frequency, failed deployment recovery time, change fail rate, deployment rework rate | `sdlc-devops-ci-cd-platform`, `sdlc-observability-reliability`, `` |
 | OpenTelemetry | Traces, metrics, logs, instrumentation vendor-neutral | `sdlc-observability-reliability` |
-| Google SRE | SLI, SLO, error budget, alerting utile, production best practices | `sdlc-observability-reliability`, `sdlc-release-production-readiness` |
+| Google SRE | SLI, SLO, error budget, alerting utile, production best practices | `sdlc-observability-reliability`, `sdlc-definition-of-done` |
 | Twelve-Factor App | Config, stateless processes, backing services, dev/prod parity | `sdlc-devops-ci-cd-platform`, `sdlc-application-architecture` |
 
 Sources:

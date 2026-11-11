@@ -9,12 +9,6 @@ description: Maintain a machine-checkable chain from requirement id to BDD scena
 
 Make 'is every requirement built and proven?' a command you can run, not an opinion.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Assign stable ids to every requirement in `docs/product/`: `FR-###` functional, `NFR-###` quality, `SEC-###` security and privacy, `AI-###` model behavior. Never reuse or renumber an id.
@@ -25,17 +19,9 @@ Make 'is every requirement built and proven?' a command you can run, not an opin
 6. Extend the chain downstream: record the commit or PR, release version, feature flag, and the metric or SLO that shows the requirement works in production.
 7. When the spec changes, update ids in place (retire, never delete) and re-run to expose orphaned tasks and tests.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: Tagged specs, scenarios, tasks, and tests; coverage matrix from `scripts/sdlc_trace.py`; entry in the review or release evidence.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -46,13 +32,8 @@ Make 'is every requirement built and proven?' a command you can run, not an opin
 
 ## Handoff
 
-`sdlc-cross-artifact-analysis` for semantic checks the script cannot do, `sdlc-release-production-readiness` for downstream links.
+`sdlc-cross-artifact-analysis` for semantic checks the script cannot do, `sdlc-definition-of-done` for downstream links.
 
-## Source Guidance
+## Provenance
 
 Original to this suite; informed by the Spec Kit analyze idea of coverage mapping, extended into an executable, id-based, end-to-end ledger. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`

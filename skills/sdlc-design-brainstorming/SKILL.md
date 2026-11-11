@@ -9,12 +9,6 @@ description: Turn a rough idea or feature request into an approved design throug
 
 Prevent building the wrong thing by making design approval a hard gate, scaled to the size of the change.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Explore the project first: existing docs, recent commits, constraints, similar features, and conventions.
@@ -25,17 +19,9 @@ Prevent building the wrong thing by making design approval a hard gate, scaled t
 6. Write the approved design to `docs/product/` or the feature spec folder, self-review it for ambiguity, contradictions, and scope creep, then ask the user to review the written file.
 7. Only after approval, hand off to `sdlc-implementation-planning` or `sdlc-task-breakdown`; never jump straight to code.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: Approved design document with decisions and rejected alternatives, then a handoff to planning.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -55,12 +41,6 @@ Prevent building the wrong thing by making design approval a hard gate, scaled t
 
 `sdlc-spec-clarification` for gaps, then `sdlc-implementation-planning`.
 
-## Source Guidance
+## Provenance
 
 Adapted idea, extended beyond the source, not copied text: superpowers brainstorming (hard gate, one question at a time, approaches before design). Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`
-- `docs/references/sourcing-matrix.md`

@@ -13,5 +13,3 @@ Steps:
 
 Never:
 - Do not add critical third-party dependencies without ownership, license, security, exit, and cost review.
-- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
-- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

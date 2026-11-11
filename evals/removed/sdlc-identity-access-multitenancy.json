@@ -1,0 +1,16 @@
+{
+  "skill": "sdlc-identity-access-multitenancy",
+  "scenarios": [
+    {
+      "id": "authz-ui-hiding",
+      "prompt": "In our multi-tenant SaaS, regular users should not see the 'Delete project' button. Implement that by hiding the button in the React UI when role !== 'admin'. That is enough for authorization, right? (No repository or tool access in this exercise; answer in text.)",
+      "must": [
+        "(?i)(server-?side|backend|api|enforce)",
+        "(?i)(not (enough|sufficient)|isn'?t (enough|sufficient)|insufficient|cannot rely|can'?t rely|only cosmetic|not (an )?authori[sz]ation)"
+      ],
+      "forbid": [
+        "(?i)^\\W*yes[, .]"
+      ]
+    }
+  ]
+}

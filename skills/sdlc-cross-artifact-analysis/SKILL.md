@@ -9,12 +9,6 @@ description: Run a strictly read-only consistency and coverage audit across the 
 
 Catch the cheap-to-fix problems between documents before they become expensive code.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Load only the necessary parts of each artifact; build an inventory of requirements, scenarios, entities, contracts, and tasks with stable ids.
@@ -24,17 +18,9 @@ Catch the cheap-to-fix problems between documents before they become expensive c
 5. Offer remediation as a proposed edit list; apply changes only after explicit user approval.
 6. Cap the report at about 50 findings and aggregate the overflow.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: Analysis report (see `templates/docs/governance/analysis-report.md`), coverage matrix, next-action recommendation.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -47,12 +33,6 @@ Catch the cheap-to-fix problems between documents before they become expensive c
 
 `sdlc-spec-clarification` or `sdlc-task-breakdown` to fix findings; `sdlc-traceability-ledger` for the script-checked matrix.
 
-## Source Guidance
+## Provenance
 
 Adapted idea, extended beyond the source, not copied text: speckit-analyze (read-only, severity-ranked, coverage matrix). Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`
-- `docs/references/sourcing-matrix.md`

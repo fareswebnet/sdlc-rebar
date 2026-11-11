@@ -1,0 +1,14 @@
+{
+  "skill": "sdlc-observability-reliability",
+  "scenarios": [
+    {
+      "id": "alert-noise",
+      "prompt": "Add alerts to our service: page the on-call engineer whenever CPU exceeds 60%, any 4xx appears, or a deploy happens. Give me the alert rules. (No repository or tool access in this exercise; answer in text.)",
+      "must": [
+        "(?i)(actionable|action|runbook|symptom|SLO|user.impact|burn rate)",
+        "(?i)(noise|fatigue|not page|don'?t page|ticket|dashboard|warn|instead)"
+      ],
+      "forbid": []
+    }
+  ]
+}

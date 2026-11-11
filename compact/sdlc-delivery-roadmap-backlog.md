@@ -13,5 +13,3 @@ Steps:
 
 Never:
 - Do not create tickets that are disconnected from product outcomes or validation.
-- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
-- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

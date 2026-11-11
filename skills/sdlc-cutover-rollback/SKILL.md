@@ -10,12 +10,6 @@ disable-model-invocation: true
 
 Make the switch reversible, rehearsed, and measured, so go-live is a decision, not a leap.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Choose the strategy: strangler by route or tenant, parallel run with comparison, or big-bang with justification; define the unit of switch and its blast radius.
@@ -27,17 +21,9 @@ Make the switch reversible, rehearsed, and measured, so go-live is a decision, n
 7. Hold go/no-go with a named owner, and keep the legacy read-only until the retention decision is recorded.
 8. After cutover, monitor a defined period, then decommission the old system only with sign-off and archived data.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: Cutover plan, rehearsal log, go/no-go record, post-cutover monitoring report.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -48,13 +34,8 @@ Make the switch reversible, rehearsed, and measured, so go-live is a decision, n
 
 ## Handoff
 
-`sdlc-release-production-readiness` for general release gates, `sdlc-incident-support-feedback` for the post-cutover loop.
+`sdlc-definition-of-done` for general release gates, `sdlc-incident-support-feedback` for the post-cutover loop.
 
-## Source Guidance
+## Provenance
 
 Original to this suite; informed by strangler fig and parallel-run migration practice. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`

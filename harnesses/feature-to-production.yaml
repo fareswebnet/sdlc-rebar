@@ -33,7 +33,7 @@ stages:
       - sdlc-task-breakdown
       - sdlc-cross-artifact-analysis
       - sdlc-data-database-architecture
-      - sdlc-api-integration-contracts
+      - sdlc-api-versioning-deprecation
     outputs:
       - docs/engineering/implementation-plan.md
       - migration and contract notes when needed
@@ -67,7 +67,7 @@ stages:
   - id: release
     agent: release-manager
     skills:
-      - sdlc-release-production-readiness
+      - sdlc-definition-of-done
     outputs:
       - release notes
       - rollout and rollback notes

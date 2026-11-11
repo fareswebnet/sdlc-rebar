@@ -9,12 +9,6 @@ description: Find and resolve underspecified areas in a PRD, feature spec, or BD
 
 Remove costly ambiguity early, with a bounded interview that ends in recorded decisions instead of an open-ended discussion.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Scan the spec against a coverage taxonomy: scope and non-goals, actors and permissions, data and lifecycle, edge and failure cases, non-functional targets, integrations, UX states, compliance, terminology, and measurable success.
@@ -24,17 +18,9 @@ Remove costly ambiguity early, with a bounded interview that ends in recorded de
 5. Stop when critical gaps are closed, the user says stop, or the question budget is spent. Report a coverage table: resolved, deferred, still outstanding.
 6. If the codebase can answer a question, read the code instead of asking the user.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: Updated spec or PRD with a `Clarifications` log, coverage summary, list of deferred questions with their risk.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -47,12 +33,6 @@ Remove costly ambiguity early, with a bounded interview that ends in recorded de
 
 `sdlc-requirements-checklist` to test the clarified spec, then `sdlc-implementation-planning`.
 
-## Source Guidance
+## Provenance
 
 Adapted idea, extended beyond the source, not copied text: speckit-clarify (bounded, sequential, recommendation-first interview). Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`
-- `docs/references/sourcing-matrix.md`

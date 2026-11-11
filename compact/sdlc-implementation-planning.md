@@ -13,5 +13,3 @@ Steps:
 
 Never:
 - Do not implement from memory when the repo can provide the answer.
-- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
-- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

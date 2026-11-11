@@ -9,12 +9,6 @@ description: Pin down the observable behavior of a legacy or reference system wi
 
 Prove equivalence by executing both sides on the same inputs, not by reading code.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Choose the oracle: the real legacy system where it can run, otherwise recorded outputs from it; a reimplementation written by the same team is never an oracle.
@@ -25,17 +19,9 @@ Prove equivalence by executing both sides on the same inputs, not by reading cod
 6. Check the comparison is not vacuous: series are non-empty, no mask hides a gap, and a deliberately broken rule makes the suite fail (mutation check).
 7. Test events and data flows where relevant: duplicates, reordering, replay, schema compatibility, and atomicity between data and outbox.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: Characterization suite, golden-master datasets with provenance, differential-run report, mutation-check evidence.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -48,11 +34,6 @@ Prove equivalence by executing both sides on the same inputs, not by reading cod
 
 `sdlc-independent-verification` for the visa, `sdlc-test-driven-development` for new behavior.
 
-## Source Guidance
+## Provenance
 
 Original to this suite; informed by golden master, characterization, and differential testing practice. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`

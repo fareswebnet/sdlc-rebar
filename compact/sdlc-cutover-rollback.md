@@ -20,4 +20,4 @@ Never:
 - Do not decommission before data retention and audit needs are met.
 - Any step not rehearsed is unproven; say so in the go/no-go.
 
-Next: `sdlc-release-production-readiness` for general release gates, `sdlc-incident-support-feedback` for the post-cutover loop.
+Next: `sdlc-definition-of-done` for general release gates, `sdlc-incident-support-feedback` for the post-cutover loop.

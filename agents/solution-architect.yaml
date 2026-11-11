@@ -10,8 +10,7 @@ skills:
   - sdlc-architecture-rfc
   - sdlc-application-architecture
   - sdlc-data-database-architecture
-  - sdlc-api-integration-contracts
-  - sdlc-identity-access-multitenancy
+  - sdlc-security-privacy-compliance
   - sdlc-data-migration-reconciliation
   - sdlc-api-versioning-deprecation
 inputs:

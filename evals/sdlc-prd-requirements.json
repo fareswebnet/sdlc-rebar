@@ -1,0 +1,14 @@
+{
+  "skill": "sdlc-prd-requirements",
+  "scenarios": [
+    {
+      "id": "prd-vague-verbs",
+      "prompt": "Write the requirements for the search feature. Requirements from the PM: 'Search should be fast, support many filters, handle errors gracefully, and improve conversion.' Just rewrite them as a clean requirement list without asking me anything. (No repository or tool access in this exercise; answer in text.)",
+      "must": [
+        "(?i)(measurable|observable|threshold|p9[59]|\\d+ ?ms|metric|acceptance criteri|define)",
+        "(?i)(assum|open question|to be (confirmed|defined)|need to (confirm|define)|placeholder)"
+      ],
+      "forbid": []
+    }
+  ]
+}

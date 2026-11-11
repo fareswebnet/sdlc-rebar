@@ -1,4 +1,0 @@
-interface:
-  display_name: "SDLC Release Production Readiness"
-  short_description: "Prepare safe releases workflows"
-  default_prompt: "Use $sdlc-release-production-readiness to make releases deliberate, observable, and reversible where possible."

@@ -9,12 +9,6 @@ description: Recover the behavior of a legacy system from code, data, logs, and 
 
 Turn implicit behavior into explicit, id-addressable rules that tests can prove and owners can approve.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Work from the registry: process one batch of lines at a time and trace each from entry point through validation, business logic, persistence, side effects, and output.
@@ -25,17 +19,9 @@ Turn implicit behavior into explicit, id-addressable rules that tests can prove 
 6. List unknowns and contradictions as questions with an owner; they block the batch only if they affect an R1 rule.
 7. Link each rule to registry keys and, later, to scenarios and tests so `sdlc-traceability-ledger` can check coverage.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: `docs/migration/rules/<source>-rules.md`, data-flow notes, defect list, open-question list with owners.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -48,11 +34,6 @@ Turn implicit behavior into explicit, id-addressable rules that tests can prove 
 
 `sdlc-characterization-testing` to prove the rules, `sdlc-bdd-specifications` to express them as scenarios.
 
-## Source Guidance
+## Provenance
 
 Original to this suite; informed by spec-mining and retro-documentation practice. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`

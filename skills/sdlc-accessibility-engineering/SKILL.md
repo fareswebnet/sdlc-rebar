@@ -9,12 +9,6 @@ description: Engineer accessibility in from requirements: target a WCAG 2.2 leve
 
 Make accessibility a tested requirement with evidence, not a late audit.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Set the target (usually WCAG 2.2 AA) and applicable law or policy; note the assistive technologies and platforms in scope.
@@ -26,17 +20,9 @@ Make accessibility a tested requirement with evidence, not a late audit.
 7. Record conformance per criterion with evidence and known gaps with owners and dates; publish an accessibility statement where required.
 8. Include people with disabilities in usability testing for high-impact flows.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: `docs/ux/accessibility.md`, acceptance criteria in specs, automated checks in CI, conformance report with gaps.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -49,11 +35,6 @@ Make accessibility a tested requirement with evidence, not a late audit.
 
 `sdlc-ui-design-system` for tokens and components, `sdlc-quality-test-strategy` for test integration.
 
-## Source Guidance
+## Provenance
 
 Original to this suite; informed by WCAG 2.2 and accessible engineering practice. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`

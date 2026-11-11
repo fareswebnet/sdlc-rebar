@@ -13,5 +13,3 @@ Steps:
 
 Never:
 - Do not approve code whose behavior cannot be connected to a spec or tested expectation.
-- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
-- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

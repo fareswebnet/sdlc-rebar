@@ -6,7 +6,7 @@ recommended_runtimes:
   - codex
   - hermes
 skills:
-  - sdlc-release-production-readiness
+  - sdlc-definition-of-done
   - sdlc-observability-reliability
   - sdlc-incident-support-feedback
   - sdlc-product-analytics-experimentation

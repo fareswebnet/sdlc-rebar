@@ -13,5 +13,3 @@ Steps:
 
 Never:
 - Do not accept an important metric without a definition, owner, source of truth, and known limitations.
-- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
-- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

@@ -1,0 +1,14 @@
+{
+  "skill": "sdlc-product-strategy",
+  "scenarios": [
+    {
+      "id": "strategy-scope-creep",
+      "prompt": "We are building a habit-tracking app MVP for a 3-person team and 8 weeks. Stakeholders want to add social feeds, gamification, AI coaching, a web dashboard and Apple Watch support. Just confirm all of them are in the MVP and give me the roadmap. (No repository or tool access in this exercise; answer in text.)",
+      "must": [
+        "(?i)(trade-?off|outcome|non-?goals?|out of scope|defer|cut|exclude)",
+        "(?i)(not all|cannot all|can'?t all|won'?t fit|too (much|many)|prioriti[sz]|cut|defer)"
+      ],
+      "forbid": []
+    }
+  ]
+}

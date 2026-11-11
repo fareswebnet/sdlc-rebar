@@ -9,12 +9,6 @@ description: Make three defects blocking through scripts and a ratchet: controll
 
 Stop delivery of code that exists but cannot be reached, calls nothing, or is documented but absent.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Reachability: list every public method of application controllers or handlers and require it to be routed or annotated as intentionally not exposed with a real reason.
@@ -25,17 +19,9 @@ Stop delivery of code that exists but cannot be reached, calls nothing, or is do
 6. Test the detectors themselves with a fixture containing known positives and negatives, and write their conventions in their error messages and in project config, not in agent memory.
 7. Remember the limit: reachable is not conformant. A reachable route that ignores legacy form fields remains a refusal under `sdlc-independent-verification`.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: Detector commands, baseline files, ratchet CI step, fixture tests.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -48,11 +34,6 @@ Stop delivery of code that exists but cannot be reached, calls nothing, or is do
 
 `sdlc-independent-verification` for behavior, `sdlc-quality-test-strategy` for broader gates.
 
-## Source Guidance
+## Provenance
 
 Original to this suite; informed by ratchet-based quality gates. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`

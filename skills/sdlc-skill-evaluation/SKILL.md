@@ -9,12 +9,6 @@ description: Evaluate skills, agents, and harnesses with repeatable scenarios: b
 
 Prove that a skill changes behavior for the better, and notice when a change makes it worse.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Define two to five realistic scenarios per skill, including at least one pressure case (deadline, sunk cost, ambiguous request) and one case where the skill should not trigger.
@@ -26,17 +20,9 @@ Prove that a skill changes behavior for the better, and notice when a change mak
 7. Run `python scripts/run_evals.py --model <model> --runs 3` against any OpenAI-compatible endpoint to compare baseline and with-skill scores, and add your scenarios under `evals/`.
 8. Review trigger quality: confirm descriptions fire on the right requests and not on near misses.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: `evals/<skill>/scenarios.md` with rubric and baseline-versus-skill scores, change notes per version.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -47,13 +33,8 @@ Prove that a skill changes behavior for the better, and notice when a change mak
 
 ## Handoff
 
-`sdlc-skill-authoring` to apply the fixes, `sdlc-agent-context-engineering` when the problem is context rather than the skill.
+`sdlc-skill-evaluation` to apply the fixes, `sdlc-agent-context-engineering` when the problem is context rather than the skill.
 
-## Source Guidance
+## Provenance
 
 Original to this suite; informed by the Superpowers 'TDD for skills' idea, extended into rubric-scored baseline-versus-skill evaluation. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`

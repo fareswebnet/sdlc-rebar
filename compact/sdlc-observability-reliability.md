@@ -13,5 +13,3 @@ Steps:
 
 Never:
 - Do not alert humans for signals that have no expected action.
-- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
-- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

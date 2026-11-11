@@ -30,7 +30,7 @@ skills:
     - sdlc-bdd-specifications
     - sdlc-quality-test-strategy
     - sdlc-security-privacy-compliance
-    - sdlc-release-production-readiness
+    - sdlc-definition-of-done
   project:
     - releasepilot-research
     - releasepilot-domain

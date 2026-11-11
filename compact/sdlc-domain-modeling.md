@@ -13,5 +13,3 @@ Steps:
 
 Never:
 - Do not design tables, APIs, or services before the core domain terms and invariants are clear.
-- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
-- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

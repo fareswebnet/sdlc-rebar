@@ -17,7 +17,6 @@ Skills added in the speckit and superpowers enrichment adapt ideas into original
 | `sdlc-subagent-driven-execution` | Superpowers `subagent-driven-development`, `dispatching-parallel-agents` | Fresh agent per task, two-stage review |
 | `sdlc-branch-worktree-lifecycle` | Superpowers `using-git-worktrees`, `finishing-a-development-branch` | Isolation and explicit finish options |
 | `sdlc-code-review-reception` | Superpowers `receiving-code-review` | Verify feedback before implementing |
-| `sdlc-skill-authoring` | Superpowers `writing-skills` | TDD for skills |
 
 ## Beyond the sources
 

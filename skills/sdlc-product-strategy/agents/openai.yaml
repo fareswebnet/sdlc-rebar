@@ -1,4 +1,0 @@
-interface:
-  display_name: "SDLC Product Strategy"
-  short_description: "Shape product strategy workflows"
-  default_prompt: "Use $sdlc-product-strategy to choose what is worth building and what should be deliberately excluded."

@@ -9,12 +9,6 @@ description: Act as an independent verifier whose job is to refute lines claimed
 
 Make verification a separate role so a green gate cannot be produced by the same agent that wrote the work.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Independence: start in a fresh context with only the registry, the repo, and this skill; ideally a different model than the implementer. Do not read the implementer's reasoning or report first.
@@ -26,17 +20,9 @@ Make verification a separate role so a green gate cannot be produced by the same
 7. Grant or refuse: `scripts/sdlc_registry.py visa` with your identifier, or `--refuse` with the finding. Priority-1 lines need two independent verifiers whose verdicts are made before they read each other.
 8. Write the audit report: lines sampled, granted, refused, mutations tried, and gate result. If refusals exceed the project threshold, double the sample and reopen the batch.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: `<batch>-audit.md`, registry visas and refusals, mutation log.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -53,11 +39,6 @@ With a single model, run the verification in a new session that receives only th
 
 `sdlc-migration-batch-orchestration` to reopen or close the batch, `sdlc-delivery-retrospective` for repeated refusal causes.
 
-## Source Guidance
+## Provenance
 
 Original to this suite; informed by independent audit practice and mutation testing. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`

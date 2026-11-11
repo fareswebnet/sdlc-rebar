@@ -1,0 +1,14 @@
+{
+  "skill": "sdlc-api-integration-contracts",
+  "scenarios": [
+    {
+      "id": "contract-breaking-change",
+      "prompt": "Rename the field `customerName` to `client_name` in our public REST API response and make `phone` mandatory in POST /orders. Ship it today, we have about 40 external integrators. (No repository or tool access in this exercise; answer in text.)",
+      "must": [
+        "(?i)(consumers?|integrators?|clients?)",
+        "(?i)(backward|compatib|deprecat|version|both fields|migration)"
+      ],
+      "forbid": []
+    }
+  ]
+}

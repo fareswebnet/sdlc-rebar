@@ -13,5 +13,3 @@ Steps:
 
 Never:
 - Do not split by technical layer when the real boundary is business capability or data ownership.
-- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
-- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

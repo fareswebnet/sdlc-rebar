@@ -9,12 +9,6 @@ description: Require fresh verification evidence before claiming work is complet
 
 Make every status claim traceable to evidence produced now, not remembered or assumed.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Identify which command or check proves the claim (tests, build, lint, type check, migration dry run, acceptance scenario).
@@ -25,17 +19,9 @@ Make every status claim traceable to evidence produced now, not remembered or as
 6. For delegated work, verify the diff and re-run checks yourself instead of trusting a subagent report.
 7. For bug fixes, confirm the original reproduction now passes and that a regression test fails without the fix.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: Verification log in the PR or task: commands run, results, requirement checklist, residual risks.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -56,12 +42,6 @@ Make every status claim traceable to evidence produced now, not remembered or as
 
 `sdlc-definition-of-done` for the full criteria; `sdlc-branch-worktree-lifecycle` to finish.
 
-## Source Guidance
+## Provenance
 
 Adapted idea, extended beyond the source, not copied text: superpowers verification-before-completion (iron law, gate function). Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`
-- `docs/references/sourcing-matrix.md`

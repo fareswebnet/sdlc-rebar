@@ -19,4 +19,4 @@ Never:
 - Prefer changes enforced by tooling over reminders.
 - Keep it short; a retrospective that produces no change is wasted effort.
 
-Next: `sdlc-project-constitution` for principle changes, `sdlc-skill-authoring` for skill updates, `sdlc-incident-support-feedback` for production lessons.
+Next: `sdlc-project-constitution` for principle changes, `sdlc-skill-evaluation` for skill updates, `sdlc-incident-support-feedback` for production lessons.

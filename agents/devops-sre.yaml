@@ -8,7 +8,7 @@ recommended_runtimes:
   - hermes
 skills:
   - sdlc-devops-ci-cd-platform
-  - sdlc-release-production-readiness
+  - sdlc-definition-of-done
   - sdlc-observability-reliability
   - sdlc-performance-scalability-cost
   - sdlc-incident-support-feedback

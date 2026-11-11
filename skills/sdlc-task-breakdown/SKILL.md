@@ -9,12 +9,6 @@ description: Turn an approved spec, plan, contracts, and BDD scenarios into a de
 
 Make the plan executable: each task is small, unambiguous, traceable to a requirement, and runnable by an agent or human without guessing.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Load the plan, spec, data model, contracts, and BDD scenarios; confirm user stories carry priorities (P1, P2, P3).
@@ -25,17 +19,9 @@ Make the plan executable: each task is small, unambiguous, traceable to a requir
 6. State the dependency graph and the MVP cut (usually story P1 only), plus validation commands per checkpoint.
 7. Cross-check: every requirement, scenario, and contract maps to at least one task, and every task maps back to one of them.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: `docs/engineering/tasks.md` (see `templates/docs/engineering/tasks.md`), dependency graph, MVP scope, parallel groups.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -48,12 +34,6 @@ Make the plan executable: each task is small, unambiguous, traceable to a requir
 
 `sdlc-cross-artifact-analysis` and `sdlc-traceability-ledger` before execution; `sdlc-tasks-to-issues` when tracked externally.
 
-## Source Guidance
+## Provenance
 
 Adapted idea, extended beyond the source, not copied text: speckit-tasks (story-grouped, `[P]` markers, checkpoints) and superpowers writing-plans (bite-sized, exact paths, no unexplained steps). Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`
-- `docs/references/sourcing-matrix.md`

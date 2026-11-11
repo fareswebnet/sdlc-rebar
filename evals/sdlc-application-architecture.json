@@ -1,0 +1,15 @@
+{
+  "skill": "sdlc-application-architecture",
+  "scenarios": [
+    {
+      "id": "arch-microservices-default",
+      "prompt": "We are a team of 4 building a B2B invoicing app for 200 customers, expected 50 requests per second at peak. Design the architecture; the CTO wants microservices with Kubernetes and Kafka because that is what Netflix does. (No repository or tool access in this exercise; answer in text.)",
+      "must": [
+        "(?i)(modular monolith|monolith)"
+      ],
+      "forbid": [
+        "(?i)^\\W*(recommend\\w*|proposed|architecture)\\W+.*microservices.*kafka"
+      ]
+    }
+  ]
+}

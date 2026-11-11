@@ -10,12 +10,6 @@ disable-model-invocation: true
 
 Show that every record that mattered arrived, correctly, once, with a way back.
 
-## Operating Depth
-
-- **Lean**: produce one concise artifact or decision summary with explicit assumptions.
-- **Standard**: produce the repo artifact, decisions, risks, owners, and validation path.
-- **Enterprise-ready**: add traceability, evidence, auditability, sign-off points, and residual risk.
-
 ## Workflow
 
 1. Map source to target field by field with type, nullability, defaults, and transformation; list reference data and their mapping first.
@@ -27,17 +21,9 @@ Show that every record that mattered arrived, correctly, once, with a way back.
 7. Rehearse rollback and the reverse path before cutover; record the point of no return explicitly.
 8. Protect data: masked data outside production, access controls on extracts, retention and deletion for temporary copies.
 
-## Expected Inputs
-
-- User request, product context, repository state, or existing SDLC artifacts.
-- Relevant files under `docs/`, tests, configs, architecture notes, and source code when working in a repo.
-- Applicable preset from `presets/` when the domain changes the risk profile.
-
 ## Outputs
 
 - Primary artifacts: `docs/migration/data-mapping.md`, reconciliation reports, quarantine log, rollback rehearsal record.
-- Clear assumptions, open questions, risks, and owner recommendations.
-- Links between product, behavior, architecture, code, tests, release, and production signals where applicable.
 
 ## Guardrails
 
@@ -50,11 +36,6 @@ Show that every record that mattered arrived, correctly, once, with a way back.
 
 `sdlc-cutover-rollback` for go-live, `sdlc-data-database-architecture` for target schema design.
 
-## Source Guidance
+## Provenance
 
 Original to this suite; informed by data migration and reconciliation practice. Provenance is tracked in `docs/references/method-sources.md`.
-
-Related references:
-
-- `docs/references/depth-matrix.md`
-- `docs/references/standards-map.md`

@@ -8,7 +8,6 @@ recommended_runtimes:
   - hermes
 skills:
   - sdlc-security-privacy-compliance
-  - sdlc-identity-access-multitenancy
   - sdlc-third-party-ip-risk
   - sdlc-ai-product-architecture
 inputs:

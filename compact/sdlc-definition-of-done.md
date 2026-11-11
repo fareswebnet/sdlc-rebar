@@ -18,4 +18,4 @@ Never:
 - Keep Lean to under ten lines; Enterprise-ready may be longer but still evidence-first.
 - Do not weaken criteria mid-sprint to make a deadline.
 
-Next: `sdlc-verification-before-completion` to produce the evidence, `sdlc-release-production-readiness` for release-level criteria.
+Next: `sdlc-verification-before-completion` to produce the evidence, `sdlc-definition-of-done` for release-level criteria.

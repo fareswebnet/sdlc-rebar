@@ -20,4 +20,4 @@ Never:
 - Record model and date; results are not portable across models without rechecking.
 - A skill that cannot show a measurable benefit should be removed.
 
-Next: `sdlc-skill-authoring` to apply the fixes, `sdlc-agent-context-engineering` when the problem is context rather than the skill.
+Next: `sdlc-skill-evaluation` to apply the fixes, `sdlc-agent-context-engineering` when the problem is context rather than the skill.

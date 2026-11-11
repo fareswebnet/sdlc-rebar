@@ -39,7 +39,6 @@ stages:
     skills:
       - sdlc-idea-framing
       - sdlc-market-user-discovery
-      - sdlc-product-strategy
     project_skill: releasepilot-research
     permissions:
       repo: read
@@ -85,8 +84,8 @@ stages:
       - sdlc-architecture-rfc
       - sdlc-application-architecture
       - sdlc-data-database-architecture
-      - sdlc-api-integration-contracts
-      - sdlc-identity-access-multitenancy
+      - sdlc-api-versioning-deprecation
+      - sdlc-security-privacy-compliance
     project_skill: releasepilot-architecture
     permissions:
       repo: docs_write
@@ -151,7 +150,7 @@ stages:
     agent: code-reviewer
     skills:
       - sdlc-code-review-quality-gate
-      - sdlc-release-production-readiness
+      - sdlc-definition-of-done
     project_skill: releasepilot-pr-review
     permissions:
       repo: read

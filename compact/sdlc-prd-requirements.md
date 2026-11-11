@@ -13,5 +13,3 @@ Steps:
 
 Never:
 - Do not accept vague verbs like improve, optimize, support, or handle unless the observable behavior is…
-- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
-- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.

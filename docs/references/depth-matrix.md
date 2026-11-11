@@ -1,5 +1,13 @@
 # Depth Matrix
 
+Depth applies to every skill (it is no longer repeated in each `SKILL.md`):
+
+- **Lean**: one concise artifact or decision summary with explicit assumptions.
+- **Standard**: the repo artifact, decisions, risks, owners, and validation path.
+- **Enterprise-ready**: adds traceability, evidence, auditability, sign-off points, and residual risk.
+
+Unless a skill says otherwise, prefer existing repo patterns over generic advice, and end each output with decision, rationale, trade-offs, next action, and validation.
+
 Which steps of the spec-driven chain are required at each depth. Skipping a step is allowed only with a stated reason in the decision log.
 
 | Step | Skill | Lean | Standard | Enterprise-ready |

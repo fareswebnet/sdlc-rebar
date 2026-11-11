@@ -10,7 +10,6 @@ stages:
     skills:
       - sdlc-idea-framing
       - sdlc-market-user-discovery
-      - sdlc-product-strategy
     output:
       - docs/product/problem-statement.md
       - docs/product/vision.md
@@ -51,8 +50,8 @@ stages:
       - sdlc-architecture-rfc
       - sdlc-application-architecture
       - sdlc-data-database-architecture
-      - sdlc-api-integration-contracts
-      - sdlc-identity-access-multitenancy
+      - sdlc-api-versioning-deprecation
+      - sdlc-security-privacy-compliance
     output:
       - docs/architecture/application-architecture.md
       - docs/architecture/data-model.md

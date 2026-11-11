@@ -13,5 +13,3 @@ Steps:
 
 Never:
 - Do not generate code from a story whose critical examples and edge cases are still unknown.
-- Prefer existing repo patterns, local conventions, and versioned artifacts over generic advice.
-- Keep outputs actionable: decision, rationale, trade-offs, next action, and validation.
