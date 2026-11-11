@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import subprocess
+import tempfile
 import urllib.request
 
 DEFAULT_BASE_URL = "http://localhost:11434/v1"
@@ -18,7 +19,7 @@ def _chat_claude_cli(messages: list[dict], model: str, timeout: int) -> str:
     command = ["claude", "-p", "--model", model, "--tools", "", "--disable-slash-commands", "--no-session-persistence", "--setting-sources", ""]
     if system:
         command += ["--system-prompt", system]
-    result = subprocess.run(command, input=user, capture_output=True, text=True, timeout=timeout)
+    result = subprocess.run(command, input=user, capture_output=True, text=True, timeout=timeout, cwd=tempfile.gettempdir())
     if result.returncode != 0:
         raise RuntimeError(f"claude CLI failed: {result.stderr.strip()[:500]}")
     return result.stdout.strip()
