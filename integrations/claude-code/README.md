@@ -67,7 +67,7 @@ Caveats: string checks are a floor and the sample is small. Several failures wit
 
 - Skills with side effects (`sdlc-tasks-to-issues`, `sdlc-cutover-rollback`, `sdlc-data-migration-reconciliation`) set `disable-model-invocation: true`, so they only run when you invoke them explicitly with `/sdlc-<name>`.
 - Claude Code shows skill descriptions to the model within a limited budget. The 58 descriptions total about 11,100 characters; if you install many other skills, descriptions may be shortened. Install only the subset you use, or rely on the harnesses and explicit `/sdlc-<name>` calls.
-- Subagents: `--native-roles` writes `.claude/agents/*.md`; run the `independent-verifier` role as its own subagent so it does not see the builder's reasoning.
+- Subagents: `--native-roles` writes `.claude/agents/sdlc-<role>.md` (prefixed to avoid clashing with your own agents); run the `sdlc-independent-verifier` role as its own subagent so it does not see the builder's reasoning.
 
 ## MCP Connectors
 

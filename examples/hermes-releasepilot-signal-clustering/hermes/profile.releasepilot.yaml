@@ -23,12 +23,12 @@ memory_policy:
     - temporary implementation guesses
 skills:
   sdlc:
-    - sdlc-delivery-system
-    - sdlc-ai-assisted-development
+    - sdlc-delivery-orchestrator
+    - sdlc-ai-coding-governance
     - sdlc-domain-modeling
     - sdlc-bounded-context-map
     - sdlc-bdd-specifications
-    - sdlc-quality-test-strategy
+    - sdlc-test-strategy
     - sdlc-security-privacy-compliance
     - sdlc-definition-of-done
   project:

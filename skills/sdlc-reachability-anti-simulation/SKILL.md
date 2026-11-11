@@ -32,7 +32,7 @@ Stop delivery of code that exists but cannot be reached, calls nothing, or is do
 
 ## Handoff
 
-`sdlc-independent-verification` for behavior, `sdlc-quality-test-strategy` for broader gates.
+`sdlc-independent-verification` for behavior, `sdlc-test-strategy` for broader gates.
 
 ## Provenance
 

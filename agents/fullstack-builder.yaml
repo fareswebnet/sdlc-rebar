@@ -14,8 +14,8 @@ skills:
   - sdlc-systematic-debugging
   - sdlc-verification-before-completion
   - sdlc-branch-worktree-lifecycle
-  - sdlc-code-review-reception
-  - sdlc-quality-test-strategy
+  - sdlc-receiving-code-review
+  - sdlc-test-strategy
 inputs:
   - implementation plan
   - acceptance examples

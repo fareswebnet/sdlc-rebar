@@ -21,7 +21,7 @@ Do not implement. Stop when BDD examples are ready for human acceptance.
 ## Red Test Writer
 
 ```text
-Use agents/qa-test-engineer.yaml with skills sdlc-quality-test-strategy and sdlc-bdd-specifications.
+Use agents/qa-test-engineer.yaml with skills sdlc-test-strategy and sdlc-bdd-specifications.
 
 Inputs:
 - accepted BDD scenarios
@@ -41,7 +41,7 @@ Do not modify implementation files.
 ## Scoped Implementation
 
 ```text
-Use agents/fullstack-builder.yaml with skills sdlc-code-change-execution and sdlc-quality-test-strategy.
+Use agents/fullstack-builder.yaml with skills sdlc-code-change-execution and sdlc-test-strategy.
 
 Implement only the Signal Clustering first slice.
 

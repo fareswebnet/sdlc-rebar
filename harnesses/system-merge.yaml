@@ -20,7 +20,7 @@ stages:
   - id: classification
     agent: legacy-analyst
     skills:
-      - sdlc-system-merge-convergence
+      - sdlc-system-merge
     outputs:
       - rule classification table
       - convergence slices

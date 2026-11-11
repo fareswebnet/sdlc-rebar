@@ -49,7 +49,7 @@ stages:
     skills:
       - sdlc-architecture-rfc
       - sdlc-application-architecture
-      - sdlc-data-database-architecture
+      - sdlc-data-architecture
       - sdlc-api-versioning-deprecation
       - sdlc-security-privacy-compliance
     output:
@@ -60,7 +60,7 @@ stages:
   - id: implementation-plan
     agent: orchestrator
     skills:
-      - sdlc-ai-assisted-development
+      - sdlc-ai-coding-governance
       - sdlc-delivery-roadmap-backlog
       - sdlc-implementation-planning
     output:
@@ -72,7 +72,7 @@ stages:
     agent: fullstack-builder
     skills:
       - sdlc-code-change-execution
-      - sdlc-quality-test-strategy
+      - sdlc-test-strategy
     output:
       - implementation diff
       - unit tests
@@ -82,7 +82,7 @@ stages:
   - id: independent-validation
     agent: qa-test-engineer
     skills:
-      - sdlc-quality-test-strategy
+      - sdlc-test-strategy
     output:
       - docs/quality/acceptance-tests.md
       - docs/quality/regression-risk.md
@@ -99,7 +99,7 @@ stages:
   - id: merge-review
     agent: code-reviewer
     skills:
-      - sdlc-code-review-quality-gate
+      - sdlc-code-review
     output:
       - review findings
       - merge decision

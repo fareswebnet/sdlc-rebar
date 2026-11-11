@@ -1,4 +1,0 @@
-interface:
-  display_name: "SDLC Code Review Reception"
-  short_description: "Evaluate review feedback before implementing"
-  default_prompt: "Use $sdlc-code-review-reception to turn review feedback into correct changes without performative agreement or blind implementation."

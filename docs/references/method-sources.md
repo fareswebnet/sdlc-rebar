@@ -16,7 +16,7 @@ Skills added in the speckit and superpowers enrichment adapt ideas into original
 | `sdlc-verification-before-completion` | Superpowers `verification-before-completion` | Evidence before claims |
 | `sdlc-subagent-driven-execution` | Superpowers `subagent-driven-development`, `dispatching-parallel-agents` | Fresh agent per task, two-stage review |
 | `sdlc-branch-worktree-lifecycle` | Superpowers `using-git-worktrees`, `finishing-a-development-branch` | Isolation and explicit finish options |
-| `sdlc-code-review-reception` | Superpowers `receiving-code-review` | Verify feedback before implementing |
+| `sdlc-receiving-code-review` | Superpowers `receiving-code-review` | Verify feedback before implementing |
 
 ## Beyond the sources
 
@@ -40,7 +40,7 @@ The migration layer generalizes, in English and project-agnostic form, the pract
 | `sdlc-legacy-inventory-registry`, `sdlc-migration-batch-orchestration` | Registry-driven migration programs |
 | `sdlc-legacy-reverse-engineering`, `sdlc-characterization-testing` | Spec mining, golden master, differential testing |
 | `sdlc-independent-verification`, `sdlc-reachability-anti-simulation` | Independent audit, mutation testing, ratchet gates |
-| `sdlc-system-merge-convergence`, `sdlc-data-migration-reconciliation`, `sdlc-cutover-rollback` | Multi-source convergence, data reconciliation, strangler and parallel run |
+| `sdlc-system-merge`, `sdlc-data-migration-reconciliation`, `sdlc-cutover-rollback` | Multi-source convergence, data reconciliation, strangler and parallel run |
 | `sdlc-performance-budgets` | Web performance budgets, SRE objectives |
 | `sdlc-accessibility-engineering` | WCAG 2.2 |
 | `sdlc-api-versioning-deprecation` | Semantic versioning, consumer-driven contracts |

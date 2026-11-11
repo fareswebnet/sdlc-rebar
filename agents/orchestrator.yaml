@@ -6,8 +6,8 @@ recommended_runtimes:
   - codex
   - hermes
 skills:
-  - sdlc-delivery-system
-  - sdlc-ai-assisted-development
+  - sdlc-delivery-orchestrator
+  - sdlc-ai-coding-governance
   - sdlc-project-constitution
   - sdlc-cross-artifact-analysis
   - sdlc-subagent-driven-execution

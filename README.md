@@ -47,7 +47,7 @@ Restart the agent session so new skills are discovered. Fallbacks for missing to
 
 | Skill | Purpose |
 |---|---|
-| `sdlc-delivery-system` | Orchestrate the complete lifecycle and route to the right skill. |
+| `sdlc-delivery-orchestrator` | Orchestrate the complete lifecycle and route to the right skill. |
 | `sdlc-idea-framing` | Clarify raw product ideas. |
 | `sdlc-market-user-discovery` | Research users, market, and evidence. |
 | `sdlc-prd-requirements` | Write precise, testable PRDs and requirements. |
@@ -58,21 +58,21 @@ Restart the agent session so new skills are discovered. Fallbacks for missing to
 | `sdlc-ui-design-system` | Plan UI components, tokens, and accessibility. |
 | `sdlc-architecture-rfc` | Create architecture RFCs and ADR candidates. |
 | `sdlc-application-architecture` | Design modules, layers, services, and boundaries. |
-| `sdlc-data-database-architecture` | Design data ownership, schemas, migrations, and audit. |
+| `sdlc-data-architecture` | Design data ownership, schemas, migrations, and audit. |
 | `sdlc-security-privacy-compliance` | Integrate AppSec, privacy, compliance, and threat modeling. |
-| `sdlc-ai-assisted-development` | Govern AI-assisted coding workflows. |
+| `sdlc-ai-coding-governance` | Govern AI-assisted coding workflows. |
 | `sdlc-ai-product-architecture` | Design LLM, RAG, agent, eval, safety, and AI observability. |
 | `sdlc-delivery-roadmap-backlog` | Slice roadmap and backlog into executable work. |
 | `sdlc-implementation-planning` | Plan safe code changes. |
 | `sdlc-code-change-execution` | Execute scoped repository changes. |
-| `sdlc-quality-test-strategy` | Design quality strategy and tests by risk. |
-| `sdlc-code-review-quality-gate` | Review code against quality gates. |
-| `sdlc-devops-ci-cd-platform` | Design delivery platform and CI/CD. |
+| `sdlc-test-strategy` | Design quality strategy and tests by risk. |
+| `sdlc-code-review` | Review code against quality gates. |
+| `sdlc-ci-cd-platform` | Design delivery platform and CI/CD. |
 | `sdlc-observability-reliability` | Design SLOs, telemetry, alerts, and runbooks. |
 | `sdlc-incident-support-feedback` | Close incident, support, and feedback loops. |
-| `sdlc-performance-scalability-cost` | Balance performance, scale, and FinOps. |
-| `sdlc-product-analytics-experimentation` | Design metrics, tracking, experiments, and data quality. |
-| `sdlc-documentation-knowledge` | Keep documentation and onboarding useful. |
+| `sdlc-scalability-cost` | Balance performance, scale, and FinOps. |
+| `sdlc-product-analytics` | Design metrics, tracking, experiments, and data quality. |
+| `sdlc-documentation` | Keep documentation and onboarding useful. |
 | `sdlc-third-party-ip-risk` | Review dependencies, licenses, vendors, and IP risk. |
 | `sdlc-project-constitution` | Define non-negotiable engineering principles. |
 | `sdlc-spec-clarification` | Resolve spec ambiguity before planning. |
@@ -86,14 +86,14 @@ Restart the agent session so new skills are discovered. Fallbacks for missing to
 | `sdlc-verification-before-completion` | Evidence before any done claim. |
 | `sdlc-subagent-driven-execution` | Execute tasks with fresh agents and reviews. |
 | `sdlc-branch-worktree-lifecycle` | Isolate work and finish branches safely. |
-| `sdlc-code-review-reception` | Evaluate review feedback before implementing. |
+| `sdlc-receiving-code-review` | Evaluate review feedback before implementing. |
 | `sdlc-legacy-inventory-registry` | Freeze everything the legacy system exposes. |
 | `sdlc-legacy-reverse-engineering` | Extract business rules and behavior from legacy code. |
 | `sdlc-characterization-testing` | Pin legacy behavior with oracles and golden masters. |
 | `sdlc-migration-batch-orchestration` | Drive a migration in verified vertical batches. |
 | `sdlc-independent-verification` | Refute porting claims in a separate context. |
 | `sdlc-reachability-anti-simulation` | Block unrouted code and faked clients. |
-| `sdlc-system-merge-convergence` | Merge two systems or estates into one target. |
+| `sdlc-system-merge` | Merge two systems or estates into one target. |
 | `sdlc-data-migration-reconciliation` | Move and reconcile data with proof. |
 | `sdlc-cutover-rollback` | Rehearse go-live, parallel run, and retreat. |
 | `sdlc-performance-budgets` | Set and enforce measurable performance budgets. |
@@ -107,7 +107,7 @@ Inspired by GitHub Spec Kit and Superpowers (see `docs/references/method-sources
 `constitution -> brainstorm -> clarify -> checklist -> plan -> tasks -> analyze + trace -> TDD execution (subagent-driven, worktree-isolated) -> verify against definition of done -> review -> converge -> retrospective`
 
 - Spec chain: `sdlc-project-constitution`, `sdlc-design-brainstorming`, `sdlc-spec-clarification`, `sdlc-requirements-checklist`, `sdlc-task-breakdown`, `sdlc-cross-artifact-analysis`, `sdlc-spec-convergence`.
-- Execution discipline: `sdlc-test-driven-development`, `sdlc-systematic-debugging`, `sdlc-verification-before-completion`, `sdlc-subagent-driven-execution`, `sdlc-branch-worktree-lifecycle`, `sdlc-code-review-reception`.
+- Execution discipline: `sdlc-test-driven-development`, `sdlc-systematic-debugging`, `sdlc-verification-before-completion`, `sdlc-subagent-driven-execution`, `sdlc-branch-worktree-lifecycle`, `sdlc-receiving-code-review`.
 - Beyond both sources: `sdlc-traceability-ledger` (script-checked requirement-to-test chain), `sdlc-definition-of-done` (depth-scaled, evidence-first), `sdlc-agent-context-engineering`, `sdlc-tasks-to-issues`, `sdlc-delivery-retrospective`, `sdlc-skill-evaluation`.
 - Meta: `sdlc-skill-evaluation`.
 
@@ -123,7 +123,7 @@ Migrating a legacy estate, or merging two, fails when progress is counted on wha
 
 `frozen registry -> batches -> reverse engineering -> oracles -> test-first build -> reachability ratchet -> independent verification and visa -> rehearsed cutover -> lessons`
 
-- Skills: `sdlc-legacy-inventory-registry`, `sdlc-legacy-reverse-engineering`, `sdlc-characterization-testing`, `sdlc-migration-batch-orchestration`, `sdlc-independent-verification`, `sdlc-reachability-anti-simulation`, `sdlc-system-merge-convergence`, `sdlc-data-migration-reconciliation`, `sdlc-cutover-rollback`.
+- Skills: `sdlc-legacy-inventory-registry`, `sdlc-legacy-reverse-engineering`, `sdlc-characterization-testing`, `sdlc-migration-batch-orchestration`, `sdlc-independent-verification`, `sdlc-reachability-anti-simulation`, `sdlc-system-merge`, `sdlc-data-migration-reconciliation`, `sdlc-cutover-rollback`.
 - Agents: `legacy-analyst` and `independent-verifier` (the verifier runs in a separate context and cannot visa its own work).
 - Harnesses: `harnesses/legacy-migration.yaml`, `harnesses/system-merge.yaml`; pipelines `pipelines/legacy-migration.md`, `pipelines/system-merge.md`.
 - Tool: `scripts/sdlc_registry.py` (init, check, report, sample, claim, visa, ratchet), tested by `scripts/test_sdlc_registry.py`.
@@ -137,18 +137,18 @@ Specialized quality skills: `sdlc-performance-budgets`, `sdlc-accessibility-engi
 
 ## Presets
 
-- `preset-fintech-regulated`
-- `preset-b2b-saas`
-- `preset-ai-agent-product`
-- `preset-mobile-offline`
-- `preset-marketplace`
-- `preset-data-product`
-- `preset-enterprise-ready`
-- `preset-legacy-migration`
-- `preset-system-merge`
-- `preset-healthtech-regulated`
-- `preset-public-sector`
-- `preset-ecommerce-retail`
+- `fintech-regulated`
+- `b2b-saas`
+- `ai-agent-product`
+- `mobile-offline`
+- `marketplace`
+- `data-product`
+- `enterprise-ready`
+- `legacy-migration`
+- `system-merge`
+- `healthtech-regulated`
+- `public-sector`
+- `ecommerce-retail`
 
 Presets are stored in `presets/` and tune skill depth for domain-specific projects.
 
@@ -225,7 +225,7 @@ Human approval remains required for product scope, durable architecture choices,
 From this repository:
 
 ```bash
-python skills/sdlc-delivery-system/scripts/scaffold_sdlc_docs.py --target /path/to/project
+python skills/sdlc-delivery-orchestrator/scripts/scaffold_sdlc_docs.py --target /path/to/project
 ```
 
 This copies reusable templates from `templates/docs/` into the target project's `docs/` tree without overwriting existing files unless `--force` is passed.

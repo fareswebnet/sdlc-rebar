@@ -19,4 +19,4 @@ Never:
 - Budgets measured on toy data are fiction; state the data volume.
 - A waiver without an expiry becomes the new budget.
 
-Next: `sdlc-performance-scalability-cost` for capacity and cost, `sdlc-observability-reliability` for production SLOs.
+Next: `sdlc-scalability-cost` for capacity and cost, `sdlc-observability-reliability` for production SLOs.

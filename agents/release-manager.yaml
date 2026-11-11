@@ -9,7 +9,7 @@ skills:
   - sdlc-definition-of-done
   - sdlc-observability-reliability
   - sdlc-incident-support-feedback
-  - sdlc-product-analytics-experimentation
+  - sdlc-product-analytics
   - sdlc-cutover-rollback
 inputs:
   - approved PR or release candidate

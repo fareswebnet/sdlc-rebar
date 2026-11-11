@@ -8,12 +8,12 @@ recommended_runtimes:
   - hermes
 skills:
   - sdlc-bdd-specifications
-  - sdlc-quality-test-strategy
+  - sdlc-test-strategy
   - sdlc-requirements-checklist
   - sdlc-traceability-ledger
   - sdlc-definition-of-done
   - sdlc-characterization-testing
-  - sdlc-product-analytics-experimentation
+  - sdlc-product-analytics
 inputs:
   - PRD and BDD examples
   - implementation diff

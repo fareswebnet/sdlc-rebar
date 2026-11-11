@@ -9,7 +9,7 @@ recommended_runtimes:
 skills:
   - sdlc-ux-product-design
   - sdlc-ui-design-system
-  - sdlc-product-analytics-experimentation
+  - sdlc-product-analytics
   - sdlc-accessibility-engineering
 inputs:
   - PRD and BDD examples

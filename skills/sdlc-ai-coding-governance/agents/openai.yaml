@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC AI Coding Governance"
+  short_description: "Control agentic coding work"
+  default_prompt: "Use $sdlc-ai-coding-governance to use ai coding agents as supervised engineering workflows, not free-form generators."

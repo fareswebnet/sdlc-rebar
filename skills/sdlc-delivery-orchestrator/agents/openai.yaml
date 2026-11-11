@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Delivery Orchestrator"
+  short_description: "Orchestrate product-tech delivery"
+  default_prompt: "Use $sdlc-delivery-orchestrator to coordinate the complete sdlc without turning it into bureaucracy."

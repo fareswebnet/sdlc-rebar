@@ -1,4 +1,0 @@
-interface:
-  display_name: "SDLC Data Database Architecture"
-  short_description: "Design data and persistence"
-  default_prompt: "Use $sdlc-data-database-architecture to make data ownership, persistence, and evolution explicit."

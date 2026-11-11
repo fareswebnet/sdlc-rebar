@@ -10,7 +10,7 @@ stages:
   - id: request-triage
     agent: orchestrator
     skills:
-      - sdlc-delivery-system
+      - sdlc-delivery-orchestrator
       - sdlc-prd-requirements
       - sdlc-spec-clarification
     outputs:
@@ -32,7 +32,7 @@ stages:
       - sdlc-implementation-planning
       - sdlc-task-breakdown
       - sdlc-cross-artifact-analysis
-      - sdlc-data-database-architecture
+      - sdlc-data-architecture
       - sdlc-api-versioning-deprecation
     outputs:
       - docs/engineering/implementation-plan.md
@@ -52,14 +52,14 @@ stages:
   - id: verify
     agent: qa-test-engineer
     skills:
-      - sdlc-quality-test-strategy
+      - sdlc-test-strategy
     outputs:
       - acceptance and regression evidence
     gate: critical flows are tested
   - id: review
     agent: code-reviewer
     skills:
-      - sdlc-code-review-quality-gate
+      - sdlc-code-review
     outputs:
       - review findings
       - merge decision

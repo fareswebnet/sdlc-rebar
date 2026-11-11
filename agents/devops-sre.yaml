@@ -7,10 +7,10 @@ recommended_runtimes:
   - claude-code
   - hermes
 skills:
-  - sdlc-devops-ci-cd-platform
+  - sdlc-ci-cd-platform
   - sdlc-definition-of-done
   - sdlc-observability-reliability
-  - sdlc-performance-scalability-cost
+  - sdlc-scalability-cost
   - sdlc-incident-support-feedback
   - sdlc-performance-budgets
 inputs:

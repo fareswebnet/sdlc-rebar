@@ -2,7 +2,7 @@
 
 - sdlc-accessibility-engineering: Build in accessibility from requirements: WCAG 2.2 target, criteria, keyboard and screen-reader support, assistive-tech testing.
 - sdlc-agent-context-engineering: Design the context agents receive: AGENTS.md, task context packs, subagent briefs, handoff notes.
-- sdlc-ai-assisted-development: Govern AI-assisted coding: task decomposition, agent roles, guardrails, review loops.
+- sdlc-ai-coding-governance: Govern AI-assisted coding: task decomposition, agent roles, guardrails, review loops.
 - sdlc-ai-product-architecture: Design the architecture of an AI-enabled product: assistants, copilots, LLM and RAG pipelines, prompts, tool use, evals, safety, cost, human…
 - sdlc-api-versioning-deprecation: Manage API contract evolution: classify breaking changes, choose versioning, run consumer-driven contract tests, deprecate with sunset dates.
 - sdlc-application-architecture: Design application structure: modular monolith, layered, hexagonal, CQRS, event-driven, module boundaries, dependency rules.
@@ -11,20 +11,19 @@
 - sdlc-bounded-context-map: Map DDD bounded contexts: which team or module owns which data and capability, upstream/downstream links, anti-corruption layers.
 - sdlc-branch-worktree-lifecycle: Start work in an isolated git worktree with a verified baseline; finish by merge, PR, keep, or discard.
 - sdlc-characterization-testing: Pin down legacy behavior with characterization tests and golden masters, with numeric tolerances, to prove a migrated system equivalent.
+- sdlc-ci-cd-platform: Design the delivery platform: CI/CD pipelines, security scans, artifact provenance, environments, secrets, IaC.
 - sdlc-code-change-execution: Implement scoped code changes preserving local patterns, tests, boundaries, and user changes, with verification evidence.
-- sdlc-code-review-quality-gate: Review a change set as a quality gate: correctness, architecture, tests, security, performance, release risk.
-- sdlc-code-review-reception: Handle received review feedback rigorously: verify each item against the code, push back with evidence, implement one at a time.
+- sdlc-code-review: Review a change set as a quality gate: correctness, architecture, tests, security, performance, release risk.
 - sdlc-cross-artifact-analysis: Run a read-only consistency audit across constitution, spec, plan, BDD, and tasks for contradictions, uncovered requirements, orphan tasks.
 - sdlc-cutover-rollback: Plan legacy-to-target cutover with strangler or parallel run, rehearsed rollback, and a named go/no-go owner.
-- sdlc-data-database-architecture: Design data architecture: schemas, source of truth, migrations, indexes, audit trails, retention, tenant isolation.
+- sdlc-data-architecture: Design data architecture: schemas, source of truth, migrations, indexes, audit trails, retention, tenant isolation.
 - sdlc-data-migration-reconciliation: Plan and prove data migration or merge: mapping, deduplication, dry runs, reconciliation counts and checksums, rollback.
 - sdlc-definition-of-done: Define a Definition of Done scaled by depth and risk, each criterion naming its proving evidence.
+- sdlc-delivery-orchestrator: Orchestrate the end-to-end SDLC from idea to release and feedback.
 - sdlc-delivery-retrospective: Run an evidence-based retrospective after a release, sprint, or incident and turn lessons into changes to process, definition of done, skills, or CI.
 - sdlc-delivery-roadmap-backlog: Create delivery roadmaps, prioritized backlogs, vertical slices, and ticket readiness checks.
-- sdlc-delivery-system: Orchestrate the end-to-end SDLC from idea to release and feedback.
 - sdlc-design-brainstorming: Turn a rough idea or feature request into an approved design via dialogue: one question at a time, compare approaches, get explicit approval before…
-- sdlc-devops-ci-cd-platform: Design the delivery platform: CI/CD pipelines, security scans, artifact provenance, environments, secrets, IaC.
-- sdlc-documentation-knowledge: Create and maintain repo-first docs: onboarding guides, API docs, ADRs, runbooks, stale-doc checks.
+- sdlc-documentation: Create and maintain repo-first docs: onboarding guides, API docs, ADRs, runbooks, stale-doc checks.
 - sdlc-domain-modeling: Model the business domain with DDD: ubiquitous language, entities, aggregates, invariants, state transitions.
 - sdlc-idea-framing: Frame a raw product idea into problem, audience, value proposition, alternatives, assumptions, and no-go areas.
 - sdlc-implementation-planning: Plan scoped code changes: affected files, boundaries, migrations, tests, risks, rollback, validation commands, sequencing.
@@ -36,23 +35,24 @@
 - sdlc-migration-batch-orchestration: Run migration as vertical batches cut from the frozen registry, with measured exit criteria and an independent verification gate per batch.
 - sdlc-observability-reliability: Design observability and reliability: SLIs, SLOs, error budgets, logs, metrics, traces, alerts, runbooks.
 - sdlc-performance-budgets: Define performance budgets (latency, bundle size, memory) tied to SLOs and enforced in CI as failing gates.
-- sdlc-performance-scalability-cost: Review scalability, capacity, and cloud or LLM cost: FinOps, unit economics, bottlenecks, caching.
 - sdlc-prd-requirements: Create and refine PRDs, user stories, assumptions, and out-of-scope decisions.
-- sdlc-product-analytics-experimentation: Design product analytics: tracking plans, event taxonomy, funnels, retention, experiments, feature flags, metric governance.
+- sdlc-product-analytics: Design product analytics: tracking plans, event taxonomy, funnels, retention, experiments, feature flags, metric governance.
 - sdlc-project-constitution: Create or amend a versioned constitution of non-negotiable engineering, quality, security, and AI principles.
-- sdlc-quality-test-strategy: Define test strategy across unit, integration, contract, e2e, exploratory, and non-functional tests plus quality gates.
 - sdlc-reachability-anti-simulation: Block three defects via scripts and a ratchet: unrouted handlers, API client methods faking data, docs citing missing files.
+- sdlc-receiving-code-review: Handle received review feedback rigorously: verify each item against the code, push back with evidence, implement one at a time.
 - sdlc-requirements-checklist: Generate a checklist that tests the quality of written requirements (completeness, clarity, measurability, edge cases), not the implementation.
+- sdlc-scalability-cost: Review scalability, capacity, and cloud or LLM cost: FinOps, unit economics, bottlenecks, caching.
 - sdlc-security-privacy-compliance: Integrate secure SDLC: threat modeling, privacy, compliance, abuse cases, data protection, release security gates.
 - sdlc-skill-evaluation: Evaluate skills with repeatable scenarios: baseline vs with-skill runs, rubric scoring, regression tracking.
 - sdlc-spec-clarification: Resolve underspecified areas in a PRD or spec by asking a few high-impact questions one at a time with a recommended answer, writing decisions back.
 - sdlc-spec-convergence: Compare code to spec, plan, and tasks to find what is built, partial, or missing, and append missing work as tasks.
 - sdlc-subagent-driven-execution: Execute a task list with a fresh subagent per task, then spec-compliance and code-quality reviews, parallelizing independent work.
-- sdlc-system-merge-convergence: Merge several systems into one target: classify rules as equivalent, parameterizable, additive, or contradictory; prove non-regression per source.
+- sdlc-system-merge: Merge several systems into one target: classify rules as equivalent, parameterizable, additive, or contradictory; prove non-regression per source.
 - sdlc-systematic-debugging: Debug by finding root cause before fixing: reproduce, trace data flow, test one hypothesis at a time.
 - sdlc-task-breakdown: Turn an approved spec and plan into a dependency-ordered task list per user story: exact file paths, parallel markers, test-first order.
 - sdlc-tasks-to-issues: Convert an approved task list into issues in GitHub, GitLab, Jira, or Linear and keep status synced with the repo task file, after human approval.
 - sdlc-test-driven-development: Enforce red-green-refactor: write one failing test, watch it fail, write minimal code to pass, then refactor.
+- sdlc-test-strategy: Define test strategy across unit, integration, contract, e2e, exploratory, and non-functional tests plus quality gates.
 - sdlc-third-party-ip-risk: Review dependencies, open-source licenses, IP risk, AI-generated code policy, SBOM, provenance, and vendor lock-in.
 - sdlc-traceability-ledger: Maintain a machine-checked chain from requirement id to scenario, task, test, commit, and release via scripts/sdlc_trace.py.
 - sdlc-ui-design-system: Create UI design system guidance: components, design tokens, interaction conventions, responsive rules.

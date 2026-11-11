@@ -32,7 +32,7 @@ Turn 'it should be fast' into numbers with owners, tests, and consequences.
 
 ## Handoff
 
-`sdlc-performance-scalability-cost` for capacity and cost, `sdlc-observability-reliability` for production SLOs.
+`sdlc-scalability-cost` for capacity and cost, `sdlc-observability-reliability` for production SLOs.
 
 ## Provenance
 

@@ -83,7 +83,7 @@ stages:
       - sdlc-ui-design-system
       - sdlc-architecture-rfc
       - sdlc-application-architecture
-      - sdlc-data-database-architecture
+      - sdlc-data-architecture
       - sdlc-api-versioning-deprecation
       - sdlc-security-privacy-compliance
     project_skill: releasepilot-architecture
@@ -101,7 +101,7 @@ stages:
   - id: red-tests
     agent: qa-test-engineer
     skills:
-      - sdlc-quality-test-strategy
+      - sdlc-test-strategy
       - sdlc-bdd-specifications
     project_skill: releasepilot-tdd
     permissions:
@@ -116,7 +116,7 @@ stages:
     agent: fullstack-builder
     skills:
       - sdlc-code-change-execution
-      - sdlc-quality-test-strategy
+      - sdlc-test-strategy
     project_skill: releasepilot-implementation
     permissions:
       repo: scoped_write
@@ -149,7 +149,7 @@ stages:
   - id: pr-review
     agent: code-reviewer
     skills:
-      - sdlc-code-review-quality-gate
+      - sdlc-code-review
       - sdlc-definition-of-done
     project_skill: releasepilot-pr-review
     permissions:
@@ -165,8 +165,8 @@ stages:
     agent: release-manager
     skills:
       - sdlc-observability-reliability
-      - sdlc-product-analytics-experimentation
-      - sdlc-performance-scalability-cost
+      - sdlc-product-analytics
+      - sdlc-scalability-cost
       - sdlc-incident-support-feedback
     project_skill: releasepilot-roi
     permissions:

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC Test Strategy"
+  short_description: "Design quality and tests workflows"
+  default_prompt: "Use $sdlc-test-strategy to test what matters by risk, behavior, and quality attributes rather than coverage theater."

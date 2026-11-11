@@ -41,11 +41,11 @@
 ],
 [
 "Review this pull request for correctness, security and missing tests before I merge.",
-"code-review-quality-gate"
+"code-review"
 ],
 [
 "The reviewer left 12 comments on my PR, two look wrong. How should I handle them?",
-"code-review-reception"
+"receiving-code-review"
 ],
 [
 "Check that the spec, plan, BDD and tasks are consistent with each other and nothing is uncovered, without editing anything.",
@@ -57,7 +57,7 @@
 ],
 [
 "Design the Postgres schema, retention and tenant isolation for our invoicing data.",
-"data-database-architecture"
+"data-architecture"
 ],
 [
 "We are merging two customer databases; plan the field mapping, deduplication and the row-count reconciliation.",
@@ -77,7 +77,7 @@
 ],
 [
 "I am starting a new product from scratch; which SDLC steps should I run in what order?",
-"delivery-system"
+"delivery-orchestrator"
 ],
 [
 "I want a notification feature. Let's think it through before anything is built.",
@@ -85,11 +85,11 @@
 ],
 [
 "Set up our CI pipeline with lint, typecheck, secret scanning and preview deployments.",
-"devops-ci-cd-platform"
+"ci-cd-platform"
 ],
 [
 "Write the onboarding guide and runbooks for the new engineers and keep them from going stale.",
-"documentation-knowledge"
+"documentation"
 ],
 [
 "Model the insurance claims domain: entities, aggregates, invariants and the shared vocabulary.",
@@ -137,7 +137,7 @@
 ],
 [
 "Forecast our cloud and LLM API bill at 10x traffic and find database and caching bottlenecks.",
-"performance-scalability-cost"
+"scalability-cost"
 ],
 [
 "Write the PRD with user stories, acceptance criteria and out-of-scope items for the export feature.",
@@ -145,7 +145,7 @@
 ],
 [
 "Define our tracking plan, event taxonomy, funnels and A/B test setup.",
-"product-analytics-experimentation"
+"product-analytics"
 ],
 [
 "Write down the non-negotiable engineering principles every spec and review will be checked against.",
@@ -153,7 +153,7 @@
 ],
 [
 "What test pyramid and quality gates do we need for this release?",
-"quality-test-strategy"
+"test-strategy"
 ],
 [
 "Controllers exist that no route reaches and API client methods return fake data; add a gate that blocks that.",
@@ -185,7 +185,7 @@
 ],
 [
 "We acquired a competitor; combine their platform with ours and prove nothing regresses for either customer base.",
-"system-merge-convergence"
+"system-merge"
 ],
 [
 "Checkout throws a 500 intermittently and I do not know why; find the cause.",
@@ -225,7 +225,7 @@
 ],
 [
 "Let's govern how our coding agents work: roles, review loops and keeping generated code aligned with specs.",
-"ai-assisted-development"
+"ai-coding-governance"
 ],
 [
 "Design the RAG pipeline, evaluation, safety and human oversight for our support copilot.",
@@ -249,7 +249,7 @@
 ],
 [
 "How much will running our LLM calls cost next year as users grow?",
-"performance-scalability-cost"
+"scalability-cost"
 ],
 [
 "The assistant should answer from our docs and call tools safely; how do we structure the whole thing?",
@@ -297,7 +297,7 @@
 ],
 [
 "What would a good README, ADR folder and runbook set look like for this repo?",
-"documentation-knowledge"
+"documentation"
 ],
 [
 "Are our dependencies' licenses compatible with selling this to enterprises?",
@@ -313,6 +313,6 @@
 ],
 [
 "Which data events should we track to know whether onboarding works?",
-"product-analytics-experimentation"
+"product-analytics"
 ]
 ]

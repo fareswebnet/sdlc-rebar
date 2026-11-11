@@ -1,0 +1,15 @@
+# sdlc-data-architecture (compact)
+
+When: Design data architecture: schemas, source of truth, migrations, indexes, audit trails, retention, tenant isolation.
+
+Goal: Make data ownership, persistence, and evolution explicit.
+
+Steps:
+1. Map domain entities, bounded contexts, ownership, and source-of-truth decisions.
+2. Design logical and physical schema with constraints, indexes, migrations, and audit requirements.
+3. Define transaction boundaries, consistency expectations, retention, deletion, and privacy rules.
+4. Plan multi-tenant isolation, backups, restore, imports, exports, and reporting needs.
+5. Connect operational data to product analytics and compliance evidence.
+
+Never:
+- Do not add shared tables or cross-context writes without an explicit ownership and consistency decision.

@@ -9,7 +9,7 @@ recommended_runtimes:
 skills:
   - sdlc-architecture-rfc
   - sdlc-application-architecture
-  - sdlc-data-database-architecture
+  - sdlc-data-architecture
   - sdlc-security-privacy-compliance
   - sdlc-data-migration-reconciliation
   - sdlc-api-versioning-deprecation

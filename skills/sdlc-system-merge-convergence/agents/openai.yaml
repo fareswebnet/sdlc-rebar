@@ -1,4 +1,0 @@
-interface:
-  display_name: "SDLC System Merge Convergence"
-  short_description: "Merge two systems or estates into one target"
-  default_prompt: "Use $sdlc-system-merge-convergence to converge without silently losing either side: every source is inventoried alone, every rule is classified and proven, and the earlier sources stay green."

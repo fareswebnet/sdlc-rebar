@@ -35,7 +35,7 @@ Use narrow scripted agent runs for summaries and review support:
 
 ```bash
 codex exec --sandbox workspace-write \
-  "Use sdlc-code-review-quality-gate to review this PR diff. Return blocking findings first, then missing tests, then residual risk."
+  "Use sdlc-code-review to review this PR diff. Return blocking findings first, then missing tests, then residual risk."
 ```
 
 Keep CI agent runs non-destructive. They can comment, summarize, or open follow-up issues, but should not deploy to production without a separate human-approved workflow.

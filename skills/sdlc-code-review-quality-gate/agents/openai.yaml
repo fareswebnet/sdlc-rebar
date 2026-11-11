@@ -1,4 +1,0 @@
-interface:
-  display_name: "SDLC Code Review Quality Gate"
-  short_description: "Review code against gates"
-  default_prompt: "Use $sdlc-code-review-quality-gate to find defects and risk before they reach users."

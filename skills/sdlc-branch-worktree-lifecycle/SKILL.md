@@ -36,7 +36,7 @@ Without worktree support, use a plain branch in a clean checkout and record the 
 
 ## Handoff
 
-`sdlc-code-review-quality-gate` before merge; `sdlc-definition-of-done` for release.
+`sdlc-code-review` before merge; `sdlc-definition-of-done` for release.
 
 ## Provenance
 

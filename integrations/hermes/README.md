@@ -21,7 +21,7 @@ Keep this repository as a project dependency and expose the `skills/`, `agents/`
 Interactive project kickoff:
 
 ```bash
-hermes chat --worktree --skills sdlc-delivery-system \
+hermes chat --worktree --skills sdlc-delivery-orchestrator \
   -q "Use harnesses/app-idea-to-production.yaml for this app idea. Create the product, BDD, architecture, and implementation plan. Stop before coding until the plan is reviewable."
 ```
 
@@ -35,7 +35,7 @@ hermes chat --worktree --skills sdlc-code-change-execution \
 Production learning report:
 
 ```bash
-hermes chat --skills sdlc-incident-support-feedback,sdlc-product-analytics-experimentation \
+hermes chat --skills sdlc-incident-support-feedback,sdlc-product-analytics \
   -q "Run pipelines/production-feedback-loop.md against the latest support and observability signals available through approved tools."
 ```
 
@@ -44,7 +44,7 @@ Complete ReleasePilot example:
 ```bash
 python3 examples/hermes-releasepilot-signal-clustering/scripts/validate_hermes_example.py
 
-hermes chat --worktree --skills sdlc-delivery-system,sdlc-ai-assisted-development,sdlc-bdd-specifications,sdlc-quality-test-strategy \
+hermes chat --worktree --skills sdlc-delivery-orchestrator,sdlc-ai-coding-governance,sdlc-bdd-specifications,sdlc-test-strategy \
   -q "$(cat examples/hermes-releasepilot-signal-clustering/prompts/hermes-kickoff.md)"
 ```
 

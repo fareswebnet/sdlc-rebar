@@ -1,4 +1,0 @@
-interface:
-  display_name: "SDLC Product Analytics Experimentation"
-  short_description: "Design metrics and experiments"
-  default_prompt: "Use $sdlc-product-analytics-experimentation to measure whether the product creates value, not only whether the system works."

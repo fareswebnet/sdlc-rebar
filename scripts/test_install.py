@@ -71,8 +71,8 @@ class InstallTests(unittest.TestCase):
 
     def test_native_roles_claude_only(self):
         self.assertEqual(self.install("--runtime", "claude", "--native-roles").returncode, 0)
-        text = (self.target / ".claude/agents/independent-verifier.md").read_text()
-        self.assertIn("name: independent-verifier", text)
+        text = (self.target / ".claude/agents/sdlc-independent-verifier.md").read_text()
+        self.assertIn("name: sdlc-independent-verifier", text)
         self.assertNotEqual(self.install("--runtime", "codex", "--native-roles").returncode, 0)
 
     def test_link_mode(self):

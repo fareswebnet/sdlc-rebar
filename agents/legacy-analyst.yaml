@@ -9,7 +9,7 @@ recommended_runtimes:
 skills:
   - sdlc-legacy-inventory-registry
   - sdlc-legacy-reverse-engineering
-  - sdlc-system-merge-convergence
+  - sdlc-system-merge
 inputs:
   - source repositories and schemas
   - framework route and schema listings

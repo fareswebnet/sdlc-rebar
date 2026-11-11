@@ -20,4 +20,4 @@ Never:
 - ARIA misuse is worse than none; prefer native elements.
 - Track known gaps openly with an owner and a date.
 
-Next: `sdlc-ui-design-system` for tokens and components, `sdlc-quality-test-strategy` for test integration.
+Next: `sdlc-ui-design-system` for tokens and components, `sdlc-test-strategy` for test integration.

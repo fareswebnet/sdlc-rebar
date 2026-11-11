@@ -33,7 +33,7 @@ Make accessibility a tested requirement with evidence, not a late audit.
 
 ## Handoff
 
-`sdlc-ui-design-system` for tokens and components, `sdlc-quality-test-strategy` for test integration.
+`sdlc-ui-design-system` for tokens and components, `sdlc-test-strategy` for test integration.
 
 ## Provenance
 

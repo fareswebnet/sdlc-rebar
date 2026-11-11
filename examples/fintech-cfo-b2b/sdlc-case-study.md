@@ -15,7 +15,7 @@ A CFO copilot for startups that tracks burn, runway, forecast, budget variance, 
 5. `sdlc-bounded-context-map`
 6. `sdlc-bdd-specifications`
 7. `sdlc-ux-product-design`
-8. `sdlc-data-database-architecture`
+8. `sdlc-data-architecture`
 9. `sdlc-security-privacy-compliance`
 10. `sdlc-security-privacy-compliance`
 11. `sdlc-ai-product-architecture`

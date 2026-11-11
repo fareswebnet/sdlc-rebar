@@ -1,5 +1,5 @@
 skill,cluster,display_name,short_description
-sdlc-delivery-system,orchestration,SDLC Delivery System,Orchestrate product-tech delivery
+sdlc-delivery-orchestrator,orchestration,SDLC Delivery Orchestrator,Orchestrate product-tech delivery
 sdlc-idea-framing,product,SDLC Idea Framing,Clarify raw product ideas
 sdlc-market-user-discovery,product,SDLC Market User Discovery,Research users and market
 sdlc-prd-requirements,product,SDLC PRD Requirements,Write precise product specs
@@ -10,21 +10,21 @@ sdlc-ux-product-design,design,SDLC UX Product Design,Design user flows and state
 sdlc-ui-design-system,design,SDLC UI Design System,Plan UI system and components
 sdlc-architecture-rfc,architecture,SDLC Architecture RFC,Write architecture RFCs
 sdlc-application-architecture,architecture,SDLC Application Architecture,Design application boundaries
-sdlc-data-database-architecture,data,SDLC Data Database Architecture,Design data and persistence
+sdlc-data-architecture,data,SDLC Data Architecture,Design data and persistence
 sdlc-security-privacy-compliance,security,SDLC Security Privacy Compliance,Integrate AppSec and privacy
-sdlc-ai-assisted-development,ai-engineering,SDLC AI Assisted Development,Control agentic coding work
+sdlc-ai-coding-governance,ai-engineering,SDLC AI Coding Governance,Control agentic coding work
 sdlc-ai-product-architecture,ai-product,SDLC AI Product Architecture,Design LLM and agent products
 sdlc-delivery-roadmap-backlog,delivery,SDLC Delivery Roadmap Backlog,Slice roadmap and backlog
 sdlc-implementation-planning,delivery,SDLC Implementation Planning,Plan code changes safely
 sdlc-code-change-execution,implementation,SDLC Code Change Execution,Execute scoped repo changes
-sdlc-quality-test-strategy,quality,SDLC Quality Test Strategy,Design quality and tests
-sdlc-code-review-quality-gate,quality,SDLC Code Review Quality Gate,Review code against gates
-sdlc-devops-ci-cd-platform,platform,SDLC DevOps CI CD Platform,Design delivery platform
+sdlc-test-strategy,quality,SDLC Test Strategy,Design quality and tests
+sdlc-code-review,quality,SDLC Code Review,Review code against gates
+sdlc-ci-cd-platform,platform,SDLC CI/CD Platform,Design delivery platform
 sdlc-observability-reliability,production,SDLC Observability Reliability,Design reliable production systems
 sdlc-incident-support-feedback,production,SDLC Incident Support Feedback,Close incident and support loops
-sdlc-performance-scalability-cost,performance-cost,SDLC Performance Scalability Cost,Balance scale and cost
-sdlc-product-analytics-experimentation,analytics,SDLC Product Analytics Experimentation,Design metrics and experiments
-sdlc-documentation-knowledge,knowledge,SDLC Documentation Knowledge,Keep docs useful and current
+sdlc-scalability-cost,performance-cost,SDLC Scalability Cost,Balance scale and cost
+sdlc-product-analytics,analytics,SDLC Product Analytics,Design metrics and experiments
+sdlc-documentation,knowledge,SDLC Documentation,Keep docs useful and current
 sdlc-third-party-ip-risk,risk,SDLC Third Party IP Risk,"Review vendors, licenses, IP"
 sdlc-project-constitution,governance,SDLC Project Constitution,Define non-negotiable engineering principles
 sdlc-spec-clarification,product,SDLC Spec Clarification,Resolve spec ambiguity before planning
@@ -38,7 +38,7 @@ sdlc-systematic-debugging,quality,SDLC Systematic Debugging,Root cause before an
 sdlc-verification-before-completion,quality,SDLC Verification Before Completion,Evidence before any done claim
 sdlc-subagent-driven-execution,automation,SDLC Subagent-Driven Execution,Execute tasks with fresh agents and reviews
 sdlc-branch-worktree-lifecycle,delivery,SDLC Branch Worktree Lifecycle,Isolate work and finish branches safely
-sdlc-code-review-reception,quality,SDLC Code Review Reception,Evaluate review feedback before implementing
+sdlc-receiving-code-review,quality,SDLC Receiving Code Review,Evaluate review feedback before implementing
 sdlc-traceability-ledger,governance,SDLC Traceability Ledger,Trace requirement to test to release
 sdlc-definition-of-done,quality,SDLC Definition Of Done,Depth-scaled done criteria with evidence
 sdlc-agent-context-engineering,automation,SDLC Agent Context Engineering,Design context packs and briefs for agents
@@ -51,7 +51,7 @@ sdlc-characterization-testing,migration,SDLC Characterization Testing,Pin legacy
 sdlc-migration-batch-orchestration,migration,SDLC Migration Batch Orchestration,Drive a migration in verified vertical batches
 sdlc-independent-verification,migration,SDLC Independent Verification,Refute porting claims in a separate context
 sdlc-reachability-anti-simulation,migration,SDLC Reachability And Anti-Simulation,Block unrouted code and faked clients
-sdlc-system-merge-convergence,migration,SDLC System Merge Convergence,Merge two systems or estates into one target
+sdlc-system-merge,migration,SDLC System Merge,Merge two systems or estates into one target
 sdlc-data-migration-reconciliation,migration,SDLC Data Migration Reconciliation,Move and reconcile data with proof
 sdlc-cutover-rollback,migration,SDLC Cutover And Rollback,"Rehearse go-live, parallel run, and retreat"
 sdlc-performance-budgets,performance-cost,SDLC Performance Budgets,Set and enforce measurable performance budgets

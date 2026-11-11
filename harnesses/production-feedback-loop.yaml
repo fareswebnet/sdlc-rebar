@@ -13,7 +13,7 @@ stages:
     skills:
       - sdlc-incident-support-feedback
       - sdlc-observability-reliability
-      - sdlc-product-analytics-experimentation
+      - sdlc-product-analytics
     outputs:
       - incident or feedback summary
       - affected journeys and metrics
@@ -22,7 +22,7 @@ stages:
     agent: devops-sre
     skills:
       - sdlc-observability-reliability
-      - sdlc-performance-scalability-cost
+      - sdlc-scalability-cost
     outputs:
       - docs/operations/incidents/postmortem-template.md
       - reliability or cost findings
@@ -31,7 +31,7 @@ stages:
     agent: product-strategist
     skills:
       - sdlc-idea-framing
-      - sdlc-product-analytics-experimentation
+      - sdlc-product-analytics
     outputs:
       - roadmap or KPI impact notes
     gate: product decision is tied to measured user impact
@@ -50,7 +50,7 @@ stages:
       - sdlc-systematic-debugging
       - sdlc-code-change-execution
       - sdlc-test-driven-development
-      - sdlc-quality-test-strategy
+      - sdlc-test-strategy
     outputs:
       - fix diff
       - regression tests
@@ -60,7 +60,7 @@ stages:
     agent: release-manager
     skills:
       - sdlc-definition-of-done
-      - sdlc-documentation-knowledge
+      - sdlc-documentation
     outputs:
       - release and follow-up notes
       - updated runbook or documentation

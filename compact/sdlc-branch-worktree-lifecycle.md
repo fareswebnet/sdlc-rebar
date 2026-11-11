@@ -19,4 +19,4 @@ Never:
 - Do not merge with failing tests.
 - Keep unrelated user changes untouched.
 
-Next: `sdlc-code-review-quality-gate` before merge; `sdlc-definition-of-done` for release.
+Next: `sdlc-code-review` before merge; `sdlc-definition-of-done` for release.

@@ -139,12 +139,12 @@ def main() -> int:
             raise SystemExit("--native-roles is only available for --runtime claude")
         for path in sorted((SUITE / "agents").glob("*.yaml")):
             role = parse_role(path)
-            body = [f"---", f"name: {role['id']}", f"description: {role.get('purpose', role['id'])}", "---", "",
+            body = [f"---", f"name: sdlc-{role['id']}", f"description: {role.get('purpose', role['id'])}", "---", "",
                     f"You are the {role.get('name', role['id'])} role of the AI SDLC suite.", "",
                     "Use these skills: " + ", ".join(role["lists"].get("skills", [])) + ".", "", "Gates:"]
             body += [f"- {g}" for g in role["lists"].get("gates", [])]
-            body += ["", "Hand off to: " + ", ".join(role["lists"].get("handoffs", [])) + "."]
-            write(target / ".claude" / "agents" / f"{role['id']}.md", "\n".join(body) + "\n", args.dry_run)
+            body += ["", "Hand off to: " + ", ".join("sdlc-" + h for h in role["lists"].get("handoffs", [])) + "."]
+            write(target / ".claude" / "agents" / f"sdlc-{role['id']}.md", "\n".join(body) + "\n", args.dry_run)
     return 0
 
 

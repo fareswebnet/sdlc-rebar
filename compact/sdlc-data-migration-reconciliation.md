@@ -20,4 +20,4 @@ Never:
 - Counts alone are not reconciliation; compare values and invariants.
 - A rejected row is a finding, not noise.
 
-Next: `sdlc-cutover-rollback` for go-live, `sdlc-data-database-architecture` for target schema design.
+Next: `sdlc-cutover-rollback` for go-live, `sdlc-data-architecture` for target schema design.

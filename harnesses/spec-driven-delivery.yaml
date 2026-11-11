@@ -77,8 +77,8 @@ stages:
   - id: review
     agent: code-reviewer
     skills:
-      - sdlc-code-review-quality-gate
-      - sdlc-code-review-reception
+      - sdlc-code-review
+      - sdlc-receiving-code-review
     outputs:
       - review findings
       - merge decision

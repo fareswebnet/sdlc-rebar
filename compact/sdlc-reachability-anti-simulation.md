@@ -19,4 +19,4 @@ Never:
 - Local-only markers never apply to business data.
 - A green detector does not prove there are no other controllers or clients outside its scan.
 
-Next: `sdlc-independent-verification` for behavior, `sdlc-quality-test-strategy` for broader gates.
+Next: `sdlc-independent-verification` for behavior, `sdlc-test-strategy` for broader gates.

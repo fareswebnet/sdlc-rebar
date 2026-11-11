@@ -7,10 +7,10 @@ recommended_runtimes:
   - claude-code
   - hermes
 skills:
-  - sdlc-code-review-quality-gate
+  - sdlc-code-review
   - sdlc-verification-before-completion
   - sdlc-delivery-retrospective
-  - sdlc-documentation-knowledge
+  - sdlc-documentation
 inputs:
   - diff
   - requirements and BDD examples

@@ -1,0 +1,4 @@
+interface:
+  display_name: "SDLC CI/CD Platform"
+  short_description: "Design delivery platform workflows"
+  default_prompt: "Use $sdlc-ci-cd-platform to make build, test, preview, and deploy boring enough for fast teams."

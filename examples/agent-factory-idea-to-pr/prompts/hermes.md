@@ -1,7 +1,7 @@
 # Hermes Prompt
 
 ```bash
-hermes chat --worktree --skills sdlc-delivery-system,sdlc-ai-assisted-development \
+hermes chat --worktree --skills sdlc-delivery-orchestrator,sdlc-ai-coding-governance \
   -q "Run harnesses/app-idea-to-production.yaml for ReleasePilot.
 
 ReleasePilot is a B2B SaaS app for small product-engineering teams. It reads a feature brief, acceptance criteria, CI status, risk notes, and deployment context, then produces a release-readiness view with missing gates, rollback notes, and post-release checks.

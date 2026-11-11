@@ -1,4 +1,0 @@
-interface:
-  display_name: "SDLC AI Assisted Development"
-  short_description: "Control agentic coding work"
-  default_prompt: "Use $sdlc-ai-assisted-development to use ai coding agents as supervised engineering workflows, not free-form generators."

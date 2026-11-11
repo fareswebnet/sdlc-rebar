@@ -19,4 +19,4 @@ Never:
 - Avoid testing mock behavior; mock only what is external, slow, or nondeterministic.
 - Exceptions (throwaway prototypes, generated code, configuration) require explicit human agreement.
 
-Next: `sdlc-verification-before-completion` after each green cycle; `sdlc-code-review-quality-gate` for the diff.
+Next: `sdlc-verification-before-completion` after each green cycle; `sdlc-code-review` for the diff.
