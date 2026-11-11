@@ -4,7 +4,11 @@ What each skill adds over the bare model, what was measured, and what was remove
 
 ## What was measured
 
-Only Claude (Sonnet and Haiku, via the local Claude Code CLI with tools, skills, and MCP connectors disabled) could be measured. Codex is not installed here, and the Gemini CLI refuses this account ("client no longer supported", migrate to Antigravity). **There is no measured data for Codex or Gemini.** The skills are plain text and runtime-neutral, but a weaker model may benefit more than Claude does; re-run `scripts/run_evals.py` with an OpenAI-compatible endpoint to check.
+Claude (Sonnet and Haiku, via the local Claude Code CLI with tools, skills, and MCP connectors disabled) and Gemini through Antigravity (`agy`, model `gemini-4-argon-low`, 2 runs). Codex is not installed here, so **there is no measured data for Codex.** The old Gemini CLI is no longer supported on this account; Gemini means Antigravity throughout.
+
+Antigravity is less isolated than the Claude runs: `agy` cannot disable its tools or set a system prompt, so the skill text is prefixed to the prompt, the run happens in an empty directory, and every prompt states that no tool access exists. The Gemini Flash and GPT-OSS models were out of quota, so only `gemini-4-argon-low` was measured.
+
+Totals over the 19 scenarios of the repository: Sonnet and Haiku about 22/48 and 23/48 baseline versus 44/48 and 43/48 with the skill on the 16 original scenarios; Antigravity 21/38 versus 34/38 on all 19 scenarios (2 runs).
 
 Method: one or more pressure scenarios per skill, 3 runs each, with and without the compact skill, regex checks (a floor, not a quality judgement). Raw replies are in `evals/results/`. Runs are noisy: the three kept generic skills were measured twice and their baselines moved by one run out of three, so differences of one run are not significant.
 
@@ -24,6 +28,10 @@ Method: one or more pressure scenarios per skill, 3 runs each, with and without 
 | `sdlc-product-strategy`, `sdlc-api-integration-contracts`, `sdlc-identity-access-multitenancy`, `sdlc-release-production-readiness`, `sdlc-technical-debt-evolution` | one pressure scenario each | 3/3 / 3/3 | **No gain measured: removed** |
 
 Pattern: skills that encode a non-obvious discipline against a tempting shortcut (self-approval, test-first, registry-first, hard design gate) change behavior. Skills that restate general engineering knowledge (strategy, contracts, authorization, release checks, debt) do not, because the model already applies it.
+
+## Antigravity (Gemini) results
+
+Baseline versus with skill, 2 runs per scenario: design gate 0/2 to 2/2; TDD under time pressure 0/2 to 2/2; TDD with a fix supplied 0/2 to 1/2; "suite is green" pressure 0/2 to 2/2; verifying a partial result 0/2 to 2/2; unverified fix claim 0/2 to 2/2; self-visa 1/2 to 2/2; PRD vague verbs 1/2 to 2/2. No gain on registry-first, debugging, alert noise, or microservices default (already 2/2). Notably, `sdlc-verification-before-completion` helps Gemini where it barely moves Claude, which supports keeping it. `design-small-change-pressure` failed 0/2 both ways (the model gave the design but the regex found no "approach" wording). The sample is small (2 runs); raw replies are in `evals/results/antigravity-gemini-4-argon-low.md`.
 
 ## Removed
 

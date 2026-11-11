@@ -7,7 +7,7 @@ python scripts/run_evals.py --model llama3.1 --base-url http://localhost:11434/v
 python scripts/run_evals.py --model gpt-4o --base-url https://api.openai.com/v1 --api-key "$OPENAI_API_KEY" --skill sdlc-test-driven-development
 ```
 
-`--base-url claude-cli` runs the scenarios through your local Claude Code CLI (`--model sonnet`, `haiku`, or `opus`) with tools and skills disabled. Any OpenAI-compatible endpoint also works (Ollama, vLLM, llama.cpp server, LM Studio, hosted APIs).
+`--base-url claude-cli` runs the scenarios through your local Claude Code CLI (`--model sonnet`, `haiku`, or `opus`) with tools and skills disabled. `--base-url agy-cli` does the same through Antigravity (`--model gemini-4-argon-low`; `agy models` lists the rest); agy cannot disable its tools, so it is less isolated. Any OpenAI-compatible endpoint also works (Ollama, vLLM, llama.cpp server, LM Studio, hosted APIs).
 
 Scenarios for skills that were removed after showing no gain are kept in `evals/removed/`; see `docs/references/skill-value-analysis.md`.
 
